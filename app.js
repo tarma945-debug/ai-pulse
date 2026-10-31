@@ -329,6 +329,7 @@
     view: {
       allTag: "all",
       dailyDate: "",
+      dailyTab: "ai",           /* ai | comp */
       calMonth: "",             /* YYYY-MM */
       siteId: "",
       modelNat: { models: "all", videoModels: "all", imageModels: "all" },
@@ -596,18 +597,73 @@
 
     if (!S.view.dailyDate || dates.indexOf(S.view.dailyDate) < 0) S.view.dailyDate = dates[0];
     var cur = S.view.dailyDate;
+    var tab = S.view.dailyTab === "comp" ? "comp" : "ai";
     var rep = S.daily[cur];
 
     var cal = renderCalendar(dates, cur);
-    var body;
+    var compCount = dailyCompCount(cur);
+    var tabs = '<div class="daily-tabs">' +
+      '<button type="button" class="daily-tab' + (tab === "ai" ? " active" : "") + '" data-dtab="ai">' +
+        '<span class="dt-ico">◆</span>AI 日报' +
+        (rep ? '<span class="dt-n">' + ((rep.sections || []).reduce(function (a, s) { return a + (s.items || []).length; }, 0)) + "</span>" : "") +
+      "</button>" +
+      '<button type="button" class="daily-tab' + (tab === "comp" ? " active" : "") + '" data-dtab="comp">' +
+        '<span class="dt-ico">◇</span>竞品动态' +
+        (compCount ? '<span class="dt-n">' + compCount + "</span>" : "") +
+      "</button>" +
+    "</div>";
 
-    if (!rep) {
+    var body;
+    if (tab === "comp") {
+      body = renderDailyComp(cur);
+    } else if (!rep) {
       body = S.dailyLoading === cur ? skeleton(3) : emptyBox("日报加载中…");
     } else {
       body = renderReport(rep, dates);
     }
 
-    return '<div class="daily-layout">' + cal + '<div class="daily-main">' + body + "</div></div>";
+    return '<div class="daily-layout">' + cal + '<div class="daily-main">' + tabs + body + "</div></div>";
+  }
+
+  /* 某天（含回退的近 7 天）有多少条竞品动态，用于标签上的数字 */
+  function dailyCompCount(date) {
+    var got = dailyCompWindow(date);
+    return got ? got.ups.length : 0;
+  }
+
+  /* 计算某天的竞品窗口：优先当天；不足 3 条回退近 7 天。返回 {from,to,ups,fallback} */
+  function dailyCompWindow(date) {
+    if (!COMP.loaded || !COMP.updates.length) return null;
+
+    var toDay = date;
+    var byDate = function (u) { return u.date && u.date === toDay; };
+    var ups = COMP.updates.filter(byDate).sort(function (a, b) {
+      return String(b.date).localeCompare(String(a.date));
+    });
+
+    if (ups.length >= 3) return { from: toDay, to: toDay, ups: ups, fallback: false };
+
+    /* 回退：截至当天为止的最近 10 条（不超过 7 天） */
+    var endMs = new Date(date + "T23:59:59+08:00").getTime();
+    var backMs = endMs - 7 * 24 * 3600 * 1000;
+    var backDay = dayOfMs(backMs);
+    var week = COMP.updates.filter(function (u) {
+      return u.date && u.date <= toDay && u.date >= backDay;
+    }).sort(function (a, b) {
+      return String(b.date).localeCompare(String(a.date));
+    }).slice(0, 10);
+
+    if (week.length > ups.length) return { from: backDay, to: toDay, ups: week, fallback: true };
+    return { from: toDay, to: toDay, ups: ups, fallback: false };
+  }
+
+  function dayOfMs(ms) {
+    var p = {};
+    try {
+      new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" })
+        .formatToParts(new Date(ms)).forEach(function (x) { p[x.type] = x.value; });
+    } catch (e) { return ""; }
+    return (p.year || "") + "-" + (p.month || "") + "-" + (p.day || "");
   }
 
   function renderCalendar(dates, cur) {
@@ -725,58 +781,33 @@
         }).join("") + "</div></section>"
       : "";
 
-    var compHtml = renderDailyCompetitors(rep);
-
-    return head + leadHtml + sections + compHtml + flashHtml;
+    return head + leadHtml + sections + flashHtml;
   }
 
-  /* 日报内嵌「竞品动态」板块：取该日报覆盖的 24 小时窗口内所有竞品更新 */
-  function renderDailyCompetitors(rep) {
-    if (!COMP.loaded || !COMP.updates.length) return "";
+  /* 日报「竞品动态」独立标签页：不再混在 AI 日报里 */
+  function renderDailyComp(date) {
+    var got = dailyCompWindow(date);
 
-    /* 日报窗口：generatedAt 前 24 小时；缺失时退回用日报日期前一天 */
-    var end = rep.generatedAt ? rep.generatedAt : (rep.date + "T00:00:00+08:00");
-    var endMs = new Date(end).getTime();
-    if (isNaN(endMs)) endMs = new Date(rep.date + "T00:00:00+08:00").getTime();
-    if (isNaN(endMs)) return "";
-
-    var startMs = endMs - 24 * 3600 * 1000;
-    function dayOf(ms) {
-      var p = {};
-      try {
-        new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit", day: "2-digit" })
-          .formatToParts(new Date(ms)).forEach(function (x) { p[x.type] = x.value; });
-      } catch (e) { return ""; }
-      return (p.year || "") + "-" + (p.month || "") + "-" + (p.day || "");
+    if (!COMP.loaded) return skeleton(4);
+    if (COMP.error && !COMP.updates.length) {
+      return errorBox("竞品数据拉取失败：" + COMP.error.message + "（来源 ai-video-watch）", "daily");
     }
-    var fromDay = dayOf(startMs), toDay = dayOf(endMs);
-
-    /* 竞品更新只有日期精度，取 [fromDay, toDay] 闭区间 */
-    var ups = COMP.updates.filter(function (u) {
-      return u.date && u.date >= fromDay && u.date <= toDay;
-    }).sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); });
-
-    /* 当天窗口太冷清（不足 3 条）时，回退成「最近 7 天」，避免板块时有时无 */
-    var fallback = false;
-    if (ups.length < 3) {
-      var backMs = endMs - 7 * 24 * 3600 * 1000;
-      var backDay = dayOf(backMs);
-      var week = COMP.updates.filter(function (u) {
-        return u.date && u.date <= toDay;
-      }).sort(function (a, b) { return String(b.date).localeCompare(String(a.date)); }).slice(0, 10);
-      if (week.length > ups.length) { ups = week; fallback = true; fromDay = backDay; }
+    if (!got || !got.ups.length) {
+      return '<div class="dcomp-head"><h3>竞品动态</h3></div>' +
+        emptyBox("这一天没有任何竞品更新", "换个日期看看，或去「竞品动态」看完整时间线");
     }
 
-    if (!ups.length) return "";
+    var ups = got.ups;
 
-    /* 按站点分组，便于阅读 */
+    /* 按站点分组，组内按日期倒序 */
     var bySite = {};
     ups.forEach(function (u) {
       var k = u.competitor || u.siteId || "其他";
       (bySite[k] = bySite[k] || []).push(u);
     });
+    var order = Object.keys(bySite).sort(function (x, y) { return bySite[y].length - bySite[x].length; });
 
-    var groups = Object.keys(bySite).map(function (k) {
+    var groups = order.map(function (k) {
       var arr = bySite[k];
       return '<div class="dc-group">' +
         '<div class="dc-site">' + esc(compName(k)) + '<span class="dc-n">' + arr.length + "</span></div>" +
@@ -784,9 +815,13 @@
           var src = u.source
             ? '<a class="lnk" href="' + esc(u.source) + '" target="_blank" rel="noopener">' + esc(u.sourceName || "原文") + " ↗</a>"
             : "";
+          var more = (u.details && u.details.length > 1)
+            ? '<ul class="dc-more">' + u.details.slice(1).map(function (d) { return "<li>" + esc(d) + "</li>"; }).join("") + "</ul>"
+            : "";
           return '<div class="dc-item">' +
             "<h5>" + esc(u.title) + "</h5>" +
-            (u.details && u.details.length ? '<p>' + esc(u.details[0]) + "</p>" : "") +
+            (u.details && u.details.length ? "<p>" + esc(u.details[0]) + "</p>" : "") +
+            more +
             '<div class="dc-meta"><span class="upd-date">' + esc(u.date) + "</span>" +
               (u.type ? '<span class="chip chip-gray" style="font-size:10.5px;padding:0 6px">' + esc(u.type) + "</span>" : "") +
               src +
@@ -796,16 +831,23 @@
       "</div>";
     }).join("");
 
-    var rangeText = fallback
-      ? "近 7 天精选 · 截至 " + toDay
-      : fromDay + " ~ " + toDay;
+    var rangeText = got.fallback
+      ? "近 7 天精选 · 截至 " + got.to
+      : got.from;
+    var siteCount = order.length;
 
-    return '<section class="dsec dsec-comp">' +
-      '<div class="dsec-head"><h3>竞品动态</h3>' +
-        '<span class="n">' + ups.length + "</span>" +
-        '<span class="dsec-src">来自 ai-video-watch · ' + esc(rangeText) + "</span></div>" +
-      '<div class="dc-wrap">' + groups + "</div>" +
-    "</section>";
+    var head = '<div class="dcomp-head">' +
+      "<h3>竞品动态</h3>" +
+      '<span class="dcomp-n">' + ups.length + " 条 · " + siteCount + " 个站点</span>" +
+      '<span class="dcomp-src">来自 ai-video-watch · ' + esc(rangeText) + "</span>" +
+      '<a class="dcomp-link" href="#/videoSites">看完整时间线 →</a>' +
+    "</div>";
+
+    if (got.fallback) {
+      head += '<div class="dcomp-note">当天更新的竞品不足 3 条，已自动扩展为近 7 天精选，避免这一天空白。</div>';
+    }
+
+    return head + '<div class="dc-wrap">' + groups + "</div>";
   }
 
   /* ------------------------------------------------------------
@@ -1151,6 +1193,8 @@
           if (S.view.dailyDate) S.view.calMonth = S.view.dailyDate.slice(0, 7);
         }
         if (!S.view.dailyDate) { paint(); return; }
+        /* 只在「AI 日报」标签下才需要拉日报正文，竞品标签用不到 */
+        if (S.view.dailyTab === "comp") { paint(); return; }
         return loadDaily(S.view.dailyDate).then(function () {
           if (token === S.token) paint();
         }).catch(function () {
@@ -1239,6 +1283,14 @@
       /* 竞品切换 */
       var site = t.closest ? t.closest("[data-site]") : null;
       if (site) { S.view.siteId = site.getAttribute("data-site"); paint(); return; }
+
+      /* 日报：切换 AI / 竞品标签 */
+      var dtab = t.closest ? t.closest("[data-dtab]") : null;
+      if (dtab) {
+        S.view.dailyTab = dtab.getAttribute("data-dtab") === "comp" ? "comp" : "ai";
+        paint();
+        return;
+      }
 
       /* 日报：选日期 / 换月 / 前后翻 */
       var day = t.closest ? t.closest("[data-date]") : null;
