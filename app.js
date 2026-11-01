@@ -6,7 +6,9 @@
 (function () {
   "use strict";
 
-  var API = "https://aihot.virxact.com/api/v1";
+  /* AIHOT 公开只读 API。旧域名 aihot.virxact.com 已 301 跳到 aihot.news，
+     直接用新域名，少一跳、也避免某些浏览器对跨域重定向的额外预检 */
+  var API = "https://aihot.news/api/v1";
   var COMPETITOR_URL = "https://tarma945-debug.github.io/ai-video-watch/data.js";
   var CACHE_TTL = 5 * 60 * 1000;      /* 5 分钟 */
   var LOCAL = window.SITE_DATA || {};
