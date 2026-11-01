@@ -3,14 +3,14 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-10-30"
+    "updated": "2026-11-01"
   },
   "videoModels": [
     {
       "name": "Seedance 2.5",
       "vendor": "字节跳动",
       "type": "视频",
-      "feature": "30 秒原生直出、50 个全模态参考、时间戳级控制，AI 视频进入导演可控时代",
+      "feature": "30 秒原生直出、50 个全模态参考、时间戳级控制，4K 版定向供应影视工作室 + Draft 低清预览模式",
       "heat": 98,
       "launchDate": "2026-08",
       "evalCount": 42,
@@ -26,8 +26,8 @@ window.SITE_DATA = {
       "name": "可灵 Kling 4.0",
       "vendor": "快手",
       "type": "视频",
-      "feature": "4K / 1080p 10-bit HDR 原生直出，15 项全能参考，30 秒长镜头 + 导演思维扩写",
-      "heat": 97,
+      "feature": "4K / 1080p 10-bit HDR 原生直出，15 项全能参考，30 秒长镜头，API 已开放给全球开发者",
+      "heat": 98,
       "launchDate": "2026-10",
       "evalCount": 38,
       "evalRatio": 88,
@@ -122,7 +122,7 @@ window.SITE_DATA = {
       "name": "Vidu Q4",
       "vendor": "生数科技",
       "type": "视频",
-      "feature": "下一代旗舰音视频，2K/4K 输出与 10-bit 色深，创作成本降至 $0.014/秒",
+      "feature": "下一代旗舰音视频，2K/4K 输出与 10-bit 色深，API 已开放、Q4 积分包 7 折，成本降至 $0.014/秒",
       "heat": 88,
       "launchDate": "2026-10",
       "evalCount": 26,
@@ -181,6 +181,22 @@ window.SITE_DATA = {
       "isDomestic": false,
       "isOpenSource": false,
       "category": "图生视频"
+    },
+    {
+      "name": "混元 Hy-Nomas",
+      "vendor": "腾讯混元",
+      "type": "视频",
+      "feature": "开源交互式视频世界模型，8B 骨干 + 千问做导演，一句话实时改写可探索的视频世界",
+      "heat": 86,
+      "launchDate": "2026-10",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "待评估",
+      "score": 84.6,
+      "isDomestic": true,
+      "isOpenSource": true,
+      "category": "世界模型"
     },
     {
       "name": "SkyReels-V4",
@@ -284,7 +300,7 @@ window.SITE_DATA = {
       "name": "Flux 3",
       "vendor": "Black Forest Labs",
       "type": "图片",
-      "feature": "多模态图文创建与编辑，图像质量与指令跟随全面升级",
+      "feature": "原生 4K 生图 + 坐标网格精准排布，开放权重版数周内放出，图像质量与指令跟随全面升级",
       "heat": 93,
       "launchDate": "2026-08",
       "evalCount": 30,
@@ -380,7 +396,7 @@ window.SITE_DATA = {
       "name": "Recraft V4",
       "vendor": "Recraft",
       "type": "图片",
-      "feature": "矢量图与品牌设计专项，平面设计工作流优化",
+      "feature": "矢量图与品牌设计专项，新增可视化标注——点选画面元素直接指定修改项",
       "heat": 78,
       "launchDate": "2026-08",
       "evalCount": 16,
