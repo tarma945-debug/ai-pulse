@@ -1215,6 +1215,146 @@ table.rank th.r, table.rank td.r { text-align: right; }
   letter-spacing: -0.2px;
 }
 
+/* ============================ 社区热帖 ============================ */
+.fb-n {
+  margin-left: 6px;
+  font-size: 10.5px;
+  font-variant-numeric: tabular-nums;
+  opacity: .62;
+}
+.filter-btn.active .fb-n { opacity: .9; }
+
+/* Reddit 二级板块，比一级小一号 */
+.comm-subbar { margin-top: -6px; margin-bottom: 16px; }
+.filter-btn.sm { font-size: 11.5px; padding: 4px 11px; }
+
+/* 社区页的筛选按钮要保证点击区 ≥32px（默认 .filter-btn 只有 27px 高） */
+.comm-subbar .filter-btn,
+.filter-bar .filter-btn[data-csrc] { min-height: 32px; padding-top: 0; padding-bottom: 0; display: inline-flex; align-items: center; }
+.filter-btn.sm { min-height: 30px; }
+
+.comm-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 11px 14px;
+  margin-bottom: 16px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-line);
+  border-radius: 10px;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--text-3);
+}
+.comm-note .cn-ico { color: var(--accent); flex: 0 0 auto; font-size: 11px; line-height: 1.9; }
+
+.comm-list { display: flex; flex-direction: column; gap: 10px; }
+
+.comm-card {
+  display: grid;
+  grid-template-columns: 62px 1fr;
+  gap: 16px;
+  padding: 15px 18px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+}
+.comm-card:hover {
+  border-color: var(--accent-line);
+  box-shadow: 0 4px 16px rgba(20, 22, 43, .07);
+  transform: translateY(-1px);
+}
+
+/* 左侧热度条 */
+.cc-side { display: flex; align-items: flex-start; padding-top: 2px; }
+.cc-heat { width: 100%; display: flex; flex-direction: column; gap: 5px; }
+.cch-n {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.3px;
+}
+.cch-bar {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--bg-sub);
+  border-radius: 2px;
+  overflow: hidden;
+}
+.cch-bar i {
+  display: block;
+  height: 100%;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), #7B74FF);
+}
+
+.cc-main { min-width: 0; }
+.cc-top { display: flex; align-items: center; gap: 7px; margin-bottom: 7px; flex-wrap: wrap; }
+
+.cc-src {
+  font-size: 11px;
+  font-weight: 650;
+  padding: 2px 8px;
+  border-radius: 5px;
+  background: var(--bg-sub);
+  color: var(--text-2);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+.cc-src-reddit { background: #FFF0E8; color: #C2410C; border-color: #FFD9C2; }
+.cc-src-hacker-news { background: #FFF6E5; color: #B45309; border-color: #FCE3B4; }
+.cc-src-product-hunt { background: #FFEFF5; color: #BE185D; border-color: #FBCFE0; }
+.cc-src-github { background: #EEF1F6; color: #334155; border-color: #DBE2EC; }
+/* 来源本身做灰色小标签，和上面带色的板块标签区分开 */
+.cc-src-plain { background: transparent; border-color: transparent; color: var(--text-4); font-weight: 500; padding-left: 2px; }
+
+.cc-cat { font-size: 11px; color: var(--text-4); white-space: nowrap; }
+
+.comm-card h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: -.15px;
+  /* 标题最多两行，超出省略。也定高，避免长短标题把卡片撑成不同高度 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 22.5px;
+}
+.comm-card h3 a { color: var(--text); text-decoration: none; }
+.comm-card h3 a:hover { color: var(--accent); }
+
+.cc-excerpt {
+  margin: 0 0 8px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--text-3);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  /* 固定两行高度：有的帖子没有摘要，不占位会让卡片高度在 109~160 之间跳，列表看着很乱 */
+  min-height: 43px;
+  max-height: 43px;
+}
+
+.cc-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 11.5px;
+  color: var(--text-4);
+}
+.cc-author { color: var(--text-3); font-weight: 500; }
+.cc-meta .dot { opacity: .45; }
+
 /* ============================ 竞品动态 ============================ */
 .site-bar {
   display: flex;
@@ -1506,6 +1646,18 @@ table.rank th.r, table.rank td.r { text-align: right; }
   .dsec-src { margin-left: 0; width: 100%; }
 
   .drawer { width: 100%; }
+
+  /* 社区热帖：侧栏热度条移到顶部，避免挤占正文宽度 */
+  .comm-card { grid-template-columns: 1fr; gap: 9px; padding: 13px 14px; }
+  .cc-side { padding-top: 0; }
+  .cc-heat { flex-direction: row; align-items: center; gap: 9px; }
+  .cch-n { font-size: 12px; order: 2; }
+  .cch-bar { flex: 1; order: 1; max-width: none; }
+  .comm-card h3 { font-size: 14.5px; }
+  .cc-excerpt { -webkit-line-clamp: 3; }
+
+  .filter-btn.sm { min-height: 32px; }
+  .comm-subbar { margin-top: -8px; }
 
   .to-top { right: 15px; bottom: 15px; }
   .page-footer { font-size: 11px; }

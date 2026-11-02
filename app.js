@@ -10,6 +10,8 @@
      直接用新域名，少一跳、也避免某些浏览器对跨域重定向的额外预检 */
   var API = "https://aihot.news/api/v1";
   var COMPETITOR_URL = "https://tarma945-debug.github.io/ai-video-watch/data.js";
+  /* 社区热帖是本地定时抓好的静态文件（Reddit 有反爬和跨域，不能浏览器实时拉） */
+  var COMMUNITY_URL = "community.js";
   var CACHE_TTL = 5 * 60 * 1000;      /* 5 分钟 */
   var LOCAL = window.SITE_DATA || {};
   var videoModels = LOCAL.videoModels || [];
@@ -17,6 +19,9 @@
 
   /* 竞品监控数据（运行时从 ai-video-watch 拉取） */
   var COMP = { competitors: [], updates: [], updated: "", loaded: false, error: null };
+
+  /* 社区热帖（读本地 community.js，由 scripts/fetch-community.mjs 生成） */
+  var COMM = { site: null, posts: [], loaded: false, error: null };
 
   /* ------------------------------------------------------------
      小工具
@@ -328,12 +333,15 @@
     stale: false,
     fetchedAt: "",
     booted: false,
+    commLoading: false,
     view: {
       allTag: "all",
       dailyDate: "",
       dailyTab: "ai",           /* ai | comp */
       calMonth: "",             /* YYYY-MM */
       siteId: "",
+      commSource: "all",        /* all | Reddit | Hacker News | Product Hunt | GitHub */
+      commSub: "all",           /* 次级筛选：Reddit 的具体 subreddit */
       modelNat: { models: "all", videoModels: "all", imageModels: "all" },
       modelType: { models: "all", videoModels: "all", imageModels: "all" }
     },
@@ -344,6 +352,7 @@
     featured:   { title: "精选", desc: "过去 24 小时 AI 圈最值得看的几条，按 AIHOT 编辑精选顺序", nav: "内容" },
     all:        { title: "全部动态", desc: "过去 24 小时全部公开动态，可按类型筛选、继续加载", nav: "内容" },
     hot:        { title: "热点榜", desc: "正在发酵的事件，按独立信源数与信号量排序", nav: "内容" },
+    community:  { title: "社区热帖", desc: "Reddit / Hacker News / Product Hunt / GitHub 上 AI 创作圈的真实讨论，每天定时抓取", nav: "内容" },
     daily:      { title: "日报", desc: "AIHOT 每日成品日报：头条 + 分板块 + 快讯，可回看历史", nav: "内容" },
     models:     { title: "AI 模型总榜", desc: "视频与图片生成模型混合排名，支持类型与国产/开源叠加筛选", nav: "榜单" },
     videoModels:{ title: "视频模型榜", desc: "主流 AI 视频生成模型综合排名", nav: "榜单" },
@@ -355,6 +364,7 @@
     featured: '<path d="M12 3l2.3 6.1L21 11l-6.7 1.9L12 19l-2.3-6.1L3 11l6.7-1.9z"/>',
     all: '<path d="M4 6h16M4 12h16M4 18h10"/>',
     hot: '<path d="M12 3s4.5 4 4.5 8.2A4.5 4.5 0 0 1 12 21a4.5 4.5 0 0 1-4.5-9.8C9 9 12 6.5 12 3z"/>',
+    community: '<path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8v.5z"/>',
     daily: '<rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/>',
     models: '<path d="M4 19V9M10 19V5M16 19v-7M22 19H2"/>',
     videoModels: '<rect x="3" y="6" width="12" height="12" rx="2.5"/><path d="M15 10l5-3v10l-5-3z"/>',
@@ -371,6 +381,7 @@
       case "all": return S.all ? S.all.length : 0;
       case "hot": return S.hot ? S.hot.length : 0;
       case "daily": return S.dailyIndex ? S.dailyIndex.length : 0;
+      case "community": return COMM.posts.length;
       case "models": return videoModels.length + imageModels.length;
       case "videoModels": return videoModels.length;
       case "imageModels": return imageModels.length;
@@ -380,7 +391,7 @@
   }
 
   function renderNav() {
-    var order = ["featured", "all", "hot", "daily", "videoSites", "models", "videoModels", "imageModels"];
+    var order = ["featured", "all", "hot", "community", "daily", "videoSites", "models", "videoModels", "imageModels"];
     var grouped = { "内容": [], "榜单": [] };
     order.forEach(function (id) {
       var m = PAGES[id];
@@ -941,6 +952,133 @@
   /* ------------------------------------------------------------
      页面：竞品动态
      ------------------------------------------------------------ */
+  /* ------------------------------------------------------------
+     页面：社区热帖（Reddit / HN / PH / GitHub）
+     ------------------------------------------------------------ */
+  var SRC_ORDER = ["Reddit", "Hacker News", "Product Hunt", "GitHub"];
+  var SRC_LABEL = { "Reddit": "Reddit", "Hacker News": "Hacker News", "Product Hunt": "Product Hunt", "GitHub": "GitHub" };
+  var SRC_DESC = {
+    "Reddit": "创作圈一线实操：出图/出片效果、工作流、踩坑",
+    "Hacker News": "技术圈视角，重讨论、重评测",
+    "Product Hunt": "新产品发布，看谁在做同类工具",
+    "GitHub": "开源项目热度，看底层模型与工具链"
+  };
+
+  function commSourceCount(src) {
+    return COMM.posts.filter(function (p) { return p.source === src; }).length;
+  }
+
+  function pageCommunity() {
+    if (!COMM.loaded) {
+      return S.commLoading ? skeleton(4)
+        : emptyBox("社区热帖尚未生成", "运行 node scripts/fetch-community.mjs 抓取，或等每日定时任务");
+    }
+    if (COMM.error) {
+      return errorBox("社区数据读取失败：" + COMM.error, "community");
+    }
+    if (!COMM.posts.length) {
+      return emptyBox("暂无社区热帖", "抓取脚本可能没跑成功");
+    }
+
+    var src = S.view.commSource || "all";
+    if (src !== "all" && !commSourceCount(src)) src = "all";
+    S.view.commSource = src;
+
+    /* 一级筛选：来源 */
+    var bar = '<div class="filter-bar">' +
+      '<button type="button" class="filter-btn' + (src === "all" ? " active" : "") + '" data-csrc="all">' +
+        "全部<span class=\"fb-n\">" + COMM.posts.length + "</span></button>" +
+      SRC_ORDER.map(function (s) {
+        var n = commSourceCount(s);
+        return '<button type="button" class="filter-btn' + (src === s ? " active" : "") + '" data-csrc="' + esc(s) + '">' +
+          esc(SRC_LABEL[s]) + '<span class="fb-n">' + n + "</span></button>";
+      }).join("") +
+      '<span class="filter-hint">' +
+        (COMM.site && COMM.site.fetched ? "抓取于 " + bjTime(COMM.site.fetched, true) : "") +
+      "</span>" +
+    "</div>";
+
+    /* 二级筛选：Reddit 下再分 subreddit */
+    var subBar = "";
+    if (src === "Reddit") {
+      var subs = [];
+      var seenSub = {};
+      COMM.posts.forEach(function (p) {
+        if (p.source !== "Reddit" || !p.sub || seenSub[p.sub]) return;
+        seenSub[p.sub] = 1;
+        subs.push({ sub: p.sub, label: p.subLabel || p.sub, n: COMM.posts.filter(function (q) { return q.sub === p.sub; }).length });
+      });
+      var curSub = S.view.commSub || "all";
+      if (curSub !== "all" && !seenSub[curSub]) curSub = "all";
+      S.view.commSub = curSub;
+
+      subBar = '<div class="filter-bar comm-subbar">' +
+        '<button type="button" class="filter-btn sm' + (curSub === "all" ? " active" : "") + '" data-csub="all">全部板块</button>' +
+        subs.map(function (s) {
+          return '<button type="button" class="filter-btn sm' + (curSub === s.sub ? " active" : "") + '" data-csub="' + esc(s.sub) + '">' +
+            esc(s.label) + '<span class="fb-n">' + s.n + "</span></button>";
+        }).join("") +
+      "</div>";
+    }
+
+    /* 过滤 */
+    var list = COMM.posts.filter(function (p) {
+      if (src !== "all" && p.source !== src) return false;
+      if (src === "Reddit" && S.view.commSub !== "all" && p.sub !== S.view.commSub) return false;
+      return true;
+    });
+
+    var body = list.length
+      ? '<div class="comm-list">' + list.map(commCard).join("") + "</div>"
+      : emptyBox("这个来源下暂无内容", "换个来源看看");
+
+    /* 顶部说明 */
+    var note = '<div class="comm-note">' +
+      '<span class="cn-ico">◇</span>' +
+      "<span>社区口径和媒体不同：这里是创作者和开发者自己发的内容，热度按新鲜度 + 社区认可度粗排，不代表官方推荐。</span>" +
+    "</div>";
+
+    return bar + subBar + note + body;
+  }
+
+  function commCard(p) {
+    var heatPct = Math.max(6, Math.min(100, Math.round((p.heat || 0) * 100)));
+    var metaBits = [];
+    if (p.author) metaBits.push('<span class="cc-author">' + esc(p.author) + "</span>");
+    metaBits.push('<span class="dot">·</span><span>' + esc(relTime(p.time)) + "</span>");
+    if (p.comments) metaBits.push('<span class="dot">·</span><span>' + p.comments + " 评论</span>");
+    if (p.points) {
+      metaBits.push('<span class="dot">·</span><span>' +
+        (p.source === "GitHub" ? "今日 +" + p.points + " ★" : p.points + " 分") + "</span>");
+    }
+
+    /* 类名要跟 styles.css 里的 .cc-src-reddit / -hacker-news / -product-hunt / -github 对上 */
+    var cls = (p.source || "").toLowerCase().replace(/\s+/g, "-");
+
+    return '<article class="comm-card">' +
+      '<div class="cc-side">' +
+        '<div class="cc-heat" title="热度 ' + (p.heat || 0).toFixed(2) + '：新鲜度 + 社区认可度综合，满分 100">' +
+          '<span class="cch-n">' + heatPct + "</span>" +
+          '<span class="cch-bar"><i style="width:' + heatPct + '%"></i></span>' +
+        "</div>" +
+      "</div>" +
+      '<div class="cc-main">' +
+        '<div class="cc-top">' +
+          '<span class="cc-src cc-src-' + esc(cls) + '">' + esc(p.sub || p.source) + "</span>" +
+          '<span class="cc-src cc-src-plain">' + esc(p.source) + "</span>" +
+          '<span class="cc-cat">' + esc(p.cat || "") + "</span>" +
+        "</div>" +
+        "<h3><a href=\"" + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.title) + "</a></h3>" +
+        /* 没摘要也留空占位，保证卡片等高，列表不会参差 */
+        '<p class="cc-excerpt">' + (p.excerpt ? esc(p.excerpt) : "") + "</p>" +
+        '<div class="cc-meta">' + metaBits.join("") + "</div>" +
+      "</div>" +
+    "</article>";
+  }
+
+  /* ------------------------------------------------------------
+     页面：竞品动态
+     ------------------------------------------------------------ */
   function pageSites() {
     if (!COMP.loaded) return skeleton(4);
     if (COMP.error && !COMP.updates.length) {
@@ -1066,6 +1204,7 @@
       case "featured": return pageFeatured();
       case "all": return pageAll();
       case "hot": return pageHot();
+      case "community": return pageCommunity();
       case "daily": return pageDaily();
       case "models": return pageModels("models", videoModels.concat(imageModels));
       case "videoModels": return pageModels("videoModels", videoModels);
@@ -1148,6 +1287,59 @@
     });
   }
 
+  /* ------------------------------------------------------------
+     社区热帖：读本地静态文件
+     ------------------------------------------------------------ */
+  var commPromise = null;
+
+  function loadCommunity(force) {
+    if (COMM.loaded && !force) return Promise.resolve(COMM);
+    if (commPromise && !force) return commPromise;
+
+    /* 已经有全局了（<script> 直接引入）就直接用，省一次请求 */
+    if (window.COMMUNITY_DATA && !force) {
+      applyComm(window.COMMUNITY_DATA);
+      return Promise.resolve(COMM);
+    }
+
+    S.commLoading = true;
+    commPromise = fetch(COMMUNITY_URL + "?t=" + Math.floor(Date.now() / 60000), { cache: "no-store" })
+      .then(function (r) {
+        if (r.status === 404) throw new Error("NOT_GENERATED");
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.text();
+      })
+      .then(function (txt) {
+        /* 文件形如 window.COMMUNITY_DATA = {...}; */
+        var a = txt.indexOf("{");
+        var b = txt.lastIndexOf("}");
+        if (a < 0 || b < a) throw new Error("社区数据格式不对");
+        applyComm(JSON.parse(txt.slice(a, b + 1)));
+        commPromise = null;
+        return COMM;
+      })
+      .catch(function (e) {
+        commPromise = null;
+        /* 404 是「还没生成」，属于正常状态，不当成错误 */
+        COMM.error = (e && e.message) === "NOT_GENERATED" ? null : ((e && e.message) || "未知错误");
+        COMM.loaded = true;
+        return COMM;
+      })
+      .then(function (v) {
+        S.commLoading = false;
+        return v;
+      });
+
+    return commPromise;
+  }
+
+  function applyComm(data) {
+    COMM.site = (data && data.site) || null;
+    COMM.posts = ((data && data.posts) || []).slice();
+    COMM.loaded = true;
+    COMM.error = null;
+  }
+
   /* 页面需要哪些数据 */
   function ensureData(cat) {
     var jobs = [];
@@ -1158,6 +1350,8 @@
       jobs.push(S.all ? null : loadAll(true));
     } else if (cat === "hot") {
       jobs.push(S.hot ? null : loadHot());
+    } else if (cat === "community") {
+      jobs.push(COMM.loaded ? null : loadCommunity());
     } else if (cat === "daily") {
       jobs.push(S.dailyIndex ? null : loadDailyIndex());
       jobs.push(COMP.loaded ? null : loadCompetitors());
@@ -1281,6 +1475,18 @@
       if (mt) { S.view.modelType[mt.getAttribute("data-key")] = mt.getAttribute("data-mtype"); paint(); return; }
       var mn = t.closest ? t.closest("[data-mnat]") : null;
       if (mn) { S.view.modelNat[mn.getAttribute("data-key")] = mn.getAttribute("data-mnat"); paint(); return; }
+
+      /* 社区热帖：来源筛选 */
+      var cs = t.closest ? t.closest("[data-csrc]") : null;
+      if (cs) {
+        S.view.commSource = cs.getAttribute("data-csrc");
+        S.view.commSub = "all";
+        paint();
+        return;
+      }
+      /* 社区热帖：Reddit 板块筛选 */
+      var csub = t.closest ? t.closest("[data-csub]") : null;
+      if (csub) { S.view.commSub = csub.getAttribute("data-csub"); paint(); return; }
 
       /* 竞品切换 */
       var site = t.closest ? t.closest("[data-site]") : null;
@@ -1536,8 +1742,8 @@
 
     contentEl.innerHTML = skeleton(4);
 
-    /* 预取：精选 + 热点 + 日报索引 + 竞品动态（四个请求并行） */
-    Promise.allSettled([loadSelected(), loadHot(), loadDailyIndex(), loadCompetitors()]).then(function () {
+    /* 预取：精选 + 热点 + 日报索引 + 竞品动态 + 社区热帖 */
+    Promise.allSettled([loadSelected(), loadHot(), loadDailyIndex(), loadCompetitors(), loadCommunity()]).then(function () {
       S.booted = true;
       var first = S.selected && S.selected.length ? S.selected[0] : null;
       if (!first) { S.stale = true; }

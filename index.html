@@ -27,7 +27,7 @@
       <span class="live-dot"></span>
       <span>实时数据来自 <a href="https://aihot.news/" target="_blank" rel="noopener">AIHOT</a></span>
     </div>
-    <div class="footer-note">竞品动态实时抓取 ai-video-watch · 榜单为本地数据</div>
+    <div class="footer-note">竞品动态实时抓取 ai-video-watch · 社区热帖每日抓取 · 榜单为本地数据</div>
   </div>
 </aside>
 
@@ -79,6 +79,8 @@
 </button>
 
 <script src="data.js"></script>
+<!-- 社区热帖：由 scripts/fetch-community.mjs 定时抓取后写入，缺失时 app.js 会自行降级 -->
+<script src="community.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
