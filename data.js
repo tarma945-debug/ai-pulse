@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-01"
+    "updated": "2026-11-05"
   },
   "videoModels": [
     {
@@ -115,6 +115,22 @@ window.SITE_DATA = {
       "outputPrice": "待评估",
       "score": 90.8,
       "isDomestic": false,
+      "isOpenSource": false,
+      "category": "文生视频"
+    },
+    {
+      "name": "可灵 Kling 4.0 Flash",
+      "vendor": "快手",
+      "type": "视频",
+      "feature": "4.0 轻量快出片：720p、单次最长 20 秒，文生/首帧/参考均可，11-04 起全量开放官网与 API，并接入 MCP、CLI 及 Photoshop/Premiere/AE 插件",
+      "heat": 91,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "待评估",
+      "score": 89.5,
+      "isDomestic": true,
       "isOpenSource": false,
       "category": "文生视频"
     },
@@ -264,6 +280,22 @@ window.SITE_DATA = {
     }
   ],
   "imageModels": [
+    {
+      "name": "GPT Image 2.6",
+      "vendor": "OpenAI",
+      "type": "图片",
+      "feature": "Flare / Sunburst 双型号，出图快 50%（低画质约 6 秒），原生输出 GIF 与 SVG，新增 complexity 规划参数与标记圈选局部编辑，价格与 2.5 持平",
+      "heat": 97,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "¥3.5",
+      "outputPrice": "¥14",
+      "score": 97.5,
+      "isDomestic": false,
+      "isOpenSource": false,
+      "category": "文生图"
+    },
     {
       "name": "GPT Image 2.5",
       "vendor": "OpenAI",
