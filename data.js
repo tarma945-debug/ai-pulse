@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-05"
+    "updated": "2026-11-06"
   },
   "videoModels": [
     {
@@ -82,6 +82,22 @@ window.SITE_DATA = {
       "inputPrice": "¥6",
       "outputPrice": "¥24",
       "score": 93.1,
+      "isDomestic": false,
+      "isOpenSource": false,
+      "category": "文生视频"
+    },
+    {
+      "name": "Gemini Omni 1.2 Flash",
+      "vendor": "Google",
+      "type": "视频",
+      "feature": "原生 15 秒直出（3-15 秒按秒可调）、多轮对话式编辑不重生成，人物/产品/品牌跨镜一致性强化，支持 360p-720p 起草后升 1080p/4K",
+      "heat": 93,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "¥0.47/秒（720p）",
+      "score": 92.4,
       "isDomestic": false,
       "isOpenSource": false,
       "category": "文生视频"
