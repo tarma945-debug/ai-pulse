@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-06"
+    "updated": "2026-11-09"
   },
   "videoModels": [
     {
@@ -439,6 +439,22 @@ window.SITE_DATA = {
       "isDomestic": false,
       "isOpenSource": false,
       "category": "图像编辑"
+    },
+    {
+      "name": "Wan 2.7 Image",
+      "vendor": "阿里",
+      "type": "图片",
+      "feature": "生成与理解统一架构：骨相级捏脸精准定制五官、调色盘提取参考图色调迁移、3K token 印刷级长文本渲染（12 语种）、最多 9 图多主体一致性，Pro 版支持 4K 文生图",
+      "heat": 84,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "¥0.21/张（$0.03）",
+      "score": 84,
+      "isDomestic": true,
+      "isOpenSource": false,
+      "category": "文生图"
     },
     {
       "name": "Recraft V4",
