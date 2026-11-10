@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-09"
+    "updated": "2026-11-10"
   },
   "videoModels": [
     {
@@ -341,6 +341,22 @@ window.SITE_DATA = {
       "outputPrice": "待评估",
       "score": 95.2,
       "isDomestic": false,
+      "isOpenSource": false,
+      "category": "文生图"
+    },
+    {
+      "name": "Seedream 5.5",
+      "vendor": "字节跳动",
+      "type": "图片",
+      "feature": "非编辑区域像素级保持，同一作品支持 100 轮连续编辑；原生 RGBA 透明素材直出免抠图；严重文字崩坏率 0.4%、轻微 1.7%，密集小字领先；2K 方图约 ¥0.28/张",
+      "heat": 94,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "¥0.28",
+      "score": 94.8,
+      "isDomestic": true,
       "isOpenSource": false,
       "category": "文生图"
     },
