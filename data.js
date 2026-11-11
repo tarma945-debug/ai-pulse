@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-10"
+    "updated": "2026-11-11"
   },
   "videoModels": [
     {
@@ -373,6 +373,22 @@ window.SITE_DATA = {
       "outputPrice": "¥8",
       "score": 93,
       "isDomestic": false,
+      "isOpenSource": true,
+      "category": "文生图"
+    },
+    {
+      "name": "MiniMax H3-Image",
+      "vendor": "MiniMax",
+      "type": "图片",
+      "feature": "衍生自 H3 的开源权重图像模型：10 秒内直出 4096×4096（约 16MP）4K 图，无需超分；6 步蒸馏免 CFG；最多 16 张参考图、7500 字符提示词；标准版速度为主流 1.5-2 倍、Highspeed 3-4 倍",
+      "heat": 88,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "¥0.23/张（4K 16MP）",
+      "score": 92.2,
+      "isDomestic": true,
       "isOpenSource": true,
       "category": "文生图"
     },
