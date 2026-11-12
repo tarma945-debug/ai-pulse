@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-11"
+    "updated": "2026-11-12"
   },
   "videoModels": [
     {
@@ -309,6 +309,22 @@ window.SITE_DATA = {
       "outputPrice": "¥14",
       "score": 97.5,
       "isDomestic": false,
+      "isOpenSource": false,
+      "category": "文生图"
+    },
+    {
+      "name": "ArtArk",
+      "vendor": "进化智能",
+      "type": "图片",
+      "feature": "SuperCLUE 11 月榜文生图 / 图像编辑四项总榜第一（文生图标准 95.14、编辑 83.6），图文一致性是全部参测模型中唯一满分；强在数量与空间关系、数形结合及汉字与画面意境融合",
+      "heat": 94,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "待评估",
+      "score": 96.8,
+      "isDomestic": true,
       "isOpenSource": false,
       "category": "文生图"
     },
