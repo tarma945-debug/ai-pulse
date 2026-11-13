@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-12"
+    "updated": "2026-11-13"
   },
   "videoModels": [
     {
@@ -131,6 +131,22 @@ window.SITE_DATA = {
       "outputPrice": "待评估",
       "score": 90.8,
       "isDomestic": false,
+      "isOpenSource": false,
+      "category": "文生视频"
+    },
+    {
+      "name": "Seedance 2.5 Flash",
+      "vendor": "字节跳动",
+      "type": "视频",
+      "feature": "Seedance 2.5 轻量档：效果最接近 2.5，生成速度翻倍、720P 价格约 ¥0.99/秒（低约 34%），单段最长 30 秒、单次 10 图 + 5 视频 + 5 音频输入，仅 480P/720P 两档，11-12 起登陆即梦/LibTV/TapNow 等，API 11-15 上线火山方舟",
+      "heat": 92,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "¥0.99/秒（720P）",
+      "score": 90.6,
+      "isDomestic": true,
       "isOpenSource": false,
       "category": "文生视频"
     },
