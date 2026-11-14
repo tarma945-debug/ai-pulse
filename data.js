@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-13"
+    "updated": "2026-11-14"
   },
   "videoModels": [
     {
@@ -517,6 +517,22 @@ window.SITE_DATA = {
       "outputPrice": "¥0.21/张（$0.03）",
       "score": 84,
       "isDomestic": true,
+      "isOpenSource": false,
+      "category": "文生图"
+    },
+    {
+      "name": "Recraft V4.1 Flash V2",
+      "vendor": "Recraft",
+      "type": "图片",
+      "feature": "11-13 发布的提速版：1K 出图约 1.1 秒（DesignArena 实测 1.5 秒，速度榜排到最前），小字与细部渲染较上代改进，价格不变；仅文生图，不支持参考图与风格",
+      "heat": 74,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "¥0.05/张（$0.007）",
+      "score": 79.6,
+      "isDomestic": false,
       "isOpenSource": false,
       "category": "文生图"
     },
