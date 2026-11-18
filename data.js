@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-14"
+    "updated": "2026-11-18"
   },
   "videoModels": [
     {
@@ -373,6 +373,22 @@ window.SITE_DATA = {
       "outputPrice": "待评估",
       "score": 95.2,
       "isDomestic": false,
+      "isOpenSource": false,
+      "category": "文生图"
+    },
+    {
+      "name": "可灵 Kling Image 4.0",
+      "vendor": "快手",
+      "type": "图片",
+      "feature": "首个原生 8K 直出图像模型（非超分），单图可排约 2000 字、70+ 字体；一次提示词出 2-10 张一致组图，另有长图接口做电商详情页；AA 文生图与图像编辑双榜第 6、国内第一；fal 4K 约 $0.063/张，官方未公布 API 定价",
+      "heat": 95,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "待评估",
+      "score": 95.0,
+      "isDomestic": true,
       "isOpenSource": false,
       "category": "文生图"
     },
