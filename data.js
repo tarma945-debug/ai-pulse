@@ -3,7 +3,7 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-18"
+    "updated": "2026-11-19"
   },
   "videoModels": [
     {
@@ -263,6 +263,22 @@ window.SITE_DATA = {
       "category": "文生视频"
     },
     {
+      "name": "Phai-M1",
+      "vendor": "范式智能",
+      "type": "视频",
+      "feature": "面向真人影视 / AI 短剧专项训练，音画同步一次生成（含对白口型），官方称 15 秒 720P 约 3 分钟出片；全流程昇腾算力训练，权重计划近期开源",
+      "heat": 82,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "待评估",
+      "score": 81.0,
+      "isDomestic": true,
+      "isOpenSource": false,
+      "category": "文生视频"
+    },
+    {
       "name": "LTX-2.5",
       "vendor": "Lightricks",
       "type": "视频",
@@ -324,6 +340,22 @@ window.SITE_DATA = {
       "inputPrice": "¥3.5",
       "outputPrice": "¥14",
       "score": 97.5,
+      "isDomestic": false,
+      "isOpenSource": false,
+      "category": "文生图"
+    },
+    {
+      "name": "MAI Image 2.7",
+      "vendor": "Microsoft",
+      "type": "图片",
+      "feature": "AA 图像编辑榜第一（1215 Elo / 5478 票），领先 GPT Image 2.6 Sunburst 4 分、价格仅约其 1/5；文生图 Arena 第 4（1387），连续多轮编辑不掉一致性、透明背景直出，最多 5 张参考图",
+      "heat": 95,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "¥0.25/张（$0.035）",
+      "score": 97.2,
       "isDomestic": false,
       "isOpenSource": false,
       "category": "文生图"
