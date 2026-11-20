@@ -1,24 +1,24 @@
 /* 由 scripts/fetch-community.mjs 自动生成，请勿手改。
-   抓取时间 2026-11-19T02:11:05.795Z   共 178 条 */
+   抓取时间 2026-11-20T02:07:46.429Z   共 178 条 */
 window.COMMUNITY_DATA = {
   "site": {
     "title": "社区热帖",
     "desc": "Reddit / Hacker News / Product Hunt / GitHub 上 AI 创作圈的真实讨论",
-    "fetched": "2026-11-19T02:11:05.795Z",
+    "fetched": "2026-11-20T02:07:46.429Z",
     "count": 178,
     "byCat": {
-      "开源项目": 8,
-      "行业讨论": 29,
-      "产品发布": 41,
+      "开源项目": 9,
+      "行业讨论": 31,
+      "产品发布": 38,
       "工作流": 25,
       "视频生成": 25,
       "图像生成": 25,
       "开源模型": 25
     },
     "bySource": {
-      "GitHub": 8,
-      "Hacker News": 4,
-      "Product Hunt": 41,
+      "GitHub": 9,
+      "Hacker News": 6,
+      "Product Hunt": 38,
       "Reddit": 125
     }
   },
@@ -32,39 +32,39 @@ window.COMMUNITY_DATA = {
       "title": "mvanhorn/last30days-skill",
       "url": "https://github.com/mvanhorn/last30days-skill",
       "author": "mvanhorn",
-      "time": "2026-11-19T02:06:53.999Z",
+      "time": "2026-11-20T02:02:58.676Z",
       "excerpt": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "points": 1059,
+      "points": 954,
       "meta": "Python",
-      "heat": 0.85
+      "heat": 0.847
     },
     {
-      "id": "hn:50550700",
+      "id": "hn:50564366",
       "source": "Hacker News",
       "sub": "HN",
       "subLabel": "Hacker News",
       "cat": "行业讨论",
-      "title": "Show HN: KradleBench – Multi-agent AI evals in Minecraft",
-      "url": "https://www.kradle.ai?1",
-      "author": "jamest",
-      "time": "2026-11-18T19:14:28Z",
-      "excerpt": "Hi HN - This is James and Kemal. In past lives we led Firebase and Tensorflow&#x2F;JAX respectively. HN has been a particularly big part of my (James’) career and the trajectory I’",
-      "points": 8,
-      "comments": 7,
-      "heat": 0.728
+      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+      "author": "sandslash",
+      "time": "2026-11-19T18:47:16Z",
+      "excerpt": "",
+      "points": 77,
+      "comments": 146,
+      "heat": 0.818
     },
     {
-      "id": "ph:assemblyai",
+      "id": "ph:nuko",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "AssemblyAI-STT-3.7",
-      "url": "https://www.producthunt.com/products/assemblyai",
-      "author": "Harnoor Singh",
-      "time": "2026-11-17T22:50:37-08:00",
-      "excerpt": "<p> Speech-to-Text for live calls, voice agents, and recordings </p> <p> <a href=\"https://www.producthunt.com/products/assemblyai?utm_campaign=producthunt-atom-posts-feed&amp;utm_m",
-      "heat": 0.41
+      "title": "Nuko",
+      "url": "https://www.producthunt.com/products/nuko",
+      "author": "Tapdig Soltanov",
+      "time": "2026-11-18T19:34:35-08:00",
+      "excerpt": "<p> Motion design in your browser </p> <p> <a href=\"https://www.producthunt.com/products/nuko?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=produc",
+      "heat": 0.385
     },
     {
       "id": "reddit:1xy8c3v",
@@ -77,22 +77,190 @@ window.COMMUNITY_DATA = {
       "author": "avatar32324",
       "time": "2026-11-17T02:12:07+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Spent an afternoon on this and figured it was worth writing down.</p> <p>Generate with TRELLIS (Tripo / Meshy / Hunyuan3D behave the same), export",
-      "heat": 0.215
+      "heat": 0.001
     },
     {
-      "id": "gh:google-research/paper-orchestra",
+      "id": "gh:HKUDS/CLI-Anything",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "google-research/paper-orchestra",
-      "url": "https://github.com/google-research/paper-orchestra",
-      "author": "google-research",
-      "time": "2026-11-19T02:06:53.999Z",
-      "excerpt": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-      "points": 1524,
+      "title": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "author": "HKUDS",
+      "time": "2026-11-20T02:02:58.675Z",
+      "excerpt": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "points": 898,
       "meta": "Python",
-      "heat": 0.85
+      "heat": 0.842
+    },
+    {
+      "id": "hn:50562320",
+      "source": "Hacker News",
+      "sub": "HN",
+      "subLabel": "Hacker News",
+      "cat": "行业讨论",
+      "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+      "url": "https://github.com/onlook-dev/onlook/",
+      "author": "D_R_Farrell",
+      "time": "2026-11-19T16:34:04Z",
+      "excerpt": "Hey HN, I&#x27;m Daniel, founder of Onlook ( https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook and onlook.com). Onlook is a desktop app that puts a canvas on top of your rea",
+      "points": 85,
+      "comments": 68,
+      "heat": 0.8
+    },
+    {
+      "id": "ph:tooljet",
+      "source": "Product Hunt",
+      "sub": "PH",
+      "subLabel": "Product Hunt",
+      "cat": "产品发布",
+      "title": "ToolJet",
+      "url": "https://www.producthunt.com/products/tooljet",
+      "author": "Navaneeth Padanna Kalathil",
+      "time": "2026-11-18T19:07:11-08:00",
+      "excerpt": "<p> Vibe-coded business apps that pass the security review </p> <p> <a href=\"https://www.producthunt.com/products/tooljet?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
+      "heat": 0.381
+    },
+    {
+      "id": "reddit:1xy7ym1",
+      "source": "Reddit",
+      "sub": "r/aivideo",
+      "subLabel": "AI Video",
+      "cat": "视频生成",
+      "title": "(Undead) Girls just wanna have fun",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xy7ym1/",
+      "author": "Th3dzon33",
+      "time": "2026-11-17T01:54:27+00:00",
+      "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Th3dzon33\"> /u/Th3dzon33 </a> <br/> <span><a href=\"https://v.redd.it/c9l2jovfv22i1\">[link]</a></span> &#32; <span><a h",
+      "heat": 0
+    },
+    {
+      "id": "gh:mjmirza/app-store-compliance",
+      "source": "GitHub",
+      "sub": "GH",
+      "subLabel": "GitHub Trending",
+      "cat": "开源项目",
+      "title": "mjmirza/app-store-compliance",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "author": "mjmirza",
+      "time": "2026-11-20T02:02:58.676Z",
+      "excerpt": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks,",
+      "points": 377,
+      "meta": "Shell",
+      "heat": 0.78
+    },
+    {
+      "id": "hn:50561434",
+      "source": "Hacker News",
+      "sub": "HN",
+      "subLabel": "Hacker News",
+      "cat": "行业讨论",
+      "title": "\"Independent\" AI Safety Groups Are Pumping Anthropic's IPO [video]",
+      "url": "https://www.youtube.com/watch?v=pyRG_5dCrfg",
+      "author": "smukherjee19",
+      "time": "2026-11-19T15:32:36Z",
+      "excerpt": "",
+      "points": 10,
+      "comments": 1,
+      "heat": 0.701
+    },
+    {
+      "id": "ph:tecla-3",
+      "source": "Product Hunt",
+      "sub": "PH",
+      "subLabel": "Product Hunt",
+      "cat": "产品发布",
+      "title": "Tecla",
+      "url": "https://www.producthunt.com/products/tecla-3",
+      "author": "Miguel Angel Cabrera Miñagorri",
+      "time": "2026-11-18T19:05:34-08:00",
+      "excerpt": "<p> A proactive AI agent whose interface is a TODO list </p> <p> <a href=\"https://www.producthunt.com/products/tecla-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-f",
+      "heat": 0.381
+    },
+    {
+      "id": "reddit:1xy71py",
+      "source": "Reddit",
+      "sub": "r/comfyui",
+      "subLabel": "ComfyUI",
+      "cat": "工作流",
+      "title": "Best ComfyUI models/workflows for realistic NSFW AI images and videos?",
+      "url": "https://www.reddit.com/r/comfyui/comments/1xy71py/",
+      "author": "MediumStop2150",
+      "time": "2026-11-17T01:10:37+00:00",
+      "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Hey everyone!</p> <p>I&#39;m currently using <strong>ComfyUI</strong> and looking for recommendations on the best AI models and workflows for gene",
+      "heat": 0
+    },
+    {
+      "id": "gh:google-labs-code/stitch-skills",
+      "source": "GitHub",
+      "sub": "GH",
+      "subLabel": "GitHub Trending",
+      "cat": "开源项目",
+      "title": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "author": "google-labs-code",
+      "time": "2026-11-20T02:02:58.676Z",
+      "excerpt": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, ",
+      "points": 302,
+      "meta": "TypeScript",
+      "heat": 0.764
+    },
+    {
+      "id": "hn:50550700",
+      "source": "Hacker News",
+      "sub": "HN",
+      "subLabel": "Hacker News",
+      "cat": "行业讨论",
+      "title": "Show HN: KradleBench – Multi-agent AI evals in Minecraft",
+      "url": "https://www.kradle.ai?1",
+      "author": "jamest",
+      "time": "2026-11-18T19:14:28Z",
+      "excerpt": "Hi HN - This is James and Kemal. In past lives we led Firebase and Tensorflow&#x2F;JAX respectively. HN has been a particularly big part of my (James’) career and the trajectory I’",
+      "points": 9,
+      "comments": 7,
+      "heat": 0.5
+    },
+    {
+      "id": "ph:gemini-6",
+      "source": "Product Hunt",
+      "sub": "PH",
+      "subLabel": "Product Hunt",
+      "cat": "产品发布",
+      "title": "Gemini 4 Neon",
+      "url": "https://www.producthunt.com/products/gemini-6",
+      "author": "Zac Zuo",
+      "time": "2026-11-18T18:32:38-08:00",
+      "excerpt": "<p> Frontier reasoning with faster task completion </p> <p> <a href=\"https://www.producthunt.com/products/gemini-6?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&",
+      "heat": 0.377
+    },
+    {
+      "id": "reddit:1xy6z7z",
+      "source": "Reddit",
+      "sub": "r/StableDiffusion",
+      "subLabel": "Stable Diffusion",
+      "cat": "图像生成",
+      "title": "When will Wan 3.0 be an open weight model, if ever?",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1xy6z7z/",
+      "author": "redstreakclan",
+      "time": "2026-11-17T01:07:24+00:00",
+      "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/redstreakclan\"> /u/redstreakclan </a> <br/> <span><a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xy6z7z/w",
+      "heat": 0
+    },
+    {
+      "id": "gh:openvinotoolkit/openvino",
+      "source": "GitHub",
+      "sub": "GH",
+      "subLabel": "GitHub Trending",
+      "cat": "开源项目",
+      "title": "openvinotoolkit/openvino",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "author": "openvinotoolkit",
+      "time": "2026-11-20T02:02:58.676Z",
+      "excerpt": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "points": 246,
+      "meta": "C++",
+      "heat": 0.749
     },
     {
       "id": "hn:50549894",
@@ -107,173 +275,20 @@ window.COMMUNITY_DATA = {
       "excerpt": "",
       "points": 6,
       "comments": 0,
-      "heat": 0.707
+      "heat": 0.474
     },
     {
-      "id": "ph:worldinmotion",
+      "id": "ph:adside",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "worldinmotion",
-      "url": "https://www.producthunt.com/products/worldinmotion",
-      "author": "Sean Dean",
-      "time": "2026-11-17T21:53:41-08:00",
-      "excerpt": "<p> Encrypted messages between AI agents, across vendors </p> <p> <a href=\"https://www.producthunt.com/products/worldinmotion?utm_campaign=producthunt-atom-posts-feed&amp;utm_mediu",
-      "heat": 0.402
-    },
-    {
-      "id": "reddit:1xy7ym1",
-      "source": "Reddit",
-      "sub": "r/aivideo",
-      "subLabel": "AI Video",
-      "cat": "视频生成",
-      "title": "(Undead) Girls just wanna have fun",
-      "url": "https://www.reddit.com/r/aivideo/comments/1xy7ym1/",
-      "author": "Th3dzon33",
-      "time": "2026-11-17T01:54:27+00:00",
-      "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/Th3dzon33\"> /u/Th3dzon33 </a> <br/> <span><a href=\"https://v.redd.it/c9l2jovfv22i1\">[link]</a></span> &#32; <span><a h",
-      "heat": 0.212
-    },
-    {
-      "id": "gh:affaan-m/ECC",
-      "source": "GitHub",
-      "sub": "GH",
-      "subLabel": "GitHub Trending",
-      "cat": "开源项目",
-      "title": "affaan-m/ECC",
-      "url": "https://github.com/affaan-m/ECC",
-      "author": "affaan-m",
-      "time": "2026-11-19T02:06:54.000Z",
-      "excerpt": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-      "points": 1108,
-      "meta": "JavaScript",
-      "heat": 0.85
-    },
-    {
-      "id": "hn:50522776",
-      "source": "Hacker News",
-      "sub": "HN",
-      "subLabel": "Hacker News",
-      "cat": "行业讨论",
-      "title": "Launch HN: Axonnic (YC F26) – Sleeves that track fingers and estimate force",
-      "url": "https://news.ycombinator.com/item?id=50522776",
-      "author": "arshpatankar",
-      "time": "2026-11-16T20:29:48Z",
-      "excerpt": "Hi HN! We’re Arsh and Max, founders of Axonnic ( https:&#x2F;&#x2F;axonnic.com ). We’ve developed a forearm sleeve that reads muscle activity to decode finger movements and estimat",
-      "points": 56,
-      "comments": 29,
-      "heat": 0.354
-    },
-    {
-      "id": "ph:soreqen-code",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "SoreQen Code",
-      "url": "https://www.producthunt.com/products/soreqen-code",
-      "author": "Ved Saini",
-      "time": "2026-11-17T19:14:00-08:00",
-      "excerpt": "<p> The coding agent that checks its own work </p> <p> <a href=\"https://www.producthunt.com/products/soreqen-code?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&a",
-      "heat": 0.381
-    },
-    {
-      "id": "reddit:1xy71py",
-      "source": "Reddit",
-      "sub": "r/comfyui",
-      "subLabel": "ComfyUI",
-      "cat": "工作流",
-      "title": "Best ComfyUI models/workflows for realistic NSFW AI images and videos?",
-      "url": "https://www.reddit.com/r/comfyui/comments/1xy71py/",
-      "author": "MediumStop2150",
-      "time": "2026-11-17T01:10:37+00:00",
-      "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Hey everyone!</p> <p>I&#39;m currently using <strong>ComfyUI</strong> and looking for recommendations on the best AI models and workflows for gene",
-      "heat": 0.206
-    },
-    {
-      "id": "gh:HKUDS/CLI-Anything",
-      "source": "GitHub",
-      "sub": "GH",
-      "subLabel": "GitHub Trending",
-      "cat": "开源项目",
-      "title": "HKUDS/CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "author": "HKUDS",
-      "time": "2026-11-19T02:06:53.998Z",
-      "excerpt": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "points": 389,
-      "meta": "Python",
-      "heat": 0.782
-    },
-    {
-      "id": "hn:50523377",
-      "source": "Hacker News",
-      "sub": "HN",
-      "subLabel": "Hacker News",
-      "cat": "行业讨论",
-      "title": "Show HN: Open-source, real-time object tracking for live video feeds",
-      "url": "https://github.com/aryamandarda/tamserve",
-      "author": "aryaman_darda",
-      "time": "2026-11-16T21:14:39Z",
-      "excerpt": "I type \"forklift\" on a live warehouse camera, and tamserve finds and tracks both forklifts, including the one driving in. Then I add \"person\" without stopping it. tamserve runs Met",
-      "points": 46,
-      "comments": 2,
-      "heat": 0.353
-    },
-    {
-      "id": "ph:confidential-cloud",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "Confidential Cloud",
-      "url": "https://www.producthunt.com/products/confidential-cloud",
-      "author": "Patrick Woodhead",
-      "time": "2026-11-17T15:57:03-08:00",
-      "excerpt": "<p> Private AI cloud that can't see your stuff </p> <p> <a href=\"https://www.producthunt.com/products/confidential-cloud?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss",
-      "heat": 0.356
-    },
-    {
-      "id": "reddit:1xy6z7z",
-      "source": "Reddit",
-      "sub": "r/StableDiffusion",
-      "subLabel": "Stable Diffusion",
-      "cat": "图像生成",
-      "title": "When will Wan 3.0 be an open weight model, if ever?",
-      "url": "https://www.reddit.com/r/StableDiffusion/comments/1xy6z7z/",
-      "author": "redstreakclan",
-      "time": "2026-11-17T01:07:24+00:00",
-      "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/redstreakclan\"> /u/redstreakclan </a> <br/> <span><a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xy6z7z/w",
-      "heat": 0.205
-    },
-    {
-      "id": "gh:google-labs-code/stitch-skills",
-      "source": "GitHub",
-      "sub": "GH",
-      "subLabel": "GitHub Trending",
-      "cat": "开源项目",
-      "title": "google-labs-code/stitch-skills",
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "author": "google-labs-code",
-      "time": "2026-11-19T02:06:54.000Z",
-      "excerpt": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, ",
-      "points": 365,
-      "meta": "TypeScript",
-      "heat": 0.777
-    },
-    {
-      "id": "ph:diagramly-2",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "Diagramly 2.0",
-      "url": "https://www.producthunt.com/products/diagramly-2",
-      "author": "Robin Singh",
-      "time": "2026-11-17T15:51:50-08:00",
-      "excerpt": "<p> Type a diagram. Get it reviewed. Present it as the deck. </p> <p> <a href=\"https://www.producthunt.com/products/diagramly-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_med",
-      "heat": 0.355
+      "title": "Adside",
+      "url": "https://www.producthunt.com/products/adside",
+      "author": "Garry Tan",
+      "time": "2026-11-18T16:52:42-08:00",
+      "excerpt": "<p> A team of specialized AI agents that manage paid ads for you </p> <p> <a href=\"https://www.producthunt.com/products/adside?utm_campaign=producthunt-atom-posts-feed&amp;utm_medi",
+      "heat": 0.364
     },
     {
       "id": "reddit:1xy6jl2",
@@ -286,35 +301,50 @@ window.COMMUNITY_DATA = {
       "author": "theimposingshadow",
       "time": "2026-11-17T00:47:27+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xy6jl2/customers_at_some_of_the_nations_largest_banks/\"> <img src=\"https://external-preview.redd.it/Jd2vs0K",
-      "heat": 0.202
+      "heat": 0
     },
     {
-      "id": "gh:n8n-io/n8n",
+      "id": "gh:jingyaogong/minimind",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "n8n-io/n8n",
-      "url": "https://github.com/n8n-io/n8n",
-      "author": "n8n-io",
-      "time": "2026-11-19T02:06:54.000Z",
-      "excerpt": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
-      "points": 325,
-      "meta": "TypeScript",
-      "heat": 0.769
+      "title": "jingyaogong/minimind",
+      "url": "https://github.com/jingyaogong/minimind",
+      "author": "jingyaogong",
+      "time": "2026-11-20T02:02:58.676Z",
+      "excerpt": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+      "points": 238,
+      "meta": "Python",
+      "heat": 0.746
     },
     {
-      "id": "ph:incredible",
+      "id": "hn:50532515",
+      "source": "Hacker News",
+      "sub": "HN",
+      "subLabel": "Hacker News",
+      "cat": "行业讨论",
+      "title": "Show HN: An API for word timestamps from speech, 75% within 20ms",
+      "url": "https://quebec.yarn.so",
+      "author": "jasperstory",
+      "time": "2026-11-17T15:16:45Z",
+      "excerpt": "Hey HN, we&#x27;re Yarn (W24) and we make a video editing app for startups, and we built Quebec ( https:&#x2F;&#x2F;quebec.yarn.so ), an API that gives you accurate word timestamps",
+      "points": 36,
+      "comments": 5,
+      "heat": 0.285
+    },
+    {
+      "id": "ph:mio-click",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Incredible Agents",
-      "url": "https://www.producthunt.com/products/incredible",
-      "author": "Yesith Thomas",
-      "time": "2026-11-17T14:02:24-08:00",
-      "excerpt": "<p> Fast Voice AI that sees your screen and runs your agents </p> <p> <a href=\"https://www.producthunt.com/products/incredible?utm_campaign=producthunt-atom-posts-feed&amp;utm_medi",
-      "heat": 0.341
+      "title": "mio click",
+      "url": "https://www.producthunt.com/products/mio-click",
+      "author": "Jordan Lyall",
+      "time": "2026-11-18T15:57:18-08:00",
+      "excerpt": "<p> A fidget that's also a friend </p> <p> <a href=\"https://www.producthunt.com/products/mio-click?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=p",
+      "heat": 0.356
     },
     {
       "id": "reddit:1xy6iql",
@@ -327,35 +357,35 @@ window.COMMUNITY_DATA = {
       "author": "justin_memer",
       "time": "2026-11-17T00:46:22+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy6iql/it_aint_much_but_its_honest_work/\"> <img src=\"https://external-preview.redd.it/eDE5dDE3eHprMjJpMZNXjZKeN",
-      "heat": 0.202
+      "heat": 0
     },
     {
-      "id": "gh:NVIDIA/SkillEvaluator",
+      "id": "gh:toeverything/AFFiNE",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "NVIDIA/SkillEvaluator",
-      "url": "https://github.com/NVIDIA/SkillEvaluator",
-      "author": "NVIDIA",
-      "time": "2026-11-19T02:06:53.999Z",
-      "excerpt": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation t",
-      "points": 312,
-      "meta": "Python",
-      "heat": 0.766
+      "title": "toeverything/AFFiNE",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "author": "toeverything",
+      "time": "2026-11-20T02:02:58.676Z",
+      "excerpt": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source",
+      "points": 182,
+      "meta": "TypeScript",
+      "heat": 0.727
     },
     {
-      "id": "ph:ui-verify",
+      "id": "ph:play-that-back",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "UI Verify",
-      "url": "https://www.producthunt.com/products/ui-verify",
-      "author": "Igor Luchenkov",
-      "time": "2026-11-17T14:03:32-08:00",
-      "excerpt": "<p> Visual testing for coding agents </p> <p> <a href=\"https://www.producthunt.com/products/ui-verify?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_sourc",
-      "heat": 0.341
+      "title": "Play That Back",
+      "url": "https://www.producthunt.com/products/play-that-back",
+      "author": "JQ Sirls",
+      "time": "2026-11-18T15:42:14-08:00",
+      "excerpt": "<p> A pro camera built for iPhone Duo </p> <p> <a href=\"https://www.producthunt.com/products/play-that-back?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm",
+      "heat": 0.354
     },
     {
       "id": "reddit:1xy6edq",
@@ -368,35 +398,35 @@ window.COMMUNITY_DATA = {
       "author": "hucun16",
       "time": "2026-11-17T00:40:53+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/comfyui/comments/1xy6edq/recreating_the_godfathers_iconic_office_scene/\"> <img src=\"https://external-preview.redd.it/bjkxNWIzZW5q",
-      "heat": 0.201
+      "heat": 0
     },
     {
-      "id": "gh:openvinotoolkit/openvino",
+      "id": "gh:zhouxiaoka/autoclip",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "openvinotoolkit/openvino",
-      "url": "https://github.com/openvinotoolkit/openvino",
-      "author": "openvinotoolkit",
-      "time": "2026-11-19T02:06:54.000Z",
-      "excerpt": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-      "points": 24,
-      "meta": "C++",
-      "heat": 0.583
+      "title": "zhouxiaoka/autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "author": "zhouxiaoka",
+      "time": "2026-11-20T02:02:58.677Z",
+      "excerpt": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "points": 126,
+      "meta": "Python",
+      "heat": 0.701
     },
     {
-      "id": "ph:introzy",
+      "id": "ph:rezora-io-ai-calling-assistant",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Introzy",
-      "url": "https://www.producthunt.com/products/introzy",
-      "author": "Zac Sheffer",
-      "time": "2026-11-17T11:39:36-08:00",
-      "excerpt": "<p> Track referrals from intro to commission </p> <p> <a href=\"https://www.producthunt.com/products/introzy?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm",
-      "heat": 0.323
+      "title": "Rezora IO",
+      "url": "https://www.producthunt.com/products/rezora-io-ai-calling-assistant",
+      "author": "Garry Tan",
+      "time": "2026-11-18T15:23:32-08:00",
+      "excerpt": "<p> Shopify for AI voice agents: live in 10 minutes </p> <p> <a href=\"https://www.producthunt.com/products/rezora-io-ai-calling-assistant?utm_campaign=producthunt-atom-posts-feed&a",
+      "heat": 0.352
     },
     {
       "id": "reddit:1xy68p7",
@@ -409,20 +439,35 @@ window.COMMUNITY_DATA = {
       "author": "SnoozeDoggyDog",
       "time": "2026-11-17T00:33:17+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xy68p7/reports_of_airelated_child_sexual_abuse_material/\"> <img src=\"https://external-preview.redd.it/8Gyel",
-      "heat": 0.2
+      "heat": 0
     },
     {
-      "id": "ph:microsoft-365",
+      "id": "gh:Tracer-Cloud/opensre",
+      "source": "GitHub",
+      "sub": "GH",
+      "subLabel": "GitHub Trending",
+      "cat": "开源项目",
+      "title": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "author": "Tracer-Cloud",
+      "time": "2026-11-20T02:02:58.676Z",
+      "excerpt": "The open-source agent for CI/CD reliability.",
+      "points": 38,
+      "meta": "Python",
+      "heat": 0.615
+    },
+    {
+      "id": "ph:upsolve-ai",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Microsoft IQ",
-      "url": "https://www.producthunt.com/products/microsoft-365",
-      "author": "Shivam Kushwaha",
-      "time": "2026-11-17T11:34:13-08:00",
-      "excerpt": "<p> Give AI agents a shared understanding of your business </p> <p> <a href=\"https://www.producthunt.com/products/microsoft-365?utm_campaign=producthunt-atom-posts-feed&amp;utm_med",
-      "heat": 0.322
+      "title": "Upsolve MCP Connections",
+      "url": "https://www.producthunt.com/products/upsolve-ai",
+      "author": "Ka Ling Wu",
+      "time": "2026-11-18T13:56:08-08:00",
+      "excerpt": "<p> Plug Notion, Linear and more into your data agent </p> <p> <a href=\"https://www.producthunt.com/products/upsolve-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-",
+      "heat": 0.341
     },
     {
       "id": "reddit:1xy5xsu",
@@ -435,20 +480,20 @@ window.COMMUNITY_DATA = {
       "author": "jollypiraterum",
       "time": "2026-11-17T00:19:27+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy5xsu/the_croaky_inn_ep02/\"> <img src=\"https://external-preview.redd.it/ZmpyY3NnbjZnMjJpMdwpSYBKMi5iN4WutW5znr",
-      "heat": 0.198
+      "heat": 0
     },
     {
-      "id": "ph:arcade",
+      "id": "ph:polylane",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Arcade",
-      "url": "https://www.producthunt.com/products/arcade",
-      "author": "Caroline Clark",
-      "time": "2026-11-17T10:17:21-08:00",
-      "excerpt": "<p> AI video generator for marketing teams </p> <p> <a href=\"https://www.producthunt.com/products/arcade?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_so",
-      "heat": 0.312
+      "title": "Polylane for Azure",
+      "url": "https://www.producthunt.com/products/polylane",
+      "author": "Zac Zuo",
+      "time": "2026-11-18T13:47:12-08:00",
+      "excerpt": "<p> An AI on-call engineer for your Azure apps </p> <p> <a href=\"https://www.producthunt.com/products/polylane?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;",
+      "heat": 0.34
     },
     {
       "id": "reddit:1xy5uyt",
@@ -461,20 +506,20 @@ window.COMMUNITY_DATA = {
       "author": "SnooPeripherals5313",
       "time": "2026-11-17T00:15:52+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xy5uyt/vibe_checking_the_irs_with_lean/\"> <img src=\"https://external-preview.redd.it/7-y5_s5b3nBj8iaVyNFFuD",
-      "heat": 0.197
+      "heat": 0
     },
     {
-      "id": "ph:openai",
+      "id": "ph:wisprflow",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "GPT-6.2 Astra and Sol",
-      "url": "https://www.producthunt.com/products/openai",
-      "author": "Rohan Chaubey",
-      "time": "2026-11-17T10:06:04-08:00",
-      "excerpt": "<p> Two new OpenAI models: frontier Astra and efficient Sol </p> <p> <a href=\"https://www.producthunt.com/products/openai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
-      "heat": 0.31
+      "title": "Wispr Flow Notetaker for iPhone",
+      "url": "https://www.producthunt.com/products/wisprflow",
+      "author": "Kate Ramakaieva",
+      "time": "2026-11-18T08:19:49-08:00",
+      "excerpt": "<p> Free AI meeting notes, wherever work takes you </p> <p> <a href=\"https://www.producthunt.com/products/wisprflow?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed",
+      "heat": 0.297
     },
     {
       "id": "reddit:1xy4zkf",
@@ -487,20 +532,20 @@ window.COMMUNITY_DATA = {
       "author": "Professional_Wall288",
       "time": "2026-11-16T23:38:46+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy4zkf/i_have_a_mom_too_an_emotional_ai_animated_short/\"> <img src=\"https://external-preview.redd.it/ZzY1dzBzZn",
-      "heat": 0.192
+      "heat": 0
     },
     {
-      "id": "ph:lepoly",
+      "id": "ph:room-ai-2",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "lepoly",
-      "url": "https://www.producthunt.com/products/lepoly",
-      "author": "alban",
-      "time": "2026-11-17T08:39:10-08:00",
-      "excerpt": "<p> One place for all your 3D assets </p> <p> <a href=\"https://www.producthunt.com/products/lepoly?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=p",
-      "heat": 0.299
+      "title": "Room AI",
+      "url": "https://www.producthunt.com/products/room-ai-2",
+      "author": "Marc Köhlbrugge",
+      "time": "2026-11-18T07:37:31-08:00",
+      "excerpt": "<p> Talk to it like a designer. Your room, one change at a time </p> <p> <a href=\"https://www.producthunt.com/products/room-ai-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_me",
+      "heat": 0.292
     },
     {
       "id": "reddit:1xy4xsx",
@@ -513,20 +558,20 @@ window.COMMUNITY_DATA = {
       "author": "Porespellar",
       "time": "2026-11-16T23:36:36+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xy4xsx/your_daily_dose_of_qwopium/\"> <img src=\"https://preview.redd.it/h8fnneyj822i1.jpeg?width=640&amp;crop",
-      "heat": 0.192
+      "heat": 0
     },
     {
-      "id": "ph:ai-canvas-2",
+      "id": "ph:noteshell",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "AI Canvas",
-      "url": "https://www.producthunt.com/products/ai-canvas-2",
-      "author": "Alex Tatu",
-      "time": "2026-11-17T07:46:37-08:00",
-      "excerpt": "<p> A design system for AI agents to design badass interfaces </p> <p> <a href=\"https://www.producthunt.com/products/ai-canvas-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_me",
-      "heat": 0.292
+      "title": "Noteshell",
+      "url": "https://www.producthunt.com/products/noteshell",
+      "author": "Quang Nguyen",
+      "time": "2026-11-18T07:28:16-08:00",
+      "excerpt": "<p> AI teammates that build and run your workspace </p> <p> <a href=\"https://www.producthunt.com/products/noteshell?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed",
+      "heat": 0.29
     },
     {
       "id": "reddit:1xy4ve3",
@@ -539,20 +584,20 @@ window.COMMUNITY_DATA = {
       "author": "JuggernautMiserable4",
       "time": "2026-11-16T23:33:39+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xy4ve3/we_could_be_12_months_away_from_ais_that_can/\"> <img src=\"https://external-preview.redd.it/FJqI0ITmB",
-      "heat": 0.191
+      "heat": 0
     },
     {
-      "id": "ph:orken",
+      "id": "ph:cleared-quit-nicotine",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Orken",
-      "url": "https://www.producthunt.com/products/orken",
-      "author": "Johan Burmester",
-      "time": "2026-11-17T06:48:27-08:00",
-      "excerpt": "<p> Tell it your time and gear. Get a workout built for you. </p> <p> <a href=\"https://www.producthunt.com/products/orken?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
-      "heat": 0.285
+      "title": "Cleared",
+      "url": "https://www.producthunt.com/products/cleared-quit-nicotine",
+      "author": "Alara Akcasiz",
+      "time": "2026-11-18T07:27:40-08:00",
+      "excerpt": "<p> Your personal plan to give up vapes, pouches and cigarettes </p> <p> <a href=\"https://www.producthunt.com/products/cleared-quit-nicotine?utm_campaign=producthunt-atom-posts-fee",
+      "heat": 0.29
     },
     {
       "id": "reddit:1xy4ftf",
@@ -565,20 +610,20 @@ window.COMMUNITY_DATA = {
       "author": "heresalexandria",
       "time": "2026-11-16T23:15:00+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy4ftf/bald_faced_liar/\"> <img src=\"https://external-preview.redd.it/d29qdDNvOHA0MjJpMbvv5G17hPKVBJo4soqiqMWytY",
-      "heat": 0.188
+      "heat": 0
     },
     {
-      "id": "ph:dusk-bot",
+      "id": "ph:fieldwork-code",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "dusk bot",
-      "url": "https://www.producthunt.com/products/dusk-bot",
-      "author": "Aleksandar Blazhev",
-      "time": "2026-11-17T06:13:59-08:00",
-      "excerpt": "<p> free open source Grok bot alternative </p> <p> <a href=\"https://www.producthunt.com/products/dusk-bot?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_s",
-      "heat": 0.28
+      "title": "Fieldwork Code",
+      "url": "https://www.producthunt.com/products/fieldwork-code",
+      "author": "Guillaume Dupuy",
+      "time": "2026-11-18T05:32:13-08:00",
+      "excerpt": "<p> AI coding on your laptop or in the cloud, from your phone </p> <p> <a href=\"https://www.producthunt.com/products/fieldwork-code?utm_campaign=producthunt-atom-posts-feed&amp;utm",
+      "heat": 0.275
     },
     {
       "id": "reddit:1xy453q",
@@ -591,19 +636,19 @@ window.COMMUNITY_DATA = {
       "author": "RoutineClock7697",
       "time": "2026-11-16T23:02:14+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/comfyui/comments/1xy453q/whats_the_best_img_2_3d_model_and_workflow_to/\"> <img src=\"https://preview.redd.it/xoc9lmee222i1.png?wid",
-      "heat": 0.187
+      "heat": 0
     },
     {
-      "id": "ph:kwatch",
+      "id": "ph:heygen",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "kwatch",
-      "url": "https://www.producthunt.com/products/kwatch",
-      "author": "Abdelrahman Ahmed",
-      "time": "2026-11-17T04:05:53-08:00",
-      "excerpt": "<p> Kubernetes alerts that name the root cause </p> <p> <a href=\"https://www.producthunt.com/products/kwatch?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;ut",
+      "title": "HeyGen Avatar 6",
+      "url": "https://www.producthunt.com/products/heygen",
+      "author": "Shivam Kushwaha",
+      "time": "2026-11-18T04:03:30-08:00",
+      "excerpt": "<p> AI Avatar Model That Looks Like You </p> <p> <a href=\"https://www.producthunt.com/products/heygen?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_sourc",
       "heat": 0.264
     },
     {
@@ -617,20 +662,20 @@ window.COMMUNITY_DATA = {
       "author": "fondlingbreeze",
       "time": "2026-11-16T23:00:54+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xy43zb/bbox_studio_v13_released_a_featurerich_intuitive/\"> <img src=\"https://preview.redd.it/3d4kxy4w02",
-      "heat": 0.186
+      "heat": 0
     },
     {
-      "id": "ph:rithub",
+      "id": "ph:context-dev",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Rithub",
-      "url": "https://www.producthunt.com/products/rithub",
-      "author": "arhan subaşı",
-      "time": "2026-11-17T03:30:27-08:00",
-      "excerpt": "<p> Own code host, move from GitHub in 5 minutes </p> <p> <a href=\"https://www.producthunt.com/products/rithub?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;",
-      "heat": 0.259
+      "title": "Enrichable by Context.dev",
+      "url": "https://www.producthunt.com/products/context-dev",
+      "author": "Ely",
+      "time": "2026-11-18T03:43:41-08:00",
+      "excerpt": "<p> Open-source AI spreadsheet for data enrichment </p> <p> <a href=\"https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-fe",
+      "heat": 0.261
     },
     {
       "id": "reddit:1xy44v6",
@@ -643,20 +688,20 @@ window.COMMUNITY_DATA = {
       "author": "wxnyc",
       "time": "2026-11-16T23:01:56+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xy44v6/what_if/\"> <img src=\"https://preview.redd.it/44s8bdbd222i1.jpeg?width=640&amp;crop=smart&amp;auto=we",
-      "heat": 0.186
+      "heat": 0
     },
     {
-      "id": "ph:beacon-26",
+      "id": "ph:assemblyai",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Beacon",
-      "url": "https://www.producthunt.com/products/beacon-26",
-      "author": "Naman Rai",
-      "time": "2026-11-17T02:45:51-08:00",
-      "excerpt": "<p> Give your AI agent the browser you're already signed into </p> <p> <a href=\"https://www.producthunt.com/products/beacon-26?utm_campaign=producthunt-atom-posts-feed&amp;utm_medi",
-      "heat": 0.253
+      "title": "AssemblyAI-STT-3.7",
+      "url": "https://www.producthunt.com/products/assemblyai",
+      "author": "Harnoor Singh",
+      "time": "2026-11-17T22:50:37-08:00",
+      "excerpt": "<p> Speech-to-Text for live calls, voice agents, and recordings </p> <p> <a href=\"https://www.producthunt.com/products/assemblyai?utm_campaign=producthunt-atom-posts-feed&amp;utm_m",
+      "heat": 0.223
     },
     {
       "id": "reddit:1xy3kkh",
@@ -669,20 +714,20 @@ window.COMMUNITY_DATA = {
       "author": "FarTrailFilms",
       "time": "2026-11-16T22:38:21+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy3kkh/the_clipper_challenge/\"> <img src=\"https://external-preview.redd.it/NGs3aXZ5djJ5MTJpMfYq-aCzoVmHDjZkpOaD",
-      "heat": 0.183
+      "heat": 0
     },
     {
-      "id": "ph:afterall-photo",
+      "id": "ph:introzy",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Afterall Photo",
-      "url": "https://www.producthunt.com/products/afterall-photo",
-      "author": "Wijnand van der Ent",
-      "time": "2026-11-17T01:26:50-08:00",
-      "excerpt": "<p> Line up your after photo exactly with your before </p> <p> <a href=\"https://www.producthunt.com/products/afterall-photo?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=",
-      "heat": 0.243
+      "title": "Introzy",
+      "url": "https://www.producthunt.com/products/introzy",
+      "author": "Zac Sheffer",
+      "time": "2026-11-17T11:39:36-08:00",
+      "excerpt": "<p> Track referrals from intro to commission </p> <p> <a href=\"https://www.producthunt.com/products/introzy?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm",
+      "heat": 0.136
     },
     {
       "id": "reddit:1xy3fhc",
@@ -695,20 +740,20 @@ window.COMMUNITY_DATA = {
       "author": "optimisticalish",
       "time": "2026-11-16T22:32:25+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Another quick MOSS-Image news and goodies round-up, for those who may have missed some items. </p> <p>-&gt; RS-Camera-Control-MOSS. A new... &quot",
-      "heat": 0.182
+      "heat": 0
     },
     {
-      "id": "ph:vanira",
+      "id": "ph:lepoly",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Vanira",
-      "url": "https://www.producthunt.com/products/vanira",
-      "author": "Teja Reddy",
-      "time": "2026-11-17T00:08:38-08:00",
-      "excerpt": "<p> Voice, video & multimodal AI agent infrastructure </p> <p> <a href=\"https://www.producthunt.com/products/vanira?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed",
-      "heat": 0.233
+      "title": "lepoly",
+      "url": "https://www.producthunt.com/products/lepoly",
+      "author": "alban",
+      "time": "2026-11-17T08:39:10-08:00",
+      "excerpt": "<p> One place for all your 3D assets </p> <p> <a href=\"https://www.producthunt.com/products/lepoly?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=p",
+      "heat": 0.113
     },
     {
       "id": "reddit:1xy2t30",
@@ -721,20 +766,20 @@ window.COMMUNITY_DATA = {
       "author": "DevKkw",
       "time": "2026-11-16T22:07:04+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xy2t30/love_how_moss_manage_lightdark_and_mix_concept/\"> <img src=\"https://preview.redd.it/ukocgx26s12i",
-      "heat": 0.178
+      "heat": 0
     },
     {
-      "id": "ph:kadeep-ai",
+      "id": "ph:verse-engine-by-ctruh",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "KaDeep AI",
-      "url": "https://www.producthunt.com/products/kadeep-ai",
-      "author": "DAKSH SAHU",
-      "time": "2026-11-17T00:00:01-08:00",
-      "excerpt": "<p> Agentic QA, localization & accessibility: know when to ship </p> <p> <a href=\"https://www.producthunt.com/products/kadeep-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_me",
-      "heat": 0.232
+      "title": "Verse Engine by Ctruh",
+      "url": "https://www.producthunt.com/products/verse-engine-by-ctruh",
+      "author": "Rohan Chaubey",
+      "time": "2026-11-17T06:44:33-08:00",
+      "excerpt": "<p> Blender, Unity or Unreal to a live 3D link in one click </p> <p> <a href=\"https://www.producthunt.com/products/verse-engine-by-ctruh?utm_campaign=producthunt-atom-posts-feed&am",
+      "heat": 0.098
     },
     {
       "id": "reddit:1xy2sg9",
@@ -747,20 +792,20 @@ window.COMMUNITY_DATA = {
       "author": "PureControl3423",
       "time": "2026-11-16T22:06:24+00:00",
       "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/PureControl3423\"> /u/PureControl3423 </a> <br/> <span><a href=\"/r/ArtificialInteligence/comments/1xy2lan/unpopular_opi",
-      "heat": 0.178
+      "heat": 0
     },
     {
-      "id": "ph:linkbit",
+      "id": "ph:dusk-bot",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "LinkBit",
-      "url": "https://www.producthunt.com/products/linkbit",
-      "author": "Egor Elkin",
-      "time": "2026-11-16T23:57:08-08:00",
-      "excerpt": "<p> Free URL shortener your AI agent can use (MCP + API) </p> <p> <a href=\"https://www.producthunt.com/products/linkbit?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-",
-      "heat": 0.232
+      "title": "dusk bot",
+      "url": "https://www.producthunt.com/products/dusk-bot",
+      "author": "Aleksandar Blazhev",
+      "time": "2026-11-17T06:13:59-08:00",
+      "excerpt": "<p> free open source Grok bot alternative </p> <p> <a href=\"https://www.producthunt.com/products/dusk-bot?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_s",
+      "heat": 0.094
     },
     {
       "id": "reddit:1xy2oqj",
@@ -773,20 +818,20 @@ window.COMMUNITY_DATA = {
       "author": "brythehuman",
       "time": "2026-11-16T22:02:10+00:00",
       "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/brythehuman\"> /u/brythehuman </a> <br/> <span><a href=\"https://v.redd.it/l0yghuwor12i1\">[link]</a></span> &#32; <span>",
-      "heat": 0.178
+      "heat": 0
     },
     {
-      "id": "ph:retriever-4",
+      "id": "ph:kadeep-ai",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Retriever",
-      "url": "https://www.producthunt.com/products/retriever-4",
-      "author": "Dhruv Gupta",
-      "time": "2026-11-16T21:04:07-08:00",
-      "excerpt": "<p> Search your phone's photos, documents and videos privately </p> <p> <a href=\"https://www.producthunt.com/products/retriever-4?utm_campaign=producthunt-atom-posts-feed&amp;utm_m",
-      "heat": 0.209
+      "title": "KaDeep AI",
+      "url": "https://www.producthunt.com/products/kadeep-ai",
+      "author": "DAKSH SAHU",
+      "time": "2026-11-17T00:00:01-08:00",
+      "excerpt": "<p> Ready to ship? One agent tests, translates and audits it </p> <p> <a href=\"https://www.producthunt.com/products/kadeep-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_mediu",
+      "heat": 0.046
     },
     {
       "id": "reddit:1xy2nf5",
@@ -799,20 +844,20 @@ window.COMMUNITY_DATA = {
       "author": "Jezbackup",
       "time": "2026-11-16T22:00:46+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy2nf5/mermaid_at_rest/\"> <img src=\"https://external-preview.redd.it/dXhvOHp4NzhyMTJpMTKRChWxPbfZQNowecdyRk3DRC",
-      "heat": 0.177
+      "heat": 0
     },
     {
-      "id": "ph:yetly",
+      "id": "ph:linkbit",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Yetly",
-      "url": "https://www.producthunt.com/products/yetly",
-      "author": "Jack Yu",
-      "time": "2026-11-16T20:33:46-08:00",
-      "excerpt": "<p> Small real-world challenges near you, on your own map </p> <p> <a href=\"https://www.producthunt.com/products/yetly?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-f",
-      "heat": 0.205
+      "title": "LinkBit",
+      "url": "https://www.producthunt.com/products/linkbit",
+      "author": "Egor Elkin",
+      "time": "2026-11-16T23:57:08-08:00",
+      "excerpt": "<p> Free URL shortener your AI agent can use (MCP + API) </p> <p> <a href=\"https://www.producthunt.com/products/linkbit?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-",
+      "heat": 0.045
     },
     {
       "id": "reddit:1xy2mce",
@@ -825,20 +870,20 @@ window.COMMUNITY_DATA = {
       "author": "FuzzByteStudios",
       "time": "2026-11-16T21:59:38+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy2mce/schrödinger_tries_to_explain_modern_dating_the/\"> <img src=\"https://external-preview.redd.it/emgxMnl5dDB",
-      "heat": 0.177
+      "heat": 0
     },
     {
-      "id": "ph:replayio",
+      "id": "ph:codedesign",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Replay QA Self-healing Mode",
-      "url": "https://www.producthunt.com/products/replayio",
-      "author": "fmerian",
-      "time": "2026-11-16T13:45:46-08:00",
-      "excerpt": "<p> Turn user frustration into verified fixes </p> <p> <a href=\"https://www.producthunt.com/products/replayio?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;u",
-      "heat": 0.152
+      "title": "CodeDesign v3",
+      "url": "https://www.producthunt.com/products/codedesign",
+      "author": "hakhil nizeem",
+      "time": "2026-11-16T21:24:17-08:00",
+      "excerpt": "<p> Run your website and business apps from ChatGPT or Claude </p> <p> <a href=\"https://www.producthunt.com/products/codedesign?utm_campaign=producthunt-atom-posts-feed&amp;utm_med",
+      "heat": 0.025
     },
     {
       "id": "reddit:1xy2722",
@@ -851,20 +896,20 @@ window.COMMUNITY_DATA = {
       "author": "trollkin34",
       "time": "2026-11-16T21:42:20+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I build giant queues and then I want to take a break and play a game. Now I have two choices: don&#39;t play until the queue finishes (could take ",
-      "heat": 0.175
+      "heat": 0
     },
     {
-      "id": "ph:polylane",
+      "id": "ph:ofintech-desk",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Polylane for CI",
-      "url": "https://www.producthunt.com/products/polylane",
-      "author": "fmerian",
-      "time": "2026-11-16T11:36:42-08:00",
-      "excerpt": "<p> Fix broken builds before they block your team </p> <p> <a href=\"https://www.producthunt.com/products/polylane?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&a",
-      "heat": 0.136
+      "title": "OfinTech Desk",
+      "url": "https://www.producthunt.com/products/ofintech-desk",
+      "author": "Mohamed",
+      "time": "2026-11-16T19:25:07-08:00",
+      "excerpt": "<p> Finance AI where every figure traces to its source </p> <p> <a href=\"https://www.producthunt.com/products/ofintech-desk?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=",
+      "heat": 0.01
     },
     {
       "id": "reddit:1xy1rrx",
@@ -877,20 +922,20 @@ window.COMMUNITY_DATA = {
       "author": "TheCowboyChameleon",
       "time": "2026-11-16T21:25:26+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy1rrx/adhtv_just_dropped_a_new_interdimensional_cable/\"> <img src=\"https://external-preview.redd.it/bXRycHVmdm",
-      "heat": 0.172
+      "heat": 0
     },
     {
-      "id": "ph:ody-ai-business-phone",
+      "id": "ph:tabstack",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Ody Ai Business Phone",
-      "url": "https://www.producthunt.com/products/ody-ai-business-phone",
-      "author": "Raphael Marchand",
-      "time": "2026-11-16T10:36:57-08:00",
-      "excerpt": "<p> Shared workspace + manageable AI agents </p> <p> <a href=\"https://www.producthunt.com/products/ody-ai-business-phone?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss",
-      "heat": 0.128
+      "title": "Tabstack by Mozilla",
+      "url": "https://www.producthunt.com/products/tabstack",
+      "author": "fmerian",
+      "time": "2026-11-16T13:57:39-08:00",
+      "excerpt": "<p> Give your model the web without giving up your privacy </p> <p> <a href=\"https://www.producthunt.com/products/tabstack?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=r",
+      "heat": 0
     },
     {
       "id": "reddit:1xy1q6z",
@@ -903,20 +948,20 @@ window.COMMUNITY_DATA = {
       "author": "TorturedPoet30",
       "time": "2026-11-16T21:23:52+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xy1q6z/altman_if_the_sales_pitch_is_we_are_going_to/\"> <img src=\"https://external-preview.redd.it/bGhkbDlzN",
-      "heat": 0.172
+      "heat": 0
     },
     {
-      "id": "ph:canfit",
+      "id": "ph:the-calm-creator-mastermind",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "canfit",
-      "url": "https://www.producthunt.com/products/canfit",
-      "author": "Federico La Terra",
-      "time": "2026-11-16T09:42:21-08:00",
-      "excerpt": "<p> The top command for people running local LLMs and apps </p> <p> <a href=\"https://www.producthunt.com/products/canfit?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss",
-      "heat": 0.121
+      "title": "The Calm Creator Mastermind",
+      "url": "https://www.producthunt.com/products/the-calm-creator-mastermind",
+      "author": "David Spinks",
+      "time": "2026-11-16T11:19:03-08:00",
+      "excerpt": "<p> For solopreneurs who are tired of being solo. </p> <p> <a href=\"https://www.producthunt.com/products/the-calm-creator-mastermind?utm_campaign=producthunt-atom-posts-feed&amp;ut",
+      "heat": 0
     },
     {
       "id": "reddit:1xy1mup",
@@ -929,20 +974,20 @@ window.COMMUNITY_DATA = {
       "author": "Total-Resort-3120",
       "time": "2026-11-16T21:20:16+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xy1mup/edmd_endpoint_distribution_matching_for_fewstep/\"> <img src=\"https://preview.redd.it/dpfwu8h2k12",
-      "heat": 0.171
+      "heat": 0
     },
     {
-      "id": "ph:stringman",
+      "id": "ph:spellar",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Stringman",
-      "url": "https://www.producthunt.com/products/stringman",
-      "author": "Nathaniel Nifong",
-      "time": "2026-11-16T07:05:23-08:00",
-      "excerpt": "<p> Turns your room into a crane game </p> <p> <a href=\"https://www.producthunt.com/products/stringman?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_sour",
-      "heat": 0.1
+      "title": "Spellar for Chrome",
+      "url": "https://www.producthunt.com/products/spellar",
+      "author": "Zino",
+      "time": "2026-11-16T04:57:22-08:00",
+      "excerpt": "<p> Free, no-bot meeting notes with memory, now in your browser </p> <p> <a href=\"https://www.producthunt.com/products/spellar?utm_campaign=producthunt-atom-posts-feed&amp;utm_medi",
+      "heat": 0
     },
     {
       "id": "reddit:1xy0x9e",
@@ -955,20 +1000,20 @@ window.COMMUNITY_DATA = {
       "author": "the-empty-tree",
       "time": "2026-11-16T20:53:11+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy0x9e/joke_of_the_day/\"> <img src=\"https://external-preview.redd.it/c2k3enM5dzdmMTJpMUPH7aZm2745OFtSjAgwp2Zdee",
-      "heat": 0.167
+      "heat": 0
     },
     {
-      "id": "ph:ox212",
+      "id": "ph:every-signal",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "OX212",
-      "url": "https://www.producthunt.com/products/ox212",
-      "author": "Raül Locco",
-      "time": "2026-11-16T05:57:19-08:00",
-      "excerpt": "<p> Don't predict the market, predict the trader </p> <p> <a href=\"https://www.producthunt.com/products/ox212?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;u",
-      "heat": 0.092
+      "title": "Every Signal",
+      "url": "https://www.producthunt.com/products/every-signal",
+      "author": "Michael Jones",
+      "time": "2026-11-14T09:43:52-08:00",
+      "excerpt": "<p> Diligence on any company in an hour, every number sourced </p> <p> <a href=\"https://www.producthunt.com/products/every-signal?utm_campaign=producthunt-atom-posts-feed&amp;utm_m",
+      "heat": 0
     },
     {
       "id": "reddit:1xy0uox",
@@ -981,20 +1026,20 @@ window.COMMUNITY_DATA = {
       "author": "Last-Pomegranate-772",
       "time": "2026-11-16T20:50:23+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I just updated ComfyUI, I used an old version ages ago and I&#39;m wondering if there&#39;s a theme or a simple way to get rid of all the bloat. <",
-      "heat": 0.167
+      "heat": 0
     },
     {
-      "id": "ph:qwen3",
+      "id": "ph:source-public-beta",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Qwen4-Max",
-      "url": "https://www.producthunt.com/products/qwen3",
-      "author": "Zac Zuo",
-      "time": "2026-11-16T04:32:32-08:00",
-      "excerpt": "<p> Qwen's new flagship for long-running agent work </p> <p> <a href=\"https://www.producthunt.com/products/qwen3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&am",
-      "heat": 0.081
+      "title": "Source",
+      "url": "https://www.producthunt.com/products/source-public-beta",
+      "author": "Mitch Wainer",
+      "time": "2026-11-16T09:34:12-08:00",
+      "excerpt": "<p> The attribution data layer for your agents to drive pipeline </p> <p> <a href=\"https://www.producthunt.com/products/source-public-beta?utm_campaign=producthunt-atom-posts-feed&",
+      "heat": 0
     },
     {
       "id": "reddit:1xy0hm6",
@@ -1007,20 +1052,20 @@ window.COMMUNITY_DATA = {
       "author": "Majestic-Star3655",
       "time": "2026-11-16T20:36:25+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy0hm6/how_to_ruin_thanksgiving_in_two_minutes_look_it_up/\"> <img src=\"https://external-preview.redd.it/M3gwaXh",
-      "heat": 0.165
+      "heat": 0
     },
     {
-      "id": "ph:hunyuan-a13b",
+      "id": "ph:replayio",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Tencent Hy4 flash",
-      "url": "https://www.producthunt.com/products/hunyuan-a13b",
-      "author": "Rohan Chaubey",
-      "time": "2026-11-15T22:53:29-08:00",
-      "excerpt": "<p> Fast, low-cost model from $0.07/M input </p> <p> <a href=\"https://www.producthunt.com/products/hunyuan-a13b?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp",
-      "heat": 0.037
+      "title": "Replay QA Self-healing Mode",
+      "url": "https://www.producthunt.com/products/replayio",
+      "author": "fmerian",
+      "time": "2026-11-16T13:45:46-08:00",
+      "excerpt": "<p> Turn user frustration into verified fixes </p> <p> <a href=\"https://www.producthunt.com/products/replayio?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;u",
+      "heat": 0
     },
     {
       "id": "reddit:1xy0em4",
@@ -1033,19 +1078,19 @@ window.COMMUNITY_DATA = {
       "author": "Akari_of",
       "time": "2026-11-16T20:33:13+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Hi guys, im new in comfy video, i always work with krea 2 and right now i move to qwen image 2.1 and i find a really good results. right now i wan",
-      "heat": 0.164
+      "heat": 0
     },
     {
-      "id": "ph:s-space",
+      "id": "ph:hunyuan-a13b",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "S.Space",
-      "url": "https://www.producthunt.com/products/s-space",
-      "author": "Zac Zuo",
-      "time": "2026-11-15T05:26:16-08:00",
-      "excerpt": "<p> Your team and everyone's AI agents, in one workspace </p> <p> <a href=\"https://www.producthunt.com/products/s-space?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-",
+      "title": "Tencent Hy4 flash",
+      "url": "https://www.producthunt.com/products/hunyuan-a13b",
+      "author": "Rohan Chaubey",
+      "time": "2026-11-15T22:53:29-08:00",
+      "excerpt": "<p> Fast, low-cost model from $0.07/M input </p> <p> <a href=\"https://www.producthunt.com/products/hunyuan-a13b?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp",
       "heat": 0
     },
     {
@@ -1059,19 +1104,19 @@ window.COMMUNITY_DATA = {
       "author": "HelixTitan",
       "time": "2026-11-16T20:31:36+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I had been using Strata for about a month, and it was such a huge improvement over llama.cpp for getting it running smoothly and quickly for hardw",
-      "heat": 0.164
+      "heat": 0
     },
     {
-      "id": "ph:review-box",
+      "id": "ph:qwen3",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Review Box",
-      "url": "https://www.producthunt.com/products/review-box",
-      "author": "Radoslav Stankov",
-      "time": "2026-11-12T08:58:34-08:00",
-      "excerpt": "<p> A fast desktop app for reviewing GitHub pull requests </p> <p> <a href=\"https://www.producthunt.com/products/review-box?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=",
+      "title": "Qwen4-Max",
+      "url": "https://www.producthunt.com/products/qwen3",
+      "author": "Zac Zuo",
+      "time": "2026-11-16T04:32:32-08:00",
+      "excerpt": "<p> Qwen's new flagship for long-running agent work </p> <p> <a href=\"https://www.producthunt.com/products/qwen3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&am",
       "heat": 0
     },
     {
@@ -1085,19 +1130,19 @@ window.COMMUNITY_DATA = {
       "author": "OnyxMonolith",
       "time": "2026-11-16T20:31:43+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xy0d9p/threejs_zero_external_assets_pure_math_one/\"> <img src=\"https://external-preview.redd.it/OG12a3JvOGh",
-      "heat": 0.164
+      "heat": 0
     },
     {
-      "id": "ph:saas-toolkit-mcp",
+      "id": "ph:stringman",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "SaaS Toolkit MCP",
-      "url": "https://www.producthunt.com/products/saas-toolkit-mcp",
-      "author": "Ian Naylor",
-      "time": "2026-11-13T14:25:43-08:00",
-      "excerpt": "<p> An SDR and CMO on your site 24/7, for one JavaScript snippet </p> <p> <a href=\"https://www.producthunt.com/products/saas-toolkit-mcp?utm_campaign=producthunt-atom-posts-feed&am",
+      "title": "Stringman",
+      "url": "https://www.producthunt.com/products/stringman",
+      "author": "Nathaniel Nifong",
+      "time": "2026-11-16T07:05:23-08:00",
+      "excerpt": "<p> Turns your room into a crane game </p> <p> <a href=\"https://www.producthunt.com/products/stringman?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_sour",
       "heat": 0
     },
     {
@@ -1111,19 +1156,19 @@ window.COMMUNITY_DATA = {
       "author": "Incener",
       "time": "2026-11-16T20:26:40+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xy08px/us_closes_the_just_rent_the_chips_loophole_for/\"> <img src=\"https://external-preview.redd.it/e-Bhu7-",
-      "heat": 0.163
+      "heat": 0
     },
     {
-      "id": "ph:bluedot-2",
+      "id": "ph:ox212",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Bluedot Phone Calls",
-      "url": "https://www.producthunt.com/products/bluedot-2",
-      "author": "Dima Eremin",
-      "time": "2026-11-14T06:21:32-08:00",
-      "excerpt": "<p> AI note taker for phone calls </p> <p> <a href=\"https://www.producthunt.com/products/bluedot-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=p",
+      "title": "OX212",
+      "url": "https://www.producthunt.com/products/ox212",
+      "author": "Raül Locco",
+      "time": "2026-11-16T05:57:19-08:00",
+      "excerpt": "<p> Don't predict the market, predict the trader </p> <p> <a href=\"https://www.producthunt.com/products/ox212?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;u",
       "heat": 0
     },
     {
@@ -1137,7 +1182,33 @@ window.COMMUNITY_DATA = {
       "author": "Motor_Mix2389",
       "time": "2026-11-16T20:24:48+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/comfyui/comments/1xy06x5/ww1_rap_made_with_comfyui_with_only_local_models/\"> <img src=\"https://external-preview.redd.it/MjQ2cnFkd",
-      "heat": 0.163
+      "heat": 0
+    },
+    {
+      "id": "ph:ody-ai-business-phone",
+      "source": "Product Hunt",
+      "sub": "PH",
+      "subLabel": "Product Hunt",
+      "cat": "产品发布",
+      "title": "Ody Ai Business Phone",
+      "url": "https://www.producthunt.com/products/ody-ai-business-phone",
+      "author": "Raphael Marchand",
+      "time": "2026-11-16T10:36:57-08:00",
+      "excerpt": "<p> Shared workspace + manageable AI agents </p> <p> <a href=\"https://www.producthunt.com/products/ody-ai-business-phone?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss",
+      "heat": 0
+    },
+    {
+      "id": "reddit:1xy06d6",
+      "source": "Reddit",
+      "sub": "r/aivideo",
+      "subLabel": "AI Video",
+      "cat": "视频生成",
+      "title": "Cross solutions",
+      "url": "https://www.reddit.com/r/aivideo/comments/1xy06d6/",
+      "author": "Pancho1st",
+      "time": "2026-11-16T20:24:12+00:00",
+      "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy06d6/cross_solutions/\"> <img src=\"https://external-preview.redd.it/bDlpdG9jNDBhMTJpMb7HQmTph0YoBBhkB1NwlEhgVb",
+      "heat": 0
     },
     {
       "id": "ph:dippr",
@@ -1153,32 +1224,6 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "reddit:1xy06d6",
-      "source": "Reddit",
-      "sub": "r/aivideo",
-      "subLabel": "AI Video",
-      "cat": "视频生成",
-      "title": "Cross solutions",
-      "url": "https://www.reddit.com/r/aivideo/comments/1xy06d6/",
-      "author": "Pancho1st",
-      "time": "2026-11-16T20:24:12+00:00",
-      "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy06d6/cross_solutions/\"> <img src=\"https://external-preview.redd.it/bDlpdG9jNDBhMTJpMb7HQmTph0YoBBhkB1NwlEhgVb",
-      "heat": 0.163
-    },
-    {
-      "id": "ph:icons-2",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "ICONS",
-      "url": "https://www.producthunt.com/products/icons-2",
-      "author": "Michael Jones",
-      "time": "2026-11-14T09:43:08-08:00",
-      "excerpt": "<p> Where brands book creators, or license their AI likeness </p> <p> <a href=\"https://www.producthunt.com/products/icons-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=",
-      "heat": 0
-    },
-    {
       "id": "reddit:1xy061t",
       "source": "Reddit",
       "sub": "r/aivideo",
@@ -1189,19 +1234,6 @@ window.COMMUNITY_DATA = {
       "author": "Ina_Olsson_Colonia",
       "time": "2026-11-16T20:23:53+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy061t/for_a_minute_a_romantic_ai_short_music_film_a_new/\"> <img src=\"https://external-preview.redd.it/cWEwemZw",
-      "heat": 0.163
-    },
-    {
-      "id": "ph:urun",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "uRun",
-      "url": "https://www.producthunt.com/products/urun",
-      "author": "fmerian",
-      "time": "2026-11-12T08:38:10-08:00",
-      "excerpt": "<p> Real-time decisions for voice and video agents </p> <p> <a href=\"https://www.producthunt.com/products/urun?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;",
       "heat": 0
     },
     {
@@ -1215,19 +1247,6 @@ window.COMMUNITY_DATA = {
       "author": "Mattapeh",
       "time": "2026-11-16T20:22:55+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy0560/pip_woke_up_in_hyrule/\"> <img src=\"https://external-preview.redd.it/bzY1anU0MXo5MTJpMT7Kagi7DOToMESEXobV",
-      "heat": 0.163
-    },
-    {
-      "id": "ph:smart-jelly",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "Dream by Smart Jelly",
-      "url": "https://www.producthunt.com/products/smart-jelly",
-      "author": "Nishant Chinchole",
-      "time": "2026-11-13T04:34:14-08:00",
-      "excerpt": "<p> An AI agent that works through your tasks overnight </p> <p> <a href=\"https://www.producthunt.com/products/smart-jelly?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=r",
       "heat": 0
     },
     {
@@ -1241,19 +1260,6 @@ window.COMMUNITY_DATA = {
       "author": "Forsaken_Stuff_Ai",
       "time": "2026-11-16T20:21:06+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy03eh/dos_gardenias_te_traje_del_jardín/\"> <img src=\"https://external-preview.redd.it/MmhqdXE5emo5MTJpMRqVpzC4",
-      "heat": 0.162
-    },
-    {
-      "id": "ph:stoiccloud",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "StoicCloud",
-      "url": "https://www.producthunt.com/products/stoiccloud",
-      "author": "Neil Shah",
-      "time": "2026-11-15T09:29:30-08:00",
-      "excerpt": "<p> Cloud storage for films that only your Mac can read </p> <p> <a href=\"https://www.producthunt.com/products/stoiccloud?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
       "heat": 0
     },
     {
@@ -1267,7 +1273,7 @@ window.COMMUNITY_DATA = {
       "author": "BittiAI",
       "time": "2026-11-16T20:18:45+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xy011y/vfx_rendering_with_minimax_h3/\"> <img src=\"https://external-preview.redd.it/ZGcyZjlrdnM4MTJpMWnL",
-      "heat": 0.162
+      "heat": 0
     },
     {
       "id": "reddit:1xxzlvx",
@@ -1280,7 +1286,7 @@ window.COMMUNITY_DATA = {
       "author": "Motor_Mix2389",
       "time": "2026-11-16T20:03:12+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxzlvx/moss_images_mini_max_videos_the_fact_you_can_slap/\"> <img src=\"https://external-preview.redd.it/",
-      "heat": 0.16
+      "heat": 0
     },
     {
       "id": "reddit:1xxzk2w",
@@ -1293,7 +1299,7 @@ window.COMMUNITY_DATA = {
       "author": "stimeister",
       "time": "2026-11-16T20:01:20+00:00",
       "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/stimeister\"> /u/stimeister </a> <br/> <span><a href=\"https://v.redd.it/ow9coywy512i1\">[link]</a></span> &#32; <span><a",
-      "heat": 0.16
+      "heat": 0
     },
     {
       "id": "reddit:1xxzk23",
@@ -1306,7 +1312,7 @@ window.COMMUNITY_DATA = {
       "author": "citrusalex",
       "time": "2026-11-16T20:01:18+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Everywhere I go, Twitter or Reddit, there are tons of rumors or comments how local is dead and we are never getting open weight Qwen 4, despite Qw",
-      "heat": 0.16
+      "heat": 0
     },
     {
       "id": "reddit:1xxz7s7",
@@ -1319,7 +1325,7 @@ window.COMMUNITY_DATA = {
       "author": "141_1337",
       "time": "2026-11-16T19:48:59+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxz7s7/fed_chair_kevin_warsh_says_ai_could_supercharge/\"> <img src=\"https://external-preview.redd.it/pKeerU",
-      "heat": 0.158
+      "heat": 0
     },
     {
       "id": "reddit:1xxz4yp",
@@ -1332,7 +1338,7 @@ window.COMMUNITY_DATA = {
       "author": "ndroidz",
       "time": "2026-11-16T19:46:01+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxz4yp/made_this_with_minimax_h3_could_seedance_25/\"> <img src=\"https://external-preview.redd.it/dnFuaW",
-      "heat": 0.157
+      "heat": 0
     },
     {
       "id": "reddit:1xxz46x",
@@ -1345,7 +1351,7 @@ window.COMMUNITY_DATA = {
       "author": "BoogerIsACult",
       "time": "2026-11-16T19:45:10+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>It&#39;s free and original developer clearly had a very good understanding of how computer hardware works and fully leveraged that to write someth",
-      "heat": 0.157
+      "heat": 0
     },
     {
       "id": "reddit:1xxyh6m",
@@ -1358,7 +1364,7 @@ window.COMMUNITY_DATA = {
       "author": "pvdyck",
       "time": "2026-11-16T19:21:52+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xxyh6m/hehehe_ai_birthday_video_cards_from_one_selfie/\"> <img src=\"https://external-preview.redd.it/MjhhNHljN3Z",
-      "heat": 0.154
+      "heat": 0
     },
     {
       "id": "reddit:1xxy9i8",
@@ -1371,7 +1377,7 @@ window.COMMUNITY_DATA = {
       "author": "Double_Language_6390",
       "time": "2026-11-16T19:13:59+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xxy9i8/vintage_rock_video/\"> <img src=\"https://external-preview.redd.it/eHNwd2E0aWx4MDJpMVzpB5ZyjlKSdIHg6oxczfJ",
-      "heat": 0.152
+      "heat": 0
     },
     {
       "id": "reddit:1xxy7eb",
@@ -1384,7 +1390,7 @@ window.COMMUNITY_DATA = {
       "author": "BinarySplit",
       "time": "2026-11-16T19:11:42+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxy7eb/mihoyo_gamer_a_generalist_game_agent/\"> <img src=\"https://external-preview.redd.it/8UIGBF_foa6WQRJuUS",
-      "heat": 0.152
+      "heat": 0
     },
     {
       "id": "reddit:1xxxu5j",
@@ -1397,7 +1403,7 @@ window.COMMUNITY_DATA = {
       "author": "Megalania34",
       "time": "2026-11-16T18:57:45+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xxxu5j/ai_car_and_pastel_palette_scene/\"> <img src=\"https://external-preview.redd.it/dzB4OXZienB1MDJpMaP3uL_C7j",
-      "heat": 0.15
+      "heat": 0
     },
     {
       "id": "reddit:1xxxs0a",
@@ -1410,7 +1416,7 @@ window.COMMUNITY_DATA = {
       "author": "TuskNaPrezydenta2020",
       "time": "2026-11-16T18:55:18+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxxs0a/small_gemma_4_tokenizers_were_recently_updated_by/\"> <img src=\"https://external-preview.redd.it/eslpZ",
-      "heat": 0.15
+      "heat": 0
     },
     {
       "id": "reddit:1xxxi9m",
@@ -1423,7 +1429,7 @@ window.COMMUNITY_DATA = {
       "author": "Rythameen",
       "time": "2026-11-16T18:44:55+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxxi9m/yet_another_emotions_test/\"> <img src=\"https://external-preview.redd.it/aHMyczBtN2RzMDJpMVbsotEF",
-      "heat": 0.148
+      "heat": 0
     },
     {
       "id": "reddit:1xxxbt9",
@@ -1436,7 +1442,7 @@ window.COMMUNITY_DATA = {
       "author": "Terminator857",
       "time": "2026-11-16T18:38:24+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Growing from nearly zero to 30% since July. Models used mostly to reduce costs on high volume workloads (large batch workloads, coding, etc).</p> ",
-      "heat": 0.147
+      "heat": 0
     },
     {
       "id": "reddit:1xxwzon",
@@ -1449,7 +1455,7 @@ window.COMMUNITY_DATA = {
       "author": "mightofkhan",
       "time": "2026-11-16T18:26:03+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p><strong>TL;DR:</strong> One RTX 3090 runs a 27B LLM agent (a Discord bot) <em>and</em> ComfyUI image/video generation by swapping models in and ou",
-      "heat": 0.145
+      "heat": 0
     },
     {
       "id": "reddit:1xxwg50",
@@ -1462,7 +1468,7 @@ window.COMMUNITY_DATA = {
       "author": "TheGrems",
       "time": "2026-11-16T18:06:00+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I&#39;m a new and admittedly very inexperienced user of AI. I installed ComfyUI a few days ago, and was having a lot of luck with Qwen for image e",
-      "heat": 0.142
+      "heat": 0
     },
     {
       "id": "reddit:1xxwg6w",
@@ -1475,7 +1481,7 @@ window.COMMUNITY_DATA = {
       "author": "jacek2023",
       "time": "2026-11-16T18:06:03+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Nemotron-Labs-Sigma-8B-instruct is a 8-billion-parameter continuous diffusion language model. Instead of generating text one token at a time, it d",
-      "heat": 0.142
+      "heat": 0
     },
     {
       "id": "reddit:1xxwerg",
@@ -1488,7 +1494,7 @@ window.COMMUNITY_DATA = {
       "author": "SnoozeDoggyDog",
       "time": "2026-11-16T18:04:32+00:00",
       "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/SnoozeDoggyDog\"> /u/SnoozeDoggyDog </a> <br/> <span><a href=\"https://www.reuters.com/legal/transactional/silicon-valle",
-      "heat": 0.142
+      "heat": 0
     },
     {
       "id": "reddit:1xxw950",
@@ -1501,7 +1507,7 @@ window.COMMUNITY_DATA = {
       "author": "iKyle02",
       "time": "2026-11-16T17:58:53+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/comfyui/comments/1xxw950/i_made_an_offline_danbooru_tag_indexer_for/\"> <img src=\"https://preview.redd.it/6ov3kju4k02i1.png?width=",
-      "heat": 0.141
+      "heat": 0
     },
     {
       "id": "reddit:1xxw9ik",
@@ -1514,7 +1520,7 @@ window.COMMUNITY_DATA = {
       "author": "LH-Tech_AI",
       "time": "2026-11-16T17:59:17+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxw9ik/new_release_supra2565m_base_and_instruct_our_next/\"> <img src=\"https://preview.redd.it/s6afqz7og02i1.",
-      "heat": 0.141
+      "heat": 0
     },
     {
       "id": "reddit:1xxw2v1",
@@ -1527,7 +1533,7 @@ window.COMMUNITY_DATA = {
       "author": "Cloud_Reviews",
       "time": "2026-11-16T17:52:13+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xxw2v1/when_plot_armor_doesnt_apply_to_you/\"> <img src=\"https://external-preview.redd.it/dThyenhlbzNqMDJpMWssPv",
-      "heat": 0.14
+      "heat": 0
     },
     {
       "id": "reddit:1xxvr5z",
@@ -1540,7 +1546,7 @@ window.COMMUNITY_DATA = {
       "author": "parepeg",
       "time": "2026-11-16T17:39:46+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Scores are lab-reported so take them with a grain of salt.</p> <h1>Specs</h1> <table><thead> <tr> <th align=\"left\">Model</th> <th align=\"left\">Org",
-      "heat": 0.138
+      "heat": 0
     },
     {
       "id": "reddit:1xxvl45",
@@ -1553,7 +1559,7 @@ window.COMMUNITY_DATA = {
       "author": "PickledRavioli135",
       "time": "2026-11-16T17:33:23+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/comfyui/comments/1xxvl45/cant_add_new_strings_to_list/\"> <img src=\"https://preview.redd.it/v2smkj2cf02i1.png?width=140&amp;height",
-      "heat": 0.137
+      "heat": 0
     },
     {
       "id": "reddit:1xxv9qc",
@@ -1566,7 +1572,7 @@ window.COMMUNITY_DATA = {
       "author": "Acrobatic-Example315",
       "time": "2026-11-16T17:21:44+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxv9qc/im_in_love_with_minimax_h3_a_little_emotion_study/\"> <img src=\"https://external-preview.redd.it/",
-      "heat": 0.136
+      "heat": 0
     },
     {
       "id": "reddit:1xxv2au",
@@ -1579,7 +1585,7 @@ window.COMMUNITY_DATA = {
       "author": "Infamous_Campaign687",
       "time": "2026-11-16T17:13:51+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxv2au/making_consistent_character_creation_easier/\"> <img src=\"https://preview.redd.it/9700n0opb02i1.g",
-      "heat": 0.135
+      "heat": 0
     },
     {
       "id": "reddit:1xxv09f",
@@ -1592,7 +1598,7 @@ window.COMMUNITY_DATA = {
       "author": "Crazy-Repeat-2006",
       "time": "2026-11-16T17:11:44+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxv09f/longcat_video_avatar_16/\"> <img src=\"https://external-preview.redd.it/cHF2bm1paWhiMDJpMUKJ7Oo9Uf",
-      "heat": 0.134
+      "heat": 0
     },
     {
       "id": "reddit:1xxuzgg",
@@ -1605,7 +1611,7 @@ window.COMMUNITY_DATA = {
       "author": "jfowers_amd",
       "time": "2026-11-16T17:10:54+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>On Friday I <a href=\"https://www.reddit.com/r/LocalLLaMA/s/4RHJh9XrzK\">posted about AMD Loom</a>, a new experimental inference stack that includes",
-      "heat": 0.134
+      "heat": 0
     },
     {
       "id": "reddit:1xxuoku",
@@ -1618,7 +1624,7 @@ window.COMMUNITY_DATA = {
       "author": "Known_Ad8309",
       "time": "2026-11-16T17:00:13+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xxuoku/diet_day_hes_not_fat_hes_fluffy/\"> <img src=\"https://external-preview.redd.it/aTZ6bHd0aXI3MDJpMVq9cM-Rhj",
-      "heat": 0.133
+      "heat": 0
     },
     {
       "id": "reddit:1xxue1s",
@@ -1631,7 +1637,7 @@ window.COMMUNITY_DATA = {
       "author": "Tasty_toxic",
       "time": "2026-11-16T16:49:58+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxue1s/make_moss_image_actually_use_reference_images_as/\"> <img src=\"https://preview.redd.it/slaojx4n70",
-      "heat": 0.131
+      "heat": 0
     },
     {
       "id": "reddit:1xxtuxg",
@@ -1644,7 +1650,7 @@ window.COMMUNITY_DATA = {
       "author": "No-Property3068",
       "time": "2026-11-16T16:29:51+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxtuxg/minimaxh3_v2v_masterclass_is_finally_here/\"> <img src=\"https://external-preview.redd.it/eGN1YXB0",
-      "heat": 0.128
+      "heat": 0
     },
     {
       "id": "reddit:1xxtvn6",
@@ -1657,7 +1663,7 @@ window.COMMUNITY_DATA = {
       "author": "No-Property3068",
       "time": "2026-11-16T16:30:37+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/comfyui/comments/1xxtvn6/minimaxh3_v2v_masterclass_is_finally_here/\"> <img src=\"https://external-preview.redd.it/OGRraXFhN2g0MDJp",
-      "heat": 0.128
+      "heat": 0
     },
     {
       "id": "reddit:1xxtmp1",
@@ -1670,7 +1676,7 @@ window.COMMUNITY_DATA = {
       "author": "DoA_Reader_007",
       "time": "2026-11-16T16:21:19+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Hi, all. I was hoping someone could answer why my LoRA training sessions are taking at least 10 hours, when the expected training time is one to t",
-      "heat": 0.127
+      "heat": 0
     },
     {
       "id": "reddit:1xxtil7",
@@ -1683,7 +1689,7 @@ window.COMMUNITY_DATA = {
       "author": "Aaron_rowe81",
       "time": "2026-11-16T16:17:02+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>when i ask a chat model to write my image prompts i used to describe the look i wanted in long sentences and got something close but never right. ",
-      "heat": 0.126
+      "heat": 0
     },
     {
       "id": "reddit:1xxtfzp",
@@ -1696,7 +1702,7 @@ window.COMMUNITY_DATA = {
       "author": "weskerayush",
       "time": "2026-11-16T16:14:18+00:00",
       "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/weskerayush\"> /u/weskerayush </a> <br/> <span><a href=\"/r/StableDiffusion/comments/1xxtfdc/best_modelwf_for_swapping_b",
-      "heat": 0.126
+      "heat": 0
     },
     {
       "id": "reddit:1xxt40p",
@@ -1709,7 +1715,7 @@ window.COMMUNITY_DATA = {
       "author": "AutoModerator",
       "time": "2026-11-16T16:01:42+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Welcome to the daily <a href=\"/r/singularity\">r/singularity</a> discussion thread!</p> <p>Use this thread for casual conversations, questions, spe",
-      "heat": 0.124
+      "heat": 0
     },
     {
       "id": "reddit:1xxsyuj",
@@ -1722,7 +1728,7 @@ window.COMMUNITY_DATA = {
       "author": "throwerff7",
       "time": "2026-11-16T15:56:17+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Been using claude and codex to help me write my scripts and narration (i&#39;m reading it IRL, and videos of myself, my ideas, research, pacing, m",
-      "heat": 0.123
+      "heat": 0
     },
     {
       "id": "reddit:1xxsc7u",
@@ -1735,7 +1741,7 @@ window.COMMUNITY_DATA = {
       "author": "thedogcow",
       "time": "2026-11-16T15:31:28+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>451: {&quot;message&quot;:&quot;Provider returned error&quot;,&quot;code&quot;:451,&quot;metadata&quot;:{&quot;raw&quot;:&quot;{\\&quot;error\\&quot",
-      "heat": 0.119
+      "heat": 0
     },
     {
       "id": "reddit:1xxs8k1",
@@ -1748,7 +1754,7 @@ window.COMMUNITY_DATA = {
       "author": "wjc_5",
       "time": "2026-11-16T15:27:51+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/comfyui/comments/1xxs8k1/moss_image_allpurpose_texttoimage_stunning/\"> <img src=\"https://external-preview.redd.it/M2E1M3R4OWNyejF",
-      "heat": 0.119
+      "heat": 0
     },
     {
       "id": "reddit:1xxs0p2",
@@ -1761,7 +1767,7 @@ window.COMMUNITY_DATA = {
       "author": "Puzzleheaded-Mall528",
       "time": "2026-11-16T15:19:14+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xxs0p2/light_a_fire/\"> <img src=\"https://external-preview.redd.it/anZnOXE0cnNyejFpMTjQc0VF_u3o0lUspl3ISQZ2VCad-",
-      "heat": 0.117
+      "heat": 0
     },
     {
       "id": "reddit:1xxrrsc",
@@ -1774,7 +1780,7 @@ window.COMMUNITY_DATA = {
       "author": "VirusCharacter",
       "time": "2026-11-16T15:09:33+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/comfyui/comments/1xxrrsc/minimax_h3_image_can_not_make_eyes/\"> <img src=\"https://preview.redd.it/kuxao10vnz1i1.png?width=140&amp;",
-      "heat": 0.116
+      "heat": 0
     },
     {
       "id": "reddit:1xxrmt4",
@@ -1787,7 +1793,7 @@ window.COMMUNITY_DATA = {
       "author": "Negative-Whereas3307",
       "time": "2026-11-16T15:04:06+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxrmt4/karpodecision31b_open_multimodal_decision_model/\"> <img src=\"https://preview.redd.it/eyn4rx64pz1i1.jp",
-      "heat": 0.115
+      "heat": 0
     },
     {
       "id": "reddit:1xxr6mh",
@@ -1800,7 +1806,7 @@ window.COMMUNITY_DATA = {
       "author": "joe4942",
       "time": "2026-11-16T14:46:47+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxr6mh/most_work_doesnt_need_the_ferrari_of_ai_wharton/\"> <img src=\"https://external-preview.redd.it/eXUlN4",
-      "heat": 0.113
+      "heat": 0
     },
     {
       "id": "reddit:1xxr2u0",
@@ -1813,7 +1819,7 @@ window.COMMUNITY_DATA = {
       "author": "vixxzplayz123",
       "time": "2026-11-16T14:42:37+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I know nothing about video generation, so I am in need of help.</p> <p>These are my specs:</p> <p>GPU: RTX 3060 12GB VRAM<br/> CPU: Intel i5-10400",
-      "heat": 0.112
+      "heat": 0
     },
     {
       "id": "reddit:1xxr3le",
@@ -1826,7 +1832,7 @@ window.COMMUNITY_DATA = {
       "author": "141_1337",
       "time": "2026-11-16T14:43:23+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxr3le/alibabas_qwen4_max_jumps_9_points_on_artificial/\"> <img src=\"https://preview.redd.it/10nnnx2flz1i1.j",
-      "heat": 0.112
+      "heat": 0
     },
     {
       "id": "reddit:1xxqhe9",
@@ -1839,7 +1845,7 @@ window.COMMUNITY_DATA = {
       "author": "Intelligent-Past1633",
       "time": "2026-11-16T14:18:06+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xxqhe9/three_dollars_two_wants_episode_1_trailer_a_kid/\"> <img src=\"https://external-preview.redd.it/bnNuaTljaz",
-      "heat": 0.108
+      "heat": 0
     },
     {
       "id": "reddit:1xxqfqr",
@@ -1852,7 +1858,7 @@ window.COMMUNITY_DATA = {
       "author": "soyalemujica",
       "time": "2026-11-16T14:16:10+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Seriously, we have all been extremely happy and confident with Qwen, even since Qwen 3.6 came out. We might not be frontier level, but even though",
-      "heat": 0.108
+      "heat": 0
     },
     {
       "id": "reddit:1xxqdn5",
@@ -1865,7 +1871,7 @@ window.COMMUNITY_DATA = {
       "author": "Eastern-Ad9515",
       "time": "2026-11-16T14:13:44+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxqdn5/graufels_a_minimax_h3_lighthouse_short_and_the/\"> <img src=\"https://external-preview.redd.it/ODc",
-      "heat": 0.108
+      "heat": 0
     },
     {
       "id": "reddit:1xxqbsw",
@@ -1878,7 +1884,7 @@ window.COMMUNITY_DATA = {
       "author": "fifflekins",
       "time": "2026-11-16T14:11:32+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xxqbsw/jimmys_tree_toxin/\"> <img src=\"https://external-preview.redd.it/cHR3eWxpcnllejFpMbeCZM_4Sg6Ef7bWu3qmu8jr",
-      "heat": 0.107
+      "heat": 0
     },
     {
       "id": "reddit:1xxpxb9",
@@ -1891,7 +1897,7 @@ window.COMMUNITY_DATA = {
       "author": "emilrueh",
       "time": "2026-11-16T13:54:37+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/comfyui/comments/1xxpxb9/how_i_tried_to_animate_ai_art_for_a_2d_game_how/\"> <img src=\"https://preview.redd.it/y8520awocz1i1.png?w",
-      "heat": 0.105
+      "heat": 0
     },
     {
       "id": "reddit:1xxpxvi",
@@ -1904,7 +1910,7 @@ window.COMMUNITY_DATA = {
       "author": "rm-rf-rm",
       "time": "2026-11-16T13:55:16+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Its time for another <strong>Best Audio Models</strong> megathread - its already been 9 months since the last one!</p> <p>Share what your favorite",
-      "heat": 0.105
+      "heat": 0
     },
     {
       "id": "reddit:1xxpiiv",
@@ -1917,7 +1923,7 @@ window.COMMUNITY_DATA = {
       "author": "alexwang_comfy",
       "time": "2026-11-16T13:35:59+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>The single biggest mistake with character consistency is putting the character description and the scene description in the same prompt sentence. ",
-      "heat": 0.102
+      "heat": 0
     },
     {
       "id": "reddit:1xxphrf",
@@ -1930,7 +1936,7 @@ window.COMMUNITY_DATA = {
       "author": "cptdurr",
       "time": "2026-11-16T13:35:00+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxphrf/what_are_we_doing_wrong_with_h3/\"> <img src=\"https://preview.redd.it/bprl9dy79z1i1.jpeg?width=64",
-      "heat": 0.102
+      "heat": 0
     },
     {
       "id": "reddit:1xxp779",
@@ -1943,7 +1949,7 @@ window.COMMUNITY_DATA = {
       "author": "Ant_6431",
       "time": "2026-11-16T13:21:40+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxp779/qwen_image_21_minimax_h3_image/\"> <img src=\"https://preview.redd.it/eqy2ky9h5z1i1.jpeg?width=140",
-      "heat": 0.1
+      "heat": 0
     },
     {
       "id": "reddit:1xxp5ub",
@@ -1956,7 +1962,7 @@ window.COMMUNITY_DATA = {
       "author": "torin1092",
       "time": "2026-11-16T13:19:59+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><blockquote> <p>Good morning everyone, I am about to upgrade my PC with some of these components and I was wondering if I would be able to work with ",
-      "heat": 0.1
+      "heat": 0
     },
     {
       "id": "reddit:1xxox5m",
@@ -1969,7 +1975,7 @@ window.COMMUNITY_DATA = {
       "author": "FaneZhang",
       "time": "2026-11-16T13:08:20+00:00",
       "excerpt": "&#32; submitted by &#32; <a href=\"https://www.reddit.com/user/FaneZhang\"> /u/FaneZhang </a> <br/> <span><a href=\"https://v.redd.it/bk9pkplmjw1i1\">[link]</a></span> &#32; <span><a h",
-      "heat": 0.098
+      "heat": 0
     },
     {
       "id": "reddit:1xxolvw",
@@ -1982,7 +1988,7 @@ window.COMMUNITY_DATA = {
       "author": "ToasterBotnet",
       "time": "2026-11-16T12:53:32+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxolvw/increase_productivity/\"> <img src=\"https://preview.redd.it/cxsqc1mt1z1i1.jpeg?width=320&amp;crop=sma",
-      "heat": 0.096
+      "heat": 0
     },
     {
       "id": "reddit:1xxokgy",
@@ -1995,7 +2001,7 @@ window.COMMUNITY_DATA = {
       "author": "Ad_Organic",
       "time": "2026-11-16T12:51:28+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p><strong>Anyone having success training Subject LoRAs with Minimax H3 Image?</strong></p> <p>I&#39;ve been struggling to train a successful Subject",
-      "heat": 0.095
+      "heat": 0
     },
     {
       "id": "reddit:1xxner6",
@@ -2008,7 +2014,7 @@ window.COMMUNITY_DATA = {
       "author": "might_thinker",
       "time": "2026-11-16T11:50:35+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxner6/157_min_24_min_local_v2v_on_a_16gb_m3_macbook_air/\"> <img src=\"https://external-preview.redd.it/",
-      "heat": 0.086
+      "heat": 0
     },
     {
       "id": "reddit:1xxn9c6",
@@ -2021,7 +2027,7 @@ window.COMMUNITY_DATA = {
       "author": "StupidScaredSquirrel",
       "time": "2026-11-16T11:41:37+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>I feel like midel context size rapidly went from 8k to 1M in just a few years but has since stayed this way for a while now. Some still offerring ",
-      "heat": 0.085
+      "heat": 0
     },
     {
       "id": "reddit:1xxn7en",
@@ -2034,7 +2040,7 @@ window.COMMUNITY_DATA = {
       "author": "LemonLimeNinja",
       "time": "2026-11-16T11:38:23+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>RSI is already happening but not fully yet. Anthropic said back in August 25% of model R&amp;D is lead by Claude (<a href=\"https://x.com/ChrisGPT/",
-      "heat": 0.085
+      "heat": 0
     },
     {
       "id": "reddit:1xxn631",
@@ -2047,7 +2053,7 @@ window.COMMUNITY_DATA = {
       "author": "pmttyji",
       "time": "2026-11-16T11:36:14+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxn631/internlmsages21flash_hugging_face/\"> <img src=\"https://external-preview.redd.it/bb-AwTPyf7TAAs2yjUYzv",
-      "heat": 0.084
+      "heat": 0
     },
     {
       "id": "reddit:1xxmj9o",
@@ -2060,7 +2066,7 @@ window.COMMUNITY_DATA = {
       "author": "pmttyji",
       "time": "2026-11-16T10:58:50+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxmj9o/paper_models_gamer_a_generalist/\"> <img src=\"https://preview.redd.it/iyknzc0chy1i1.png?width=640&amp;",
-      "heat": 0.079
+      "heat": 0
     },
     {
       "id": "reddit:1xxmjmo",
@@ -2073,7 +2079,7 @@ window.COMMUNITY_DATA = {
       "author": "Hub_Pli",
       "time": "2026-11-16T10:59:28+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxmjmo/humanitys_future_after_cognitive_offloading/\"> <img src=\"https://external-preview.redd.it/PLxve_pbuc",
-      "heat": 0.079
+      "heat": 0
     },
     {
       "id": "reddit:1xxmd3w",
@@ -2086,7 +2092,7 @@ window.COMMUNITY_DATA = {
       "author": "pmttyji",
       "time": "2026-11-16T10:48:24+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxmd3w/paper_models_mmflash_faster_speculative_decoding/\"> <img src=\"https://preview.redd.it/hiysxawefy1i1.g",
-      "heat": 0.077
+      "heat": 0
     },
     {
       "id": "reddit:1xxmd9a",
@@ -2099,7 +2105,7 @@ window.COMMUNITY_DATA = {
       "author": "spaceman_",
       "time": "2026-11-16T10:48:39+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Hi all,</p> <p>I noticed the &quot;bot problem&quot; got a lot worse the past few months. By which I mean our community seems to be taken over mor",
-      "heat": 0.077
+      "heat": 0
     },
     {
       "id": "reddit:1xxm9br",
@@ -2112,7 +2118,7 @@ window.COMMUNITY_DATA = {
       "author": "Lucky_Creme_5208",
       "time": "2026-11-16T10:41:55+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxm9br/just_release_the_bel_model_bro/\"> <img src=\"https://preview.redd.it/mnjy0jv9ey1i1.png?width=640&amp;",
-      "heat": 0.076
+      "heat": 0
     },
     {
       "id": "reddit:1xxm2v8",
@@ -2125,7 +2131,7 @@ window.COMMUNITY_DATA = {
       "author": "pmttyji",
       "time": "2026-11-16T10:30:58+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxm2v8/paper_the_value_of_thinking_learning_when_to/\"> <img src=\"https://preview.redd.it/svkldflbcy1i1.gif?w",
-      "heat": 0.075
+      "heat": 0
     },
     {
       "id": "reddit:1xxlich",
@@ -2138,7 +2144,7 @@ window.COMMUNITY_DATA = {
       "author": "Subulicious",
       "time": "2026-11-16T09:55:51+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxlich/the_beginning_of_the_becoming_of_the_beginning/\"> <img src=\"https://preview.redd.it/czvg7r846y1i1.jpe",
-      "heat": 0.069
+      "heat": 0
     },
     {
       "id": "reddit:1xxlgpb",
@@ -2151,7 +2157,7 @@ window.COMMUNITY_DATA = {
       "author": "noctrex",
       "time": "2026-11-16T09:52:44+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Now this seems to be interesting.</p> <p>From the article:</p> <blockquote> <p>We’re introducing Hy4 flash, our most cost-effective Hy model to da",
-      "heat": 0.069
+      "heat": 0
     },
     {
       "id": "reddit:1xxk01j",
@@ -2164,7 +2170,7 @@ window.COMMUNITY_DATA = {
       "author": "Away_Exam_4586",
       "time": "2026-11-16T08:17:02+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxk01j/comfyui_minimax_h3_image_conditioning_plus/\"> <img src=\"https://preview.redd.it/5qxuw6f7ox1i1.pn",
-      "heat": 0.055
+      "heat": 0
     },
     {
       "id": "reddit:1xxjvdk",
@@ -2177,7 +2183,7 @@ window.COMMUNITY_DATA = {
       "author": "CQDSN",
       "time": "2026-11-16T08:08:46+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxjvdk/combining_ltx_audio_nodes_with_minimax_h3/\"> <img src=\"https://external-preview.redd.it/kaW3xS1o",
-      "heat": 0.053
+      "heat": 0
     },
     {
       "id": "reddit:1xxidbf",
@@ -2190,7 +2196,7 @@ window.COMMUNITY_DATA = {
       "author": "evitcepsrePweN",
       "time": "2026-11-16T06:35:22+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxidbf/this_2017_song_technocrat_from_retired_rapper/\"> <img src=\"https://external-preview.redd.it/NXZibTll",
-      "heat": 0.039
+      "heat": 0
     },
     {
       "id": "reddit:1xxibeh",
@@ -2203,7 +2209,7 @@ window.COMMUNITY_DATA = {
       "author": "CryMoreT_T",
       "time": "2026-11-16T06:32:08+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/LocalLLaMA/comments/1xxibeh/new_aa_ranking_qwen38fn_better_than_glm53flash/\"> <img src=\"https://preview.redd.it/c4l0ag0s5x1i1.png",
-      "heat": 0.039
+      "heat": 0
     },
     {
       "id": "reddit:1xxi8az",
@@ -2216,7 +2222,7 @@ window.COMMUNITY_DATA = {
       "author": "may12021_saphira",
       "time": "2026-11-16T06:27:07+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxi8az/anthropic_researcher_pretty_much_all_humans_will/\"> <img src=\"https://external-preview.redd.it/XK7ig",
-      "heat": 0.038
+      "heat": 0
     },
     {
       "id": "reddit:1xxi6p2",
@@ -2229,7 +2235,7 @@ window.COMMUNITY_DATA = {
       "author": "Which-Travel-1426",
       "time": "2026-11-16T06:24:28+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxi6p2/data_analysis_on_news_coverage_about_jensen/\"> <img src=\"https://external-preview.redd.it/gr563UvCts",
-      "heat": 0.038
+      "heat": 0
     },
     {
       "id": "reddit:1xxhyy9",
@@ -2242,7 +2248,7 @@ window.COMMUNITY_DATA = {
       "author": "roychodraws",
       "time": "2026-11-16T06:11:48+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxhyy9/brightness_issue_solved_geiru_keystone_attention/\"> <img src=\"https://external-preview.redd.it/d",
-      "heat": 0.036
+      "heat": 0
     },
     {
       "id": "reddit:1xxhlxf",
@@ -2255,7 +2261,7 @@ window.COMMUNITY_DATA = {
       "author": "Awique",
       "time": "2026-11-16T05:50:38+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxhlxf/gemini_models_at_the_end_of_the_year/\"> <img src=\"https://preview.redd.it/6dh8bdedyw1i1.jpeg?width=6",
-      "heat": 0.033
+      "heat": 0
     },
     {
       "id": "reddit:1xxgmwy",
@@ -2268,7 +2274,7 @@ window.COMMUNITY_DATA = {
       "author": "rambrogi",
       "time": "2026-11-16T04:56:16+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxgmwy/h3_continuity_studio_10_is_here_a_lot_has_changed/\"> <img src=\"https://external-preview.redd.it/",
-      "heat": 0.025
+      "heat": 0
     },
     {
       "id": "reddit:1xxg2bc",
@@ -2281,7 +2287,7 @@ window.COMMUNITY_DATA = {
       "author": "Economy_Version_6707",
       "time": "2026-11-16T04:24:13+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxg2bc/what_im_i_doing_wrong_minimax_h3_image/\"> <img src=\"https://preview.redd.it/59non3fiiw1i1.png?wi",
-      "heat": 0.02
+      "heat": 0
     },
     {
       "id": "reddit:1xxg12n",
@@ -2294,7 +2300,7 @@ window.COMMUNITY_DATA = {
       "author": "ButtercupLyn100",
       "time": "2026-11-16T04:22:20+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Hey everyone,</p> <p>While building and testing WebBrain with local models, getting reliable agent performance usually required keeping two or thr",
-      "heat": 0.02
+      "heat": 0
     },
     {
       "id": "reddit:1xxflum",
@@ -2307,7 +2313,7 @@ window.COMMUNITY_DATA = {
       "author": "VRGoggles",
       "time": "2026-11-16T03:59:43+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxflum/h3_image_model_preview_override_vae_from_kj/\"> <img src=\"https://external-preview.redd.it/_6kmaP",
-      "heat": 0.016
+      "heat": 0
     },
     {
       "id": "reddit:1xxehp8",
@@ -2320,7 +2326,7 @@ window.COMMUNITY_DATA = {
       "author": "SandCheezy",
       "time": "2026-11-16T03:01:41+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/StableDiffusion/comments/1xxehp8/state_of_the_sub_1m_members_reached/\"> <img src=\"https://preview.redd.it/5miv9nokyv1i1.png?width",
-      "heat": 0.008
+      "heat": 0
     },
     {
       "id": "reddit:1xxe7en",
@@ -2333,7 +2339,7 @@ window.COMMUNITY_DATA = {
       "author": "OddConsideration7290",
       "time": "2026-11-16T02:47:28+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/singularity/comments/1xxe7en/highly_anticipated_qwen4_max_scores_a/\"> <img src=\"https://preview.redd.it/475hbiui1w1i1.png?width=6",
-      "heat": 0.005
+      "heat": 0
     },
     {
       "id": "reddit:1xxdj2b",

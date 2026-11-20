@@ -3,14 +3,14 @@ window.SITE_DATA = {
   "site": {
     "title": "AI 动态聚合",
     "subtitle": "AIHOT 实时资讯 + 竞品监控",
-    "updated": "2026-11-19"
+    "updated": "2026-11-20"
   },
   "videoModels": [
     {
       "name": "Seedance 2.5",
       "vendor": "字节跳动",
       "type": "视频",
-      "feature": "30 秒原生直出、50 个全模态参考、时间戳级控制，4K 版定向供应影视工作室 + Draft 低清预览模式",
+      "feature": "30 秒原生直出、50 个全模态参考、时间戳级控制；11-19 即梦升级原生 4K（3840×2160，免超分，支持 10-bit 色深 / BT.709、六种画幅，30 秒可直出 4K），可先出 480P 样片再定稿 4K",
       "heat": 98,
       "launchDate": "2026-08",
       "evalCount": 42,
@@ -455,6 +455,22 @@ window.SITE_DATA = {
       "isDomestic": false,
       "isOpenSource": true,
       "category": "文生图"
+    },
+    {
+      "name": "Ideogram 4.6",
+      "vendor": "Ideogram",
+      "type": "图片",
+      "feature": "原生 4K 直出（4096²，非超分）+ 精准多步编辑：Rapidata 多步编辑榜第一（1892，领先第二名 Ideogram 4.5 与第三名 Seedream 5.5 共 87 分），改图时未编辑区域像素漂移明显减少、色准提升；支持 5 张参考图与蒙版局部修改；官方称跳过 4.5 直接开源 4.6 权重（未给日期与许可）",
+      "heat": 88,
+      "launchDate": "2026-11",
+      "evalCount": null,
+      "evalRatio": null,
+      "inputPrice": "待评估",
+      "outputPrice": "¥0.06/张起（2K 极低质）；4K 高质量 $0.20、4K 修图 $0.60",
+      "score": 92.6,
+      "isDomestic": false,
+      "isOpenSource": false,
+      "category": "图像编辑"
     },
     {
       "name": "MiniMax H3-Image",
