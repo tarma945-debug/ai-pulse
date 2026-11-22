@@ -1,15 +1,15 @@
 /* 由 scripts/fetch-community.mjs 自动生成，请勿手改。
-   抓取时间 2026-11-20T02:07:46.429Z   共 178 条 */
+   抓取时间 2026-11-22T02:13:10.993Z   共 175 条 */
 window.COMMUNITY_DATA = {
   "site": {
     "title": "社区热帖",
     "desc": "Reddit / Hacker News / Product Hunt / GitHub 上 AI 创作圈的真实讨论",
-    "fetched": "2026-11-20T02:07:46.429Z",
-    "count": 178,
+    "fetched": "2026-11-22T02:13:10.993Z",
+    "count": 175,
     "byCat": {
       "开源项目": 9,
-      "行业讨论": 31,
-      "产品发布": 38,
+      "行业讨论": 29,
+      "产品发布": 37,
       "工作流": 25,
       "视频生成": 25,
       "图像生成": 25,
@@ -17,54 +17,54 @@ window.COMMUNITY_DATA = {
     },
     "bySource": {
       "GitHub": 9,
-      "Hacker News": 6,
-      "Product Hunt": 38,
+      "Hacker News": 4,
+      "Product Hunt": 37,
       "Reddit": 125
     }
   },
   "posts": [
     {
-      "id": "gh:mvanhorn/last30days-skill",
+      "id": "gh:HKUDS/CLI-Anything",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "mvanhorn/last30days-skill",
-      "url": "https://github.com/mvanhorn/last30days-skill",
-      "author": "mvanhorn",
-      "time": "2026-11-20T02:02:58.676Z",
-      "excerpt": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-      "points": 954,
+      "title": "HKUDS/CLI-Anything",
+      "url": "https://github.com/HKUDS/CLI-Anything",
+      "author": "HKUDS",
+      "time": "2026-11-22T02:08:38.092Z",
+      "excerpt": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
+      "points": 769,
       "meta": "Python",
-      "heat": 0.847
+      "heat": 0.831
     },
     {
-      "id": "hn:50564366",
+      "id": "hn:50582662",
       "source": "Hacker News",
       "sub": "HN",
       "subLabel": "Hacker News",
       "cat": "行业讨论",
-      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
-      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
-      "author": "sandslash",
-      "time": "2026-11-19T18:47:16Z",
-      "excerpt": "",
-      "points": 77,
-      "comments": 146,
-      "heat": 0.818
+      "title": "Ask HN: What's stopping us from putting agents in general purpose robots?",
+      "url": "https://news.ycombinator.com/item?id=50582662",
+      "author": "ex-aws-dude",
+      "time": "2026-11-20T21:44:46Z",
+      "excerpt": "After using Claude a bunch in the last few months I can&#x27;t stop thinking the obvious next logical step is to put an agent in a physical robot For example imagine asking \"can yo",
+      "points": 9,
+      "comments": 6,
+      "heat": 0.523
     },
     {
-      "id": "ph:nuko",
+      "id": "ph:waitfeed-2",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Nuko",
-      "url": "https://www.producthunt.com/products/nuko",
-      "author": "Tapdig Soltanov",
-      "time": "2026-11-18T19:34:35-08:00",
-      "excerpt": "<p> Motion design in your browser </p> <p> <a href=\"https://www.producthunt.com/products/nuko?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=produc",
-      "heat": 0.385
+      "title": "WaitFeed",
+      "url": "https://www.producthunt.com/products/waitfeed-2",
+      "author": "Faiz Jamadar",
+      "time": "2026-11-20T12:01:06-08:00",
+      "excerpt": "<p> Tech feed inside agent wait time </p> <p> <a href=\"https://www.producthunt.com/products/waitfeed-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_sour",
+      "heat": 0.325
     },
     {
       "id": "reddit:1xy8c3v",
@@ -77,50 +77,50 @@ window.COMMUNITY_DATA = {
       "author": "avatar32324",
       "time": "2026-11-17T02:12:07+00:00",
       "excerpt": "<!-- SC_OFF --><div class=\"md\"><p>Spent an afternoon on this and figured it was worth writing down.</p> <p>Generate with TRELLIS (Tripo / Meshy / Hunyuan3D behave the same), export",
-      "heat": 0.001
+      "heat": 0
     },
     {
-      "id": "gh:HKUDS/CLI-Anything",
+      "id": "gh:mjmirza/app-store-compliance",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "HKUDS/CLI-Anything",
-      "url": "https://github.com/HKUDS/CLI-Anything",
-      "author": "HKUDS",
-      "time": "2026-11-20T02:02:58.675Z",
-      "excerpt": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
-      "points": 898,
-      "meta": "Python",
-      "heat": 0.842
+      "title": "mjmirza/app-store-compliance",
+      "url": "https://github.com/mjmirza/app-store-compliance",
+      "author": "mjmirza",
+      "time": "2026-11-22T02:08:38.093Z",
+      "excerpt": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 124 documented rejection patterns and fixes, privacy manifest and Data safety checks,",
+      "points": 720,
+      "meta": "Shell",
+      "heat": 0.826
     },
     {
-      "id": "hn:50562320",
+      "id": "hn:50564366",
       "source": "Hacker News",
       "sub": "HN",
       "subLabel": "Hacker News",
       "cat": "行业讨论",
-      "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
-      "url": "https://github.com/onlook-dev/onlook/",
-      "author": "D_R_Farrell",
-      "time": "2026-11-19T16:34:04Z",
-      "excerpt": "Hey HN, I&#x27;m Daniel, founder of Onlook ( https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook and onlook.com). Onlook is a desktop app that puts a canvas on top of your rea",
-      "points": 85,
-      "comments": 68,
-      "heat": 0.8
+      "title": "Should governments slow frontier AI? Jacob Coxon and Robin Hanson debate [video]",
+      "url": "https://www.youtube.com/watch?v=lwfewYL7X0o",
+      "author": "sandslash",
+      "time": "2026-11-19T18:47:16Z",
+      "excerpt": "",
+      "points": 115,
+      "comments": 258,
+      "heat": 0.368
     },
     {
-      "id": "ph:tooljet",
+      "id": "ph:stitch-loop",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "ToolJet",
-      "url": "https://www.producthunt.com/products/tooljet",
-      "author": "Navaneeth Padanna Kalathil",
-      "time": "2026-11-18T19:07:11-08:00",
-      "excerpt": "<p> Vibe-coded business apps that pass the security review </p> <p> <a href=\"https://www.producthunt.com/products/tooljet?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
-      "heat": 0.381
+      "title": "Stitch Loop",
+      "url": "https://www.producthunt.com/products/stitch-loop",
+      "author": "Kumar Abhishek",
+      "time": "2026-11-20T11:38:38-08:00",
+      "excerpt": "<p> Google’s AI agent that ships fixes and watches the metric </p> <p> <a href=\"https://www.producthunt.com/products/stitch-loop?utm_campaign=producthunt-atom-posts-feed&amp;utm_me",
+      "heat": 0.322
     },
     {
       "id": "reddit:1xy7ym1",
@@ -136,47 +136,47 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "gh:mjmirza/app-store-compliance",
+      "id": "gh:zhouxiaoka/autoclip",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "mjmirza/app-store-compliance",
-      "url": "https://github.com/mjmirza/app-store-compliance",
-      "author": "mjmirza",
-      "time": "2026-11-20T02:02:58.676Z",
-      "excerpt": "Avoid common App Store and Google Play rejections. Open playbook and pre-submission guard with 117 documented rejection patterns and fixes, privacy manifest and Data safety checks,",
-      "points": 377,
-      "meta": "Shell",
-      "heat": 0.78
+      "title": "zhouxiaoka/autoclip",
+      "url": "https://github.com/zhouxiaoka/autoclip",
+      "author": "zhouxiaoka",
+      "time": "2026-11-22T02:08:38.094Z",
+      "excerpt": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
+      "points": 683,
+      "meta": "Python",
+      "heat": 0.823
     },
     {
-      "id": "hn:50561434",
+      "id": "hn:50562320",
       "source": "Hacker News",
       "sub": "HN",
       "subLabel": "Hacker News",
       "cat": "行业讨论",
-      "title": "\"Independent\" AI Safety Groups Are Pumping Anthropic's IPO [video]",
-      "url": "https://www.youtube.com/watch?v=pyRG_5dCrfg",
-      "author": "smukherjee19",
-      "time": "2026-11-19T15:32:36Z",
-      "excerpt": "",
-      "points": 10,
-      "comments": 1,
-      "heat": 0.701
+      "title": "Launch HN: Onlook (YC W25) – An open-source developer tool for designers",
+      "url": "https://github.com/onlook-dev/onlook/",
+      "author": "D_R_Farrell",
+      "time": "2026-11-19T16:34:04Z",
+      "excerpt": "Hey HN, I&#x27;m Daniel, founder of Onlook ( https:&#x2F;&#x2F;github.com&#x2F;onlook-dev&#x2F;onlook and onlook.com). Onlook is a desktop app that puts a canvas on top of your rea",
+      "points": 125,
+      "comments": 85,
+      "heat": 0.35
     },
     {
-      "id": "ph:tecla-3",
+      "id": "ph:smorza",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Tecla",
-      "url": "https://www.producthunt.com/products/tecla-3",
-      "author": "Miguel Angel Cabrera Miñagorri",
-      "time": "2026-11-18T19:05:34-08:00",
-      "excerpt": "<p> A proactive AI agent whose interface is a TODO list </p> <p> <a href=\"https://www.producthunt.com/products/tecla-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-f",
-      "heat": 0.381
+      "title": "Smorza",
+      "url": "https://www.producthunt.com/products/smorza",
+      "author": "Roko",
+      "time": "2026-11-20T11:28:10-08:00",
+      "excerpt": "<p> Every Mac app gets its own volume and output </p> <p> <a href=\"https://www.producthunt.com/products/smorza?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;",
+      "heat": 0.321
     },
     {
       "id": "reddit:1xy71py",
@@ -192,47 +192,47 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "gh:google-labs-code/stitch-skills",
+      "id": "gh:toeverything/AFFiNE",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "google-labs-code/stitch-skills",
-      "url": "https://github.com/google-labs-code/stitch-skills",
-      "author": "google-labs-code",
-      "time": "2026-11-20T02:02:58.676Z",
-      "excerpt": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, ",
-      "points": 302,
+      "title": "toeverything/AFFiNE",
+      "url": "https://github.com/toeverything/AFFiNE",
+      "author": "toeverything",
+      "time": "2026-11-22T02:08:38.093Z",
+      "excerpt": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source",
+      "points": 574,
       "meta": "TypeScript",
-      "heat": 0.764
+      "heat": 0.81
     },
     {
-      "id": "hn:50550700",
+      "id": "hn:50561434",
       "source": "Hacker News",
       "sub": "HN",
       "subLabel": "Hacker News",
       "cat": "行业讨论",
-      "title": "Show HN: KradleBench – Multi-agent AI evals in Minecraft",
-      "url": "https://www.kradle.ai?1",
-      "author": "jamest",
-      "time": "2026-11-18T19:14:28Z",
-      "excerpt": "Hi HN - This is James and Kemal. In past lives we led Firebase and Tensorflow&#x2F;JAX respectively. HN has been a particularly big part of my (James’) career and the trajectory I’",
-      "points": 9,
-      "comments": 7,
-      "heat": 0.5
+      "title": "\"Independent\" AI Safety Groups Are Pumping Anthropic's IPO [video]",
+      "url": "https://www.youtube.com/watch?v=pyRG_5dCrfg",
+      "author": "smukherjee19",
+      "time": "2026-11-19T15:32:36Z",
+      "excerpt": "",
+      "points": 10,
+      "comments": 1,
+      "heat": 0.234
     },
     {
-      "id": "ph:gemini-6",
+      "id": "ph:gitroots",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Gemini 4 Neon",
-      "url": "https://www.producthunt.com/products/gemini-6",
-      "author": "Zac Zuo",
-      "time": "2026-11-18T18:32:38-08:00",
-      "excerpt": "<p> Frontier reasoning with faster task completion </p> <p> <a href=\"https://www.producthunt.com/products/gemini-6?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&",
-      "heat": 0.377
+      "title": "gitroots",
+      "url": "https://www.producthunt.com/products/gitroots",
+      "author": "Shawki Aladdin",
+      "time": "2026-11-20T05:22:16-08:00",
+      "excerpt": "<p> Path-level GitHub access for developers and AI agents </p> <p> <a href=\"https://www.producthunt.com/products/gitroots?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
+      "heat": 0.273
     },
     {
       "id": "reddit:1xy6z7z",
@@ -248,47 +248,32 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "gh:openvinotoolkit/openvino",
+      "id": "gh:mvanhorn/last30days-skill",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "openvinotoolkit/openvino",
-      "url": "https://github.com/openvinotoolkit/openvino",
-      "author": "openvinotoolkit",
-      "time": "2026-11-20T02:02:58.676Z",
-      "excerpt": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
-      "points": 246,
-      "meta": "C++",
-      "heat": 0.749
+      "title": "mvanhorn/last30days-skill",
+      "url": "https://github.com/mvanhorn/last30days-skill",
+      "author": "mvanhorn",
+      "time": "2026-11-22T02:08:38.093Z",
+      "excerpt": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+      "points": 560,
+      "meta": "Python",
+      "heat": 0.808
     },
     {
-      "id": "hn:50549894",
-      "source": "Hacker News",
-      "sub": "HN",
-      "subLabel": "Hacker News",
-      "cat": "行业讨论",
-      "title": "CEO discovers AI costs more than humans [video]",
-      "url": "https://www.youtube.com/shorts/vj-XbrZGT2M",
-      "author": "Betelbuddy",
-      "time": "2026-11-18T18:14:31Z",
-      "excerpt": "",
-      "points": 6,
-      "comments": 0,
-      "heat": 0.474
-    },
-    {
-      "id": "ph:adside",
+      "id": "ph:lumyna-community-challenge",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Adside",
-      "url": "https://www.producthunt.com/products/adside",
-      "author": "Garry Tan",
-      "time": "2026-11-18T16:52:42-08:00",
-      "excerpt": "<p> A team of specialized AI agents that manage paid ads for you </p> <p> <a href=\"https://www.producthunt.com/products/adside?utm_campaign=producthunt-atom-posts-feed&amp;utm_medi",
-      "heat": 0.364
+      "title": "Lumyna Community Challenge",
+      "url": "https://www.producthunt.com/products/lumyna-community-challenge",
+      "author": "Yuva Raja",
+      "time": "2026-11-19T20:55:57-08:00",
+      "excerpt": "<p> A million virtual meters. A small pledge against hunger. </p> <p> <a href=\"https://www.producthunt.com/products/lumyna-community-challenge?utm_campaign=producthunt-atom-posts-f",
+      "heat": 0.208
     },
     {
       "id": "reddit:1xy6jl2",
@@ -312,39 +297,24 @@ window.COMMUNITY_DATA = {
       "title": "jingyaogong/minimind",
       "url": "https://github.com/jingyaogong/minimind",
       "author": "jingyaogong",
-      "time": "2026-11-20T02:02:58.676Z",
+      "time": "2026-11-22T02:08:38.093Z",
       "excerpt": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
-      "points": 238,
+      "points": 488,
       "meta": "Python",
-      "heat": 0.746
+      "heat": 0.798
     },
     {
-      "id": "hn:50532515",
-      "source": "Hacker News",
-      "sub": "HN",
-      "subLabel": "Hacker News",
-      "cat": "行业讨论",
-      "title": "Show HN: An API for word timestamps from speech, 75% within 20ms",
-      "url": "https://quebec.yarn.so",
-      "author": "jasperstory",
-      "time": "2026-11-17T15:16:45Z",
-      "excerpt": "Hey HN, we&#x27;re Yarn (W24) and we make a video editing app for startups, and we built Quebec ( https:&#x2F;&#x2F;quebec.yarn.so ), an API that gives you accurate word timestamps",
-      "points": 36,
-      "comments": 5,
-      "heat": 0.285
-    },
-    {
-      "id": "ph:mio-click",
+      "id": "ph:samiksa",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "mio click",
-      "url": "https://www.producthunt.com/products/mio-click",
-      "author": "Jordan Lyall",
-      "time": "2026-11-18T15:57:18-08:00",
-      "excerpt": "<p> A fidget that's also a friend </p> <p> <a href=\"https://www.producthunt.com/products/mio-click?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=p",
-      "heat": 0.356
+      "title": "Samiksa",
+      "url": "https://www.producthunt.com/products/samiksa",
+      "author": "Mihir D",
+      "time": "2026-11-19T20:22:09-08:00",
+      "excerpt": "<p> Understand research, test it yourself, publish your own </p> <p> <a href=\"https://www.producthunt.com/products/samiksa?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=r",
+      "heat": 0.203
     },
     {
       "id": "reddit:1xy6iql",
@@ -360,32 +330,32 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "gh:toeverything/AFFiNE",
+      "id": "gh:Tracer-Cloud/opensre",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "toeverything/AFFiNE",
-      "url": "https://github.com/toeverything/AFFiNE",
-      "author": "toeverything",
-      "time": "2026-11-20T02:02:58.676Z",
-      "excerpt": "There can be more than Notion and Miro. AFFiNE(pronounced [ə‘fain]) is a next-gen knowledge base that brings planning, sorting and creating all together. Privacy first, open-source",
-      "points": 182,
-      "meta": "TypeScript",
-      "heat": 0.727
+      "title": "Tracer-Cloud/opensre",
+      "url": "https://github.com/Tracer-Cloud/opensre",
+      "author": "Tracer-Cloud",
+      "time": "2026-11-22T02:08:38.093Z",
+      "excerpt": "The open-source agent for CI/CD reliability.",
+      "points": 450,
+      "meta": "Python",
+      "heat": 0.792
     },
     {
-      "id": "ph:play-that-back",
+      "id": "ph:interview-coach-3",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Play That Back",
-      "url": "https://www.producthunt.com/products/play-that-back",
-      "author": "JQ Sirls",
-      "time": "2026-11-18T15:42:14-08:00",
-      "excerpt": "<p> A pro camera built for iPhone Duo </p> <p> <a href=\"https://www.producthunt.com/products/play-that-back?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm",
-      "heat": 0.354
+      "title": "Interview Coach",
+      "url": "https://www.producthunt.com/products/interview-coach-3",
+      "author": "Vincent Chu",
+      "time": "2026-11-19T19:48:51-08:00",
+      "excerpt": "<p> Practice job interviews out loud </p> <p> <a href=\"https://www.producthunt.com/products/interview-coach-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;u",
+      "heat": 0.199
     },
     {
       "id": "reddit:1xy6edq",
@@ -401,32 +371,32 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "gh:zhouxiaoka/autoclip",
+      "id": "gh:google-labs-code/stitch-skills",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "zhouxiaoka/autoclip",
-      "url": "https://github.com/zhouxiaoka/autoclip",
-      "author": "zhouxiaoka",
-      "time": "2026-11-20T02:02:58.677Z",
-      "excerpt": "AutoClip｜一个链接，一键出片。开源 AI 视频剪辑桌面工具，将播客、访谈、课程等长视频自动剪成短视频，生成字幕、封面和发布文案，适配抖音、小红书、TikTok、Reels 与 YouTube Shorts。Open-source AI video clipping & content repurposing.",
-      "points": 126,
-      "meta": "Python",
-      "heat": 0.701
+      "title": "google-labs-code/stitch-skills",
+      "url": "https://github.com/google-labs-code/stitch-skills",
+      "author": "google-labs-code",
+      "time": "2026-11-22T02:08:38.093Z",
+      "excerpt": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, ",
+      "points": 326,
+      "meta": "TypeScript",
+      "heat": 0.769
     },
     {
-      "id": "ph:rezora-io-ai-calling-assistant",
+      "id": "ph:fack-d",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Rezora IO",
-      "url": "https://www.producthunt.com/products/rezora-io-ai-calling-assistant",
-      "author": "Garry Tan",
-      "time": "2026-11-18T15:23:32-08:00",
-      "excerpt": "<p> Shopify for AI voice agents: live in 10 minutes </p> <p> <a href=\"https://www.producthunt.com/products/rezora-io-ai-calling-assistant?utm_campaign=producthunt-atom-posts-feed&a",
-      "heat": 0.352
+      "title": "Fack’d",
+      "url": "https://www.producthunt.com/products/fack-d",
+      "author": "Philip Loyd",
+      "time": "2026-11-19T18:06:25-08:00",
+      "excerpt": "<p> Fact checks right on YouTube as it plays, with sources </p> <p> <a href=\"https://www.producthunt.com/products/fack-d?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss",
+      "heat": 0.186
     },
     {
       "id": "reddit:1xy68p7",
@@ -442,32 +412,32 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "gh:Tracer-Cloud/opensre",
+      "id": "gh:openvinotoolkit/openvino",
       "source": "GitHub",
       "sub": "GH",
       "subLabel": "GitHub Trending",
       "cat": "开源项目",
-      "title": "Tracer-Cloud/opensre",
-      "url": "https://github.com/Tracer-Cloud/opensre",
-      "author": "Tracer-Cloud",
-      "time": "2026-11-20T02:02:58.676Z",
-      "excerpt": "The open-source agent for CI/CD reliability.",
-      "points": 38,
-      "meta": "Python",
-      "heat": 0.615
+      "title": "openvinotoolkit/openvino",
+      "url": "https://github.com/openvinotoolkit/openvino",
+      "author": "openvinotoolkit",
+      "time": "2026-11-22T02:08:38.093Z",
+      "excerpt": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+      "points": 200,
+      "meta": "C++",
+      "heat": 0.734
     },
     {
-      "id": "ph:upsolve-ai",
+      "id": "ph:threadlore",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Upsolve MCP Connections",
-      "url": "https://www.producthunt.com/products/upsolve-ai",
-      "author": "Ka Ling Wu",
-      "time": "2026-11-18T13:56:08-08:00",
-      "excerpt": "<p> Plug Notion, Linear and more into your data agent </p> <p> <a href=\"https://www.producthunt.com/products/upsolve-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-",
-      "heat": 0.341
+      "title": "ThreadLore",
+      "url": "https://www.producthunt.com/products/threadlore",
+      "author": "Ken Nunes",
+      "time": "2026-11-19T18:03:00-08:00",
+      "excerpt": "<p> Turn fabric photos into editable loom drafts </p> <p> <a href=\"https://www.producthunt.com/products/threadlore?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&",
+      "heat": 0.185
     },
     {
       "id": "reddit:1xy5xsu",
@@ -483,17 +453,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:polylane",
+      "id": "ph:dozy",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Polylane for Azure",
-      "url": "https://www.producthunt.com/products/polylane",
-      "author": "Zac Zuo",
-      "time": "2026-11-18T13:47:12-08:00",
-      "excerpt": "<p> An AI on-call engineer for your Azure apps </p> <p> <a href=\"https://www.producthunt.com/products/polylane?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;",
-      "heat": 0.34
+      "title": "Dozy",
+      "url": "https://www.producthunt.com/products/dozy",
+      "author": "Charvi Bansal",
+      "time": "2026-11-19T13:18:14-08:00",
+      "excerpt": "<p> Turns your sleep data into one thing to do today </p> <p> <a href=\"https://www.producthunt.com/products/dozy?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&am",
+      "heat": 0.148
     },
     {
       "id": "reddit:1xy5uyt",
@@ -509,17 +479,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:wisprflow",
+      "id": "ph:vybe-4",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Wispr Flow Notetaker for iPhone",
-      "url": "https://www.producthunt.com/products/wisprflow",
-      "author": "Kate Ramakaieva",
-      "time": "2026-11-18T08:19:49-08:00",
-      "excerpt": "<p> Free AI meeting notes, wherever work takes you </p> <p> <a href=\"https://www.producthunt.com/products/wisprflow?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed",
-      "heat": 0.297
+      "title": "Nova by Vybe",
+      "url": "https://www.producthunt.com/products/vybe-4",
+      "author": "Jean-Baptiste Coger",
+      "time": "2026-11-19T11:54:06-08:00",
+      "excerpt": "<p> Nova audits your website free, then fixes what it finds </p> <p> <a href=\"https://www.producthunt.com/products/vybe-4?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
+      "heat": 0.138
     },
     {
       "id": "reddit:1xy4zkf",
@@ -535,17 +505,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:room-ai-2",
+      "id": "ph:undoguard",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Room AI",
-      "url": "https://www.producthunt.com/products/room-ai-2",
-      "author": "Marc Köhlbrugge",
-      "time": "2026-11-18T07:37:31-08:00",
-      "excerpt": "<p> Talk to it like a designer. Your room, one change at a time </p> <p> <a href=\"https://www.producthunt.com/products/room-ai-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_me",
-      "heat": 0.292
+      "title": "UndoGuard",
+      "url": "https://www.producthunt.com/products/undoguard",
+      "author": "jort dockx",
+      "time": "2026-11-19T11:15:42-08:00",
+      "excerpt": "<p> The Ctrl+Z button for autonomous AI agents </p> <p> <a href=\"https://www.producthunt.com/products/undoguard?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp",
+      "heat": 0.133
     },
     {
       "id": "reddit:1xy4xsx",
@@ -561,17 +531,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:noteshell",
+      "id": "ph:helpcard",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Noteshell",
-      "url": "https://www.producthunt.com/products/noteshell",
-      "author": "Quang Nguyen",
-      "time": "2026-11-18T07:28:16-08:00",
-      "excerpt": "<p> AI teammates that build and run your workspace </p> <p> <a href=\"https://www.producthunt.com/products/noteshell?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed",
-      "heat": 0.29
+      "title": "HelpCard",
+      "url": "https://www.producthunt.com/products/helpcard",
+      "author": "Nuvolin software",
+      "time": "2026-11-19T09:26:05-08:00",
+      "excerpt": "<p> a free emergency QR card </p> <p> <a href=\"https://www.producthunt.com/products/helpcard?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=product",
+      "heat": 0.118
     },
     {
       "id": "reddit:1xy4ve3",
@@ -587,17 +557,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:cleared-quit-nicotine",
+      "id": "ph:andromon",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Cleared",
-      "url": "https://www.producthunt.com/products/cleared-quit-nicotine",
-      "author": "Alara Akcasiz",
-      "time": "2026-11-18T07:27:40-08:00",
-      "excerpt": "<p> Your personal plan to give up vapes, pouches and cigarettes </p> <p> <a href=\"https://www.producthunt.com/products/cleared-quit-nicotine?utm_campaign=producthunt-atom-posts-fee",
-      "heat": 0.29
+      "title": "Andromon",
+      "url": "https://www.producthunt.com/products/andromon",
+      "author": "Jayashanka Deshan",
+      "time": "2026-11-19T04:20:09-08:00",
+      "excerpt": "<p> Your Android phone, on your computer. Free. </p> <p> <a href=\"https://www.producthunt.com/products/andromon?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp",
+      "heat": 0.079
     },
     {
       "id": "reddit:1xy4ftf",
@@ -613,17 +583,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:fieldwork-code",
+      "id": "ph:stormi",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Fieldwork Code",
-      "url": "https://www.producthunt.com/products/fieldwork-code",
-      "author": "Guillaume Dupuy",
-      "time": "2026-11-18T05:32:13-08:00",
-      "excerpt": "<p> AI coding on your laptop or in the cloud, from your phone </p> <p> <a href=\"https://www.producthunt.com/products/fieldwork-code?utm_campaign=producthunt-atom-posts-feed&amp;utm",
-      "heat": 0.275
+      "title": "Stormi",
+      "url": "https://www.producthunt.com/products/stormi",
+      "author": "ibrokhim abdivokhidov",
+      "time": "2026-11-19T04:24:03-08:00",
+      "excerpt": "<p> An AI team on your iPhone that does real work </p> <p> <a href=\"https://www.producthunt.com/products/stormi?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp",
+      "heat": 0.079
     },
     {
       "id": "reddit:1xy453q",
@@ -639,17 +609,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:heygen",
+      "id": "ph:tamekoshi",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "HeyGen Avatar 6",
-      "url": "https://www.producthunt.com/products/heygen",
-      "author": "Shivam Kushwaha",
-      "time": "2026-11-18T04:03:30-08:00",
-      "excerpt": "<p> AI Avatar Model That Looks Like You </p> <p> <a href=\"https://www.producthunt.com/products/heygen?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_sourc",
-      "heat": 0.264
+      "title": "Tamekoshi",
+      "url": "https://www.producthunt.com/products/tamekoshi",
+      "author": "Daniel Kumanaya",
+      "time": "2026-11-19T03:38:06-08:00",
+      "excerpt": "<p> A Tamagotchi-style AI companion that does real work </p> <p> <a href=\"https://www.producthunt.com/products/tamekoshi?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss",
+      "heat": 0.073
     },
     {
       "id": "reddit:1xy43zb",
@@ -665,17 +635,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:context-dev",
+      "id": "ph:baby-s-day-in",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Enrichable by Context.dev",
-      "url": "https://www.producthunt.com/products/context-dev",
-      "author": "Ely",
-      "time": "2026-11-18T03:43:41-08:00",
-      "excerpt": "<p> Open-source AI spreadsheet for data enrichment </p> <p> <a href=\"https://www.producthunt.com/products/context-dev?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-fe",
-      "heat": 0.261
+      "title": "Baby's Day In",
+      "url": "https://www.producthunt.com/products/baby-s-day-in",
+      "author": "Pulkita Manchanda",
+      "time": "2026-11-19T00:50:55-08:00",
+      "excerpt": "<p> Turn two phones into a baby monitor </p> <p> <a href=\"https://www.producthunt.com/products/baby-s-day-in?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;ut",
+      "heat": 0.052
     },
     {
       "id": "reddit:1xy44v6",
@@ -691,17 +661,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:assemblyai",
+      "id": "ph:saparo",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "AssemblyAI-STT-3.7",
-      "url": "https://www.producthunt.com/products/assemblyai",
-      "author": "Harnoor Singh",
-      "time": "2026-11-17T22:50:37-08:00",
-      "excerpt": "<p> Speech-to-Text for live calls, voice agents, and recordings </p> <p> <a href=\"https://www.producthunt.com/products/assemblyai?utm_campaign=producthunt-atom-posts-feed&amp;utm_m",
-      "heat": 0.223
+      "title": "Saparo",
+      "url": "https://www.producthunt.com/products/saparo",
+      "author": "Justin Jincaid",
+      "time": "2026-11-19T00:29:12-08:00",
+      "excerpt": "<p> Muse for shopping with deals stacks </p> <p> <a href=\"https://www.producthunt.com/products/saparo?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_sourc",
+      "heat": 0.049
     },
     {
       "id": "reddit:1xy3kkh",
@@ -717,17 +687,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:introzy",
+      "id": "ph:volcano-3",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Introzy",
-      "url": "https://www.producthunt.com/products/introzy",
-      "author": "Zac Sheffer",
-      "time": "2026-11-17T11:39:36-08:00",
-      "excerpt": "<p> Track referrals from intro to commission </p> <p> <a href=\"https://www.producthunt.com/products/introzy?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm",
-      "heat": 0.136
+      "title": "Volcano",
+      "url": "https://www.producthunt.com/products/volcano-3",
+      "author": "Connor Church",
+      "time": "2026-11-18T22:11:24-08:00",
+      "excerpt": "<p> The self-healing agent cloud by Kong </p> <p> <a href=\"https://www.producthunt.com/products/volcano-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_s",
+      "heat": 0.031
     },
     {
       "id": "reddit:1xy3fhc",
@@ -743,17 +713,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:lepoly",
+      "id": "ph:interaone",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "lepoly",
-      "url": "https://www.producthunt.com/products/lepoly",
-      "author": "alban",
-      "time": "2026-11-17T08:39:10-08:00",
-      "excerpt": "<p> One place for all your 3D assets </p> <p> <a href=\"https://www.producthunt.com/products/lepoly?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=p",
-      "heat": 0.113
+      "title": "InteraOne",
+      "url": "https://www.producthunt.com/products/interaone",
+      "author": "Abhishek Kumbhar",
+      "time": "2026-11-18T22:13:43-08:00",
+      "excerpt": "<p> Open-source Intercom & Zendesk alternative with AI agents </p> <p> <a href=\"https://www.producthunt.com/products/interaone?utm_campaign=producthunt-atom-posts-feed&amp;utm_medi",
+      "heat": 0.031
     },
     {
       "id": "reddit:1xy2t30",
@@ -769,17 +739,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:verse-engine-by-ctruh",
+      "id": "ph:instagram",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Verse Engine by Ctruh",
-      "url": "https://www.producthunt.com/products/verse-engine-by-ctruh",
-      "author": "Rohan Chaubey",
-      "time": "2026-11-17T06:44:33-08:00",
-      "excerpt": "<p> Blender, Unity or Unreal to a live 3D link in one click </p> <p> <a href=\"https://www.producthunt.com/products/verse-engine-by-ctruh?utm_campaign=producthunt-atom-posts-feed&am",
-      "heat": 0.098
+      "title": "Direct by Instagram",
+      "url": "https://www.producthunt.com/products/instagram",
+      "author": "Justin Jincaid",
+      "time": "2026-11-18T21:57:27-08:00",
+      "excerpt": "<p> Instagram DMs, without the feed or Instagram account </p> <p> <a href=\"https://www.producthunt.com/products/instagram?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
+      "heat": 0.029
     },
     {
       "id": "reddit:1xy2sg9",
@@ -795,17 +765,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:dusk-bot",
+      "id": "ph:doddle-3",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "dusk bot",
-      "url": "https://www.producthunt.com/products/dusk-bot",
-      "author": "Aleksandar Blazhev",
-      "time": "2026-11-17T06:13:59-08:00",
-      "excerpt": "<p> free open source Grok bot alternative </p> <p> <a href=\"https://www.producthunt.com/products/dusk-bot?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_s",
-      "heat": 0.094
+      "title": "Doddle",
+      "url": "https://www.producthunt.com/products/doddle-3",
+      "author": "Stone",
+      "time": "2026-11-18T19:30:17-08:00",
+      "excerpt": "<p> Draw on what your videos for 3D effects </p> <p> <a href=\"https://www.producthunt.com/products/doddle-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm",
+      "heat": 0.01
     },
     {
       "id": "reddit:1xy2oqj",
@@ -821,17 +791,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:kadeep-ai",
+      "id": "ph:backspin",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "KaDeep AI",
-      "url": "https://www.producthunt.com/products/kadeep-ai",
-      "author": "DAKSH SAHU",
-      "time": "2026-11-17T00:00:01-08:00",
-      "excerpt": "<p> Ready to ship? One agent tests, translates and audits it </p> <p> <a href=\"https://www.producthunt.com/products/kadeep-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_mediu",
-      "heat": 0.046
+      "title": "Backspin",
+      "url": "https://www.producthunt.com/products/backspin",
+      "author": "Saurav Chamoli",
+      "time": "2026-11-18T18:52:10-08:00",
+      "excerpt": "<p> Learn to DJ in your browser, on real vinyl decks </p> <p> <a href=\"https://www.producthunt.com/products/backspin?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-fee",
+      "heat": 0.005
     },
     {
       "id": "reddit:1xy2nf5",
@@ -847,17 +817,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:linkbit",
+      "id": "ph:alter-contacts-ai-client-relationships",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "LinkBit",
-      "url": "https://www.producthunt.com/products/linkbit",
-      "author": "Egor Elkin",
-      "time": "2026-11-16T23:57:08-08:00",
-      "excerpt": "<p> Free URL shortener your AI agent can use (MCP + API) </p> <p> <a href=\"https://www.producthunt.com/products/linkbit?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-",
-      "heat": 0.045
+      "title": "AlterContacts",
+      "url": "https://www.producthunt.com/products/alter-contacts-ai-client-relationships",
+      "author": "Zac Zuo",
+      "time": "2026-11-17T02:25:12-08:00",
+      "excerpt": "<p> AI client relationship assistant that thinks and does ahead </p> <p> <a href=\"https://www.producthunt.com/products/alter-contacts-ai-client-relationships?utm_campaign=producthu",
+      "heat": 0
     },
     {
       "id": "reddit:1xy2mce",
@@ -873,17 +843,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:codedesign",
+      "id": "ph:shipyard",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "CodeDesign v3",
-      "url": "https://www.producthunt.com/products/codedesign",
-      "author": "hakhil nizeem",
-      "time": "2026-11-16T21:24:17-08:00",
-      "excerpt": "<p> Run your website and business apps from ChatGPT or Claude </p> <p> <a href=\"https://www.producthunt.com/products/codedesign?utm_campaign=producthunt-atom-posts-feed&amp;utm_med",
-      "heat": 0.025
+      "title": "Shipyard",
+      "url": "https://www.producthunt.com/products/shipyard",
+      "author": "Simon",
+      "time": "2026-11-16T10:21:35-08:00",
+      "excerpt": "<p> MCP for Claude, Cursor and Codex to Automate Integrations </p> <p> <a href=\"https://www.producthunt.com/products/shipyard?utm_campaign=producthunt-atom-posts-feed&amp;utm_mediu",
+      "heat": 0
     },
     {
       "id": "reddit:1xy2722",
@@ -899,17 +869,17 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:ofintech-desk",
+      "id": "ph:exa-ai",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "OfinTech Desk",
-      "url": "https://www.producthunt.com/products/ofintech-desk",
-      "author": "Mohamed",
-      "time": "2026-11-16T19:25:07-08:00",
-      "excerpt": "<p> Finance AI where every figure traces to its source </p> <p> <a href=\"https://www.producthunt.com/products/ofintech-desk?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=",
-      "heat": 0.01
+      "title": "Exa Websets V2",
+      "url": "https://www.producthunt.com/products/exa-ai",
+      "author": "Rohan Chaubey",
+      "time": "2026-11-18T09:15:13-08:00",
+      "excerpt": "<p> Build custom datasets from the live web, 4x faster </p> <p> <a href=\"https://www.producthunt.com/products/exa-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-fee",
+      "heat": 0
     },
     {
       "id": "reddit:1xy1rrx",
@@ -925,16 +895,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:tabstack",
+      "id": "ph:publicit",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Tabstack by Mozilla",
-      "url": "https://www.producthunt.com/products/tabstack",
-      "author": "fmerian",
-      "time": "2026-11-16T13:57:39-08:00",
-      "excerpt": "<p> Give your model the web without giving up your privacy </p> <p> <a href=\"https://www.producthunt.com/products/tabstack?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=r",
+      "title": "Publicit",
+      "url": "https://www.producthunt.com/products/publicit",
+      "author": "Joan Medina",
+      "time": "2026-11-18T07:19:01-08:00",
+      "excerpt": "<p> Omnichannel ad infrastructure for marketers and AI agents </p> <p> <a href=\"https://www.producthunt.com/products/publicit?utm_campaign=producthunt-atom-posts-feed&amp;utm_mediu",
       "heat": 0
     },
     {
@@ -951,16 +921,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:the-calm-creator-mastermind",
+      "id": "ph:hollr-3",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "The Calm Creator Mastermind",
-      "url": "https://www.producthunt.com/products/the-calm-creator-mastermind",
-      "author": "David Spinks",
-      "time": "2026-11-16T11:19:03-08:00",
-      "excerpt": "<p> For solopreneurs who are tired of being solo. </p> <p> <a href=\"https://www.producthunt.com/products/the-calm-creator-mastermind?utm_campaign=producthunt-atom-posts-feed&amp;ut",
+      "title": "Hollr",
+      "url": "https://www.producthunt.com/products/hollr-3",
+      "author": "Jason Eliphalet",
+      "time": "2026-11-17T04:22:18-08:00",
+      "excerpt": "<p> Push-to-talk for your family, on iPhone and Apple Watch </p> <p> <a href=\"https://www.producthunt.com/products/hollr-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=r",
       "heat": 0
     },
     {
@@ -977,16 +947,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:spellar",
+      "id": "ph:prompt-puncher",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Spellar for Chrome",
-      "url": "https://www.producthunt.com/products/spellar",
-      "author": "Zino",
-      "time": "2026-11-16T04:57:22-08:00",
-      "excerpt": "<p> Free, no-bot meeting notes with memory, now in your browser </p> <p> <a href=\"https://www.producthunt.com/products/spellar?utm_campaign=producthunt-atom-posts-feed&amp;utm_medi",
+      "title": "Prompt Puncher",
+      "url": "https://www.producthunt.com/products/prompt-puncher",
+      "author": "Matthew Hefferon",
+      "time": "2026-11-17T10:29:56-08:00",
+      "excerpt": "<p> The AI CEO Fighting Game </p> <p> <a href=\"https://www.producthunt.com/products/prompt-puncher?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=p",
       "heat": 0
     },
     {
@@ -1003,16 +973,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:every-signal",
+      "id": "ph:beat-watcher",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Every Signal",
-      "url": "https://www.producthunt.com/products/every-signal",
-      "author": "Michael Jones",
-      "time": "2026-11-14T09:43:52-08:00",
-      "excerpt": "<p> Diligence on any company in an hour, every number sourced </p> <p> <a href=\"https://www.producthunt.com/products/every-signal?utm_campaign=producthunt-atom-posts-feed&amp;utm_m",
+      "title": "Beat Watcher",
+      "url": "https://www.producthunt.com/products/beat-watcher",
+      "author": "John Ganotis",
+      "time": "2026-11-14T18:56:43-08:00",
+      "excerpt": "<p> Fast Apple Watch heart rate alerts you can share with family </p> <p> <a href=\"https://www.producthunt.com/products/beat-watcher?utm_campaign=producthunt-atom-posts-feed&amp;ut",
       "heat": 0
     },
     {
@@ -1029,16 +999,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:source-public-beta",
+      "id": "ph:openvorld",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Source",
-      "url": "https://www.producthunt.com/products/source-public-beta",
-      "author": "Mitch Wainer",
-      "time": "2026-11-16T09:34:12-08:00",
-      "excerpt": "<p> The attribution data layer for your agents to drive pipeline </p> <p> <a href=\"https://www.producthunt.com/products/source-public-beta?utm_campaign=producthunt-atom-posts-feed&",
+      "title": "OpenVorld",
+      "url": "https://www.producthunt.com/products/openvorld",
+      "author": "Amir Ghasemi",
+      "time": "2026-11-16T11:15:46-08:00",
+      "excerpt": "<p> Give your AI agents a home and a Vorld. </p> <p> <a href=\"https://www.producthunt.com/products/openvorld?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;ut",
       "heat": 0
     },
     {
@@ -1055,16 +1025,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:replayio",
+      "id": "ph:croon",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Replay QA Self-healing Mode",
-      "url": "https://www.producthunt.com/products/replayio",
-      "author": "fmerian",
-      "time": "2026-11-16T13:45:46-08:00",
-      "excerpt": "<p> Turn user frustration into verified fixes </p> <p> <a href=\"https://www.producthunt.com/products/replayio?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;u",
+      "title": "CROON",
+      "url": "https://www.producthunt.com/products/croon",
+      "author": "Naoki Ishihara",
+      "time": "2026-11-18T03:51:36-08:00",
+      "excerpt": "<p> Live dubbing for whatever's playing on your iPhone </p> <p> <a href=\"https://www.producthunt.com/products/croon?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed",
       "heat": 0
     },
     {
@@ -1081,16 +1051,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:hunyuan-a13b",
+      "id": "ph:groundwork-6",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Tencent Hy4 flash",
-      "url": "https://www.producthunt.com/products/hunyuan-a13b",
-      "author": "Rohan Chaubey",
-      "time": "2026-11-15T22:53:29-08:00",
-      "excerpt": "<p> Fast, low-cost model from $0.07/M input </p> <p> <a href=\"https://www.producthunt.com/products/hunyuan-a13b?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp",
+      "title": "Groundwork",
+      "url": "https://www.producthunt.com/products/groundwork-6",
+      "author": "Chinedum Okerengwor",
+      "time": "2026-11-18T09:21:39-08:00",
+      "excerpt": "<p> Claude Code plans that re-runs never overwrite </p> <p> <a href=\"https://www.producthunt.com/products/groundwork-6?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-f",
       "heat": 0
     },
     {
@@ -1107,16 +1077,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:qwen3",
+      "id": "ph:storiara",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Qwen4-Max",
-      "url": "https://www.producthunt.com/products/qwen3",
-      "author": "Zac Zuo",
-      "time": "2026-11-16T04:32:32-08:00",
-      "excerpt": "<p> Qwen's new flagship for long-running agent work </p> <p> <a href=\"https://www.producthunt.com/products/qwen3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&am",
+      "title": "Storiara",
+      "url": "https://www.producthunt.com/products/storiara",
+      "author": "Nick Harty",
+      "time": "2026-11-17T12:02:24-08:00",
+      "excerpt": "<p> AI producers that find real savings in your film budget </p> <p> <a href=\"https://www.producthunt.com/products/storiara?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=",
       "heat": 0
     },
     {
@@ -1133,16 +1103,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:stringman",
+      "id": "ph:tripps",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Stringman",
-      "url": "https://www.producthunt.com/products/stringman",
-      "author": "Nathaniel Nifong",
-      "time": "2026-11-16T07:05:23-08:00",
-      "excerpt": "<p> Turns your room into a crane game </p> <p> <a href=\"https://www.producthunt.com/products/stringman?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_sour",
+      "title": "tripps",
+      "url": "https://www.producthunt.com/products/tripps",
+      "author": "Kevin Well",
+      "time": "2026-11-17T11:25:40-08:00",
+      "excerpt": "<p> Plan a group trip with one link, no account needed </p> <p> <a href=\"https://www.producthunt.com/products/tripps?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-fee",
       "heat": 0
     },
     {
@@ -1159,16 +1129,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:ox212",
+      "id": "ph:salus",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "OX212",
-      "url": "https://www.producthunt.com/products/ox212",
-      "author": "Raül Locco",
-      "time": "2026-11-16T05:57:19-08:00",
-      "excerpt": "<p> Don't predict the market, predict the trader </p> <p> <a href=\"https://www.producthunt.com/products/ox212?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;u",
+      "title": "Salus",
+      "url": "https://www.producthunt.com/products/salus",
+      "author": "Begaiym Adylbek kyzy",
+      "time": "2026-11-16T16:35:53-08:00",
+      "excerpt": "<p> Discover benefits and public support in the Czech Republic </p> <p> <a href=\"https://www.producthunt.com/products/salus?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=",
       "heat": 0
     },
     {
@@ -1185,16 +1155,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:ody-ai-business-phone",
+      "id": "ph:pickfit",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "Ody Ai Business Phone",
-      "url": "https://www.producthunt.com/products/ody-ai-business-phone",
-      "author": "Raphael Marchand",
-      "time": "2026-11-16T10:36:57-08:00",
-      "excerpt": "<p> Shared workspace + manageable AI agents </p> <p> <a href=\"https://www.producthunt.com/products/ody-ai-business-phone?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss",
+      "title": "pickfit",
+      "url": "https://www.producthunt.com/products/pickfit",
+      "author": "念誠",
+      "time": "2026-11-17T21:38:56-08:00",
+      "excerpt": "<p> Every tool tested in a sandbox before it's recommended </p> <p> <a href=\"https://www.producthunt.com/products/pickfit?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
       "heat": 0
     },
     {
@@ -1208,19 +1178,6 @@ window.COMMUNITY_DATA = {
       "author": "Pancho1st",
       "time": "2026-11-16T20:24:12+00:00",
       "excerpt": "<table> <tr><td> <a href=\"https://www.reddit.com/r/aivideo/comments/1xy06d6/cross_solutions/\"> <img src=\"https://external-preview.redd.it/bDlpdG9jNDBhMTJpMb7HQmTph0YoBBhkB1NwlEhgVb",
-      "heat": 0
-    },
-    {
-      "id": "ph:dippr",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "Dippr",
-      "url": "https://www.producthunt.com/products/dippr",
-      "author": "Hoshang Mehta",
-      "time": "2026-11-14T23:59:41-08:00",
-      "excerpt": "<p> A data platform served to your agents, with one prompt </p> <p> <a href=\"https://www.producthunt.com/products/dippr?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-",
       "heat": 0
     },
     {
