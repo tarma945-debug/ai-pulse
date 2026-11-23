@@ -22,13 +22,32 @@ bad()  { printf '  ✗ %s\n' "$*"; }
 echo "== 1. 环境检查 =="
 
 # --- node ---
-if command -v node >/dev/null 2>&1; then
-  NODE_VER="$(node -v)"
+# 非交互 SSH / cron 的 PATH 往往不含 nvm、Homebrew 或 WorkBuddy 自带的 node，
+# 所以不能只靠 command -v，要主动去常见位置找一遍。
+find_node() {
+  local c
+  for c in "$(command -v node 2>/dev/null)" \
+           "$HOME/.workbuddy/binaries/node/versions/current/bin/node" \
+           /opt/homebrew/bin/node /usr/local/bin/node \
+           "$HOME/.nvm/versions/node"/*/bin/node; do
+    [[ -n "$c" && -x "$c" ]] && { echo "$c"; return 0; }
+  done
+  return 1
+}
+NODE_BIN_PATH="$(find_node || true)"
+
+if [[ -n "$NODE_BIN_PATH" ]]; then
+  NODE_VER="$("$NODE_BIN_PATH" -v)"
   MAJOR="${NODE_VER#v}"; MAJOR="${MAJOR%%.*}"
-  if [[ "$MAJOR" -ge 18 ]]; then ok "node $NODE_VER"
-  else bad "node $NODE_VER 太旧，需要 >= 18"; fi
+  if [[ "$MAJOR" -ge 18 ]]; then ok "node $NODE_VER  ($NODE_BIN_PATH)"
+  else bad "node $NODE_VER 太旧，需要 >= 18"; NODE_BIN_PATH=""; fi
 else
   bad "没有 node（脚本用了 node: 内置模块和顶层 await）"
+fi
+
+# 让后续所有调用（含 lark-cli）都能找到 node
+if [[ -n "$NODE_BIN_PATH" ]]; then
+  export PATH="$(dirname "$NODE_BIN_PATH"):$PATH"
 fi
 
 # --- curl ---
@@ -99,7 +118,11 @@ node scripts/daily-report.mjs --dry || { bad "试跑失败，先解决上面的�
 echo "== 3. 注册定时任务 =="
 if [[ "$(uname -s)" == "Darwin" ]]; then
   PLIST="$HOME/Library/LaunchAgents/com.aipulse.daily.plist"
-  NODE_BIN="$(command -v node)"
+  NODE_BIN="${NODE_BIN_PATH:-$(command -v node)}"
+  mkdir -p "$HOME/Library/LaunchAgents"
+  # 关键：launchd 的环境极简，PATH 必须显式写进 plist，
+  # 否则 lark-cli / git 都可能找不到（它们可能装在非常规目录）。
+  NODE_DIR="$(dirname "$NODE_BIN")"
   cat > "$PLIST" <<PLIST_EOF
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
@@ -112,6 +135,11 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
     <string>$ROOT/scripts/daily-report.mjs</string>
   </array>
   <key>WorkingDirectory</key><string>$ROOT</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>$NODE_DIR:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    <key>HOME</key><string>$HOME</string>
+  </dict>
   <key>StartCalendarInterval</key>
   <dict><key>Hour</key><integer>10</integer><key>Minute</key><integer>0</integer></dict>
   <key>StandardOutPath</key><string>$ROOT/daily.log</string>
@@ -120,9 +148,12 @@ if [[ "$(uname -s)" == "Darwin" ]]; then
 </dict>
 </plist>
 PLIST_EOF
-  launchctl unload "$PLIST" 2>/dev/null || true
-  launchctl load "$PLIST"
-  ok "已注册 launchd：${PLIST}（每天 10:00，日志 ${ROOT}/daily.log）"
+  launchctl bootout "gui/$(id -u)/com.aipulse.daily" 2>/dev/null || launchctl unload "$PLIST" 2>/dev/null || true
+  if launchctl bootstrap "gui/$(id -u)" "$PLIST" 2>/dev/null || launchctl load "$PLIST" 2>/dev/null; then
+    ok "已注册 launchd：${PLIST}（每天 10:00，日志 ${ROOT}/daily.log）"
+  else
+    bad "launchd 注册失败（可能需要图形会话）；可改用 crontab 或手动运行"
+  fi
 else
   LINE="0 10 * * * cd $ROOT && $(command -v node) scripts/daily-report.mjs >> $ROOT/daily.log 2>&1"
   ( crontab -l 2>/dev/null | grep -v 'ai-pulse' ; echo "$LINE" ) | crontab -
