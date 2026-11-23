@@ -148,6 +148,42 @@ Host github-aipulse
 新机器注册了定时任务后，**原机器上的 automation 必须停掉**，否则同一天两边各发一次。
 脚本里有同日去重能兜住大部分情况，但那是"查了再发"，不是严格互斥。
 
+### 当前实际部署（2026-11-23 落地）
+
+跑每天 10:00 任务的是 **192.168.110.52**（Mac mini，macOS 25.5，用户 `a1234`）：
+
+| 项 | 值 |
+| --- | --- |
+| 代码目录 | `~/ai-pulse` |
+| node | `/opt/homebrew/bin/node`（v24.22.3） |
+| 定时 | launchd `~/Library/LaunchAgents/com.aipulse.daily.plist` |
+| 日志 | `~/ai-pulse/daily.log` |
+| 推送 | SSH deploy key `~/.ssh/aipulse_deploy`（`git fetch/ls-remote` 可用） |
+| 代理 | `http://127.0.0.1:7890`（**必需**，该机直连完全出不了网） |
+| 飞书 | 用户身份 `王宇`，token 在钥匙串（`lark-cli auth status` 应为 `tokenStatus: valid`） |
+
+日常运维：
+
+```bash
+# 手动触发一次（等同 10:00 那次）
+launchctl kickstart -p gui/$(id -u)/com.aipulse.daily
+tail -f ~/ai-pulse/daily.log
+
+# 看下次是否还挂着
+launchctl list | grep aipulse
+```
+
+**两个已踩过的坑：**
+
+1. **直连完全不通，代理是必需的。** 该机 `curl https://google.com` 直连返回 000，只有经 `7890` 才行。
+   所以代理探测**绝不能只探一次**——一次瞬时抖动就会误判"代理挂了"并降级直连，
+   然后整轮 Reddit 全 0 条。脚本已改成多探针（google 204 + aihot 兜底）+ 失败重试。
+
+2. **Reddit 返回 403 是出口 IP 被封，不是代码问题。**
+   实测该代理出口 IP `91.192.81.112` 访问 `reddit.com/r/*/top.json` 直接 403。
+   这时 5 个 Reddit 板块全 0 条，脚本会沿用上一份缓存（不会清空），属预期行为。
+   想恢复得换代理出口，改代码没用。
+
 
 ## 文件结构
 
