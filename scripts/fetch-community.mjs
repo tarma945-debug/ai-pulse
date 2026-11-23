@@ -47,6 +47,9 @@ const UA =
 let PROXY = null;
 
 const PROBE_URL = "https://www.google.com/generate_204";
+/* 备选探针：某些线路会单独把 google 墙掉/限流，只探 google 会误判成「代理全挂」，
+   于是降级直连 → 整轮 Reddit 全 0。加一个真实业务站兜底。 */
+const PROBE_URLS = [PROBE_URL, "https://aihot.news/api/v1/dailies?limit=1"];
 
 async function curlOnce(url, proxy, timeout) {
   const args = [
@@ -83,13 +86,21 @@ async function probeProxy() {
     } catch {
       continue;   /* 端口没开 */
     }
-    /* 再做真实连通验证：204 或无正文的 200 都算通 */
-    const code = await curlOnce(PROBE_URL, c, 12);
-    if (code === 204 || code === 200) {
-      console.log(`[代理探测] ${c} 可用（HTTP ${code}）`);
-      return c;
+    /* 再做真实连通验证：204 或无正文的 200 都算通。
+       2026-11-23 修：原来只探一次，代理偶发抖动（实测 0.8s 常见、偶发 3.6s+）
+       就会被判成「出不去」，降级直连后 Reddit 整轮挂掉。现在失败重试 + 多探针。 */
+    let ok = false;
+    for (const url of PROBE_URLS) {
+      for (let attempt = 1; attempt <= 2 && !ok; attempt++) {
+        const code = await curlOnce(url, c, 12);
+        if (code === 204 || code === 200) {
+          console.log(`[代理探测] ${c} 可用（HTTP ${code}）`);
+          return c;
+        }
+        if (attempt < 2) await new Promise((r) => setTimeout(r, 1500));
+      }
     }
-    console.log(`[代理探测] ${c} 端口开着但出不去（HTTP ${code}），跳过`);
+    if (!ok) console.log(`[代理探测] ${c} 端口开着但出不去，跳过`);
   }
   console.log("[代理探测] 没有可用代理，走直连（Reddit 会抓不到）");
   return null;

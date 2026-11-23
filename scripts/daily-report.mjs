@@ -75,23 +75,53 @@ async function curl(url, { timeout = 25, proxy = PROXY } = {}) {
   }
 }
 
+/* 探针 URL 备选：Google 的 204 最轻，但某些线路会把它单独墙掉/限流，
+   所以再挂一个我们真正要用的目标站做兜底，避免「google 不通 → 误判代理挂了」。 */
+const PROBE_URLS = [
+  "https://www.google.com/generate_204",
+  "https://aihot.news/api/v1/dailies?limit=1",
+];
+
+function curlCode(url, proxy, timeout) {
+  return new Promise((res) => {
+    const a = ["-s", "-o", "/dev/null", "--max-time", String(timeout), "-w", "%{http_code}"];
+    if (proxy) a.push("-x", proxy);
+    a.push(url);
+    execFile("curl", a, { timeout: (timeout + 3) * 1000 },
+      (err, stdout) => res(Number(String(stdout || "").trim()) || 0));
+  });
+}
+
+/* 2026-11-23 修：原来每个代理只探一次，一次瞬时抖动（实测 0.8s 常见、偶发 3.6s+）
+   就直接判定「出不去」并降级直连；而目标机直连是完全出不了网的，
+   结果整轮 Reddit 全 0 条，天天靠缓存。现在改成失败重试 + 多探针兜底。 */
 async function probeProxy() {
-  /* 环境变量里给了就直接用 */
+  /* 环境变量里给了就优先试 */
   const envProxy = (process.env.HTTPS_PROXY || process.env.https_proxy || "").replace(/\/$/, "");
   const cands = [];
   if (envProxy) cands.push(envProxy);
   for (const p of [7897, 7890, 1087, 8118, 8119]) {
-    cands.push(`http://127.0.0.1:${p}`);
+    const u = `http://127.0.0.1:${p}`;
+    if (!cands.includes(u)) cands.push(u);
   }
-  /* 探针用 Google 204：只走代理可达、不限流、响应极小。
-     别用 reddit 当探针——它限流返 429 时会被误判成「代理出不去」。 */
+
+  const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
   for (const c of cands) {
-    const code = await new Promise((res) => {
-      const a = ["-s", "-o", "/dev/null", "--max-time", "8", "-x", c,
-                 "-w", "%{http_code}", "https://www.google.com/generate_204"];
-      execFile("curl", a, { timeout: 12000 }, (err, stdout) => res(stdout || ""));
-    });
-    if (["204", "200"].includes(String(code).trim())) return c;
+    /* 先看端口，没开就别浪费超时 */
+    const port = new URL(c).port;
+    const open = await new Promise((res) =>
+      execFile("nc", ["-z", "-G", "1", "127.0.0.1", port], { timeout: 3000 },
+        (err) => res(!err)));
+    if (!open) continue;
+
+    for (const url of PROBE_URLS) {
+      for (let attempt = 1; attempt <= 2; attempt++) {
+        const code = await curlCode(url, c, 10);
+        if (code === 204 || code === 200) return c;
+        if (attempt < 2) await sleep(1500);
+      }
+    }
   }
   return null;
 }
