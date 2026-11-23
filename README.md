@@ -56,6 +56,45 @@ node scripts/fetch-community.mjs --dry    # 只看抓取结果，不写文件
 
 耗时约 4 分钟（主要在等 Reddit 限流冷却），产出约 180 条。
 
+## 每日全流程（可脱离 WorkBuddy 独立跑）
+
+```bash
+node scripts/daily-report.mjs                # 抓社区 → 判断日报 → 发飞书 → 推送
+node scripts/daily-report.mjs --dry          # 只判断和打印正文，不发不推不抓
+node scripts/daily-report.mjs --no-community # 跳过社区抓取（省 4 分钟）
+node scripts/daily-report.mjs --no-push      # 改了但不推送
+```
+
+它固化了一条铁律：**没有真正的新内容就不发**。
+
+- 最新日报 `date` 不是今天 → 不发，群保持安静
+- 今天日报正文（`sections[].items` 累加）< 3 条 → 不发
+- 群里今天已经发过 → 不发，避免重复
+- 竞品动态只取今天/昨天，没有就不写这一段
+
+> ⚠️ AIHOT 详情接口的正文在 `report.sections`，外面套了一层 `report`；
+> 列表接口 `/dailies` 的 sections 永远是空的，必须拉 `/dailies/<date>` 详情。
+> 另外 `highlights` 字段**不参与**正文条数计算，别拿它凑数。
+
+## 换机器部署
+
+代码和逻辑全在仓库里，任何一台常驻的 Mac / Linux 都能接手：
+
+```bash
+git clone https://github.com/tarma945-debug/ai-pulse.git
+cd ai-pulse
+bash scripts/setup-host.sh --dry    # 先体检：node / curl / git / lark-cli / 代理 / 出网
+bash scripts/setup-host.sh          # 装好并注册定时任务（每天 10:00）
+```
+
+`setup-host.sh` 会自动判断系统：macOS 写 launchd plist，Linux 写 crontab。
+日志落在仓库根目录 `daily.log`。
+
+需要在目标机器上单独准备的两样东西（脚本会检查并提示）：
+
+1. **lark-cli 登录态** —— 设备码授权，必须人工确认一次，无法复制粘贴
+2. **git 推送凭据** —— 建议 `osxkeychain`（macOS）或 `git config credential.helper store`（Linux）
+
 ## 文件结构
 
 ```
@@ -65,7 +104,10 @@ app.js                    全部逻辑（路由 / 数据 / 渲染）
 data.js                   本地模型榜单数据（手工维护）
 community.js              社区热帖数据（脚本生成，勿手改）
 scripts/fetch-community.mjs  社区热帖抓取脚本
+scripts/daily-report.mjs     每日全流程（判断 + 发飞书 + 推送）
+scripts/setup-host.sh        新机器一键部署
 ```
+
 
 ## 部署
 
