@@ -78,7 +78,23 @@ node scripts/daily-report.mjs --no-push      # 改了但不推送
 
 ## 换机器部署
 
-代码和逻辑全在仓库里，任何一台常驻的 Mac / Linux 都能接手：
+代码和逻辑全在仓库里，任何一台常驻的 Mac / Linux 都能接手。
+
+### 方式 A：一键引导（推荐，交互式）
+
+```bash
+# 在你当前的机器上，把引导脚本推过去
+scp scripts/bootstrap-110-52.sh <用户名>@192.168.110.52:~/
+
+# 然后登上去跑
+ssh <用户名>@192.168.110.52
+bash ~/bootstrap-110-52.sh
+```
+
+脚本会一步步带你走：检查系统 → 缺 node 就装 → 装 lark-cli 并引导授权 →
+配 Git 部署密钥 → clone 仓库 → 体检 → 试跑 → 注册定时任务。每步都会问你要不要做。
+
+### 方式 B：手动
 
 ```bash
 git clone https://github.com/tarma945-debug/ai-pulse.git
@@ -90,10 +106,48 @@ bash scripts/setup-host.sh          # 装好并注册定时任务（每天 10:00
 `setup-host.sh` 会自动判断系统：macOS 写 launchd plist，Linux 写 crontab。
 日志落在仓库根目录 `daily.log`。
 
-需要在目标机器上单独准备的两样东西（脚本会检查并提示）：
+### 目标机器上必须单独准备的两样
 
-1. **lark-cli 登录态** —— 设备码授权，必须人工确认一次，无法复制粘贴
-2. **git 推送凭据** —— 建议 `osxkeychain`（macOS）或 `git config credential.helper store`（Linux）
+这两样**没法从原机器复制**，必须在目标机器上各做一次：
+
+**1. lark-cli 登录**（发飞书用）
+
+```bash
+lark-cli auth login --domain im
+```
+
+会打印一个授权链接，用浏览器打开、飞书账号确认一次即可。token 绑机器，复制不过去。
+
+**2. Git 推送权限**（推 GitHub 用）
+
+不要复制 token。用 **Deploy Key**，只对这一个仓库有效、可随时单独吊销：
+
+```bash
+ssh-keygen -t ed25519 -N "" -C "aipulse-deploy@$(hostname)" -f ~/.ssh/aipulse_deploy
+cat ~/.ssh/aipulse_deploy.pub
+```
+
+把这行公钥加到仓库设置页，**务必勾选 Allow write access**：
+https://github.com/tarma945-debug/ai-pulse/settings/keys/new
+
+然后在目标机器的 `~/.ssh/config` 里加个别名，让 git 用这把钥匙：
+
+```
+Host github-aipulse
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/aipulse_deploy
+  IdentitiesOnly yes
+```
+
+仓库地址相应改成 `git@github-aipulse:tarma945-debug/ai-pulse.git`。
+（`bootstrap-110-52.sh` 会自动做完这些。）
+
+### ⚠️ 切换时别忘了停旧机器
+
+新机器注册了定时任务后，**原机器上的 automation 必须停掉**，否则同一天两边各发一次。
+脚本里有同日去重能兜住大部分情况，但那是"查了再发"，不是严格互斥。
+
 
 ## 文件结构
 
@@ -105,7 +159,8 @@ data.js                   本地模型榜单数据（手工维护）
 community.js              社区热帖数据（脚本生成，勿手改）
 scripts/fetch-community.mjs  社区热帖抓取脚本
 scripts/daily-report.mjs     每日全流程（判断 + 发飞书 + 推送）
-scripts/setup-host.sh        新机器一键部署
+scripts/setup-host.sh        新机器部署（依赖体检 + 注册定时）
+scripts/bootstrap-110-52.sh  新机器一键引导（含装依赖、授权、配密钥）
 ```
 
 

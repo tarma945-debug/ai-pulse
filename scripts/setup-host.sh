@@ -40,7 +40,8 @@ command -v git >/dev/null 2>&1 && ok "git" || bad "没有 git（推送需要）"
 # --- lark-cli ---
 if command -v lark-cli >/dev/null 2>&1; then
   ok "lark-cli $(lark-cli --version 2>/dev/null | head -1)"
-  if lark-cli auth status >/dev/null 2>&1; then
+  # bot 身份的 status 恒为 ready，要判 user 的 tokenStatus 才算真授权
+  if lark-cli auth status 2>/dev/null | grep -q '"tokenStatus": "valid"'; then
     ok "lark-cli 已登录"
   else
     warn "lark-cli 未登录，需要跑 lark-cli auth login（会弹设备码，必须人工确认一次）"
