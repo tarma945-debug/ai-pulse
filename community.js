@@ -1,10 +1,10 @@
 /* 由 scripts/fetch-community.mjs 自动生成，请勿手改。
-   抓取时间 2026-11-24T04:34:48.154Z   共 47 条 */
+   抓取时间 2026-11-24T04:57:09.585Z   共 47 条 */
 window.COMMUNITY_DATA = {
   "site": {
     "title": "社区热帖",
     "desc": "Reddit / Hacker News / Product Hunt / GitHub 上 AI 创作圈的真实讨论",
-    "fetched": "2026-11-24T04:34:48.154Z",
+    "fetched": "2026-11-24T04:57:09.585Z",
     "count": 47,
     "byCat": {
       "开源项目": 9,
@@ -46,7 +46,7 @@ window.COMMUNITY_DATA = {
       "excerpt": "",
       "points": 74,
       "comments": 82,
-      "heat": 0.733
+      "heat": 0.729
     },
     {
       "id": "ph:tinker-2",
@@ -59,7 +59,7 @@ window.COMMUNITY_DATA = {
       "author": "Zac Zuo",
       "time": "2026-11-22T19:37:24-08:00",
       "excerpt": "<p> 26B looped model for coding on your laptop </p> <p> <a href=\"https://www.producthunt.com/products/tinker-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;",
-      "heat": 0.366
+      "heat": 0.363
     },
     {
       "id": "gh:jingyaogong/minimind",
@@ -89,7 +89,7 @@ window.COMMUNITY_DATA = {
       "excerpt": "",
       "points": 17,
       "comments": 10,
-      "heat": 0.565
+      "heat": 0.561
     },
     {
       "id": "ph:figmamcp",
@@ -102,7 +102,7 @@ window.COMMUNITY_DATA = {
       "author": "Peng Xiao",
       "time": "2026-11-22T15:28:02-08:00",
       "excerpt": "<p> Let Claude Code or Codex edit your open Figma file </p> <p> <a href=\"https://www.producthunt.com/products/figmamcp?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-f",
-      "heat": 0.334
+      "heat": 0.331
     },
     {
       "id": "gh:mvanhorn/last30days-skill",
@@ -130,7 +130,7 @@ window.COMMUNITY_DATA = {
       "author": "Jeremy Cai",
       "time": "2026-11-22T15:04:09-08:00",
       "excerpt": "<p> Run GitHub Actions on any spare Mac or Linux machine </p> <p> <a href=\"https://www.producthunt.com/products/strict?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-f",
-      "heat": 0.33
+      "heat": 0.328
     },
     {
       "id": "gh:HKUDS/CLI-Anything",
@@ -158,7 +158,7 @@ window.COMMUNITY_DATA = {
       "author": "Raul Riera",
       "time": "2026-11-22T14:44:38-08:00",
       "excerpt": "<p> Your own keys, your very own network </p> <p> <a href=\"https://www.producthunt.com/products/open-source-solana-wallet?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rs",
-      "heat": 0.328
+      "heat": 0.325
     },
     {
       "id": "gh:mjmirza/app-store-compliance",
@@ -186,7 +186,7 @@ window.COMMUNITY_DATA = {
       "author": "Viljami Vastamäki",
       "time": "2026-11-22T13:29:23-08:00",
       "excerpt": "<p> Branchery, a Git client for Mac </p> <p> <a href=\"https://www.producthunt.com/products/branchery?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source",
-      "heat": 0.318
+      "heat": 0.315
     },
     {
       "id": "gh:toeverything/AFFiNE",
@@ -214,7 +214,7 @@ window.COMMUNITY_DATA = {
       "author": "Suvroneel Nathak",
       "time": "2026-11-22T12:25:10-08:00",
       "excerpt": "<p> Your AI companion that never forgets what you say </p> <p> <a href=\"https://www.producthunt.com/products/ashwa?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&",
-      "heat": 0.31
+      "heat": 0.307
     },
     {
       "id": "gh:Tracer-Cloud/opensre",
@@ -242,7 +242,7 @@ window.COMMUNITY_DATA = {
       "author": "Shivam Kushwaha",
       "time": "2026-11-22T09:13:25-08:00",
       "excerpt": "<p> Set a budget, coordinate teams of AI agents, </p> <p> <a href=\"https://www.producthunt.com/products/replit?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;",
-      "heat": 0.285
+      "heat": 0.282
     },
     {
       "id": "gh:google-labs-code/stitch-skills",
@@ -270,7 +270,7 @@ window.COMMUNITY_DATA = {
       "author": "Rich Stureborg, PhD",
       "time": "2026-11-22T09:08:26-08:00",
       "excerpt": "<p> Plango lets your AI agents work all night - safely </p> <p> <a href=\"https://www.producthunt.com/products/plango?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-fee",
-      "heat": 0.284
+      "heat": 0.281
     },
     {
       "id": "gh:openvinotoolkit/openvino",
@@ -298,7 +298,7 @@ window.COMMUNITY_DATA = {
       "author": "Pierre Raffalli",
       "time": "2026-11-22T08:08:46-08:00",
       "excerpt": "<p> Free open-source AI agents that beta-test your app on phones </p> <p> <a href=\"https://www.producthunt.com/products/mobile-agent-testers?utm_campaign=producthunt-atom-posts-fee",
-      "heat": 0.277
+      "heat": 0.274
     },
     {
       "id": "ph:kopyo",
@@ -311,7 +311,7 @@ window.COMMUNITY_DATA = {
       "author": "Oğuzhan YILMAZ",
       "time": "2026-11-22T07:35:04-08:00",
       "excerpt": "<p> The Mac clipboard manager that remembers everything </p> <p> <a href=\"https://www.producthunt.com/products/kopyo?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-fee",
-      "heat": 0.272
+      "heat": 0.269
     },
     {
       "id": "ph:leantake",
@@ -324,7 +324,7 @@ window.COMMUNITY_DATA = {
       "author": "hooosberg",
       "time": "2026-11-22T04:14:55-08:00",
       "excerpt": "<p> 4.1 MB native Mac screen recorder — zero export wait </p> <p> <a href=\"https://www.producthunt.com/products/leantake?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss",
-      "heat": 0.246
+      "heat": 0.243
     },
     {
       "id": "ph:omi-work",
@@ -337,7 +337,7 @@ window.COMMUNITY_DATA = {
       "author": "Om Prakash Sahoo",
       "time": "2026-11-22T00:35:25-08:00",
       "excerpt": "<p> Omi can build anything. Now it finds your next 100 customers </p> <p> <a href=\"https://www.producthunt.com/products/omi-work?utm_campaign=producthunt-atom-posts-feed&amp;utm_me",
-      "heat": 0.218
+      "heat": 0.215
     },
     {
       "id": "ph:visitors",
@@ -350,7 +350,7 @@ window.COMMUNITY_DATA = {
       "author": "Garry Tan",
       "time": "2026-11-21T23:39:42-08:00",
       "excerpt": "<p> See website visitors on your website itself </p> <p> <a href=\"https://www.producthunt.com/products/visitors?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp",
-      "heat": 0.211
+      "heat": 0.208
     },
     {
       "id": "ph:tesla",
@@ -363,7 +363,7 @@ window.COMMUNITY_DATA = {
       "author": "Chris Messina",
       "time": "2026-11-21T18:23:40-08:00",
       "excerpt": "<p> Upgrading every part of the end-to-end driving network </p> <p> <a href=\"https://www.producthunt.com/products/tesla?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-",
-      "heat": 0.17
+      "heat": 0.167
     },
     {
       "id": "ph:oovi",
@@ -376,7 +376,7 @@ window.COMMUNITY_DATA = {
       "author": "Brahimi Oussama",
       "time": "2026-11-21T12:02:03-08:00",
       "excerpt": "<p> Your own team of AI on your desktop </p> <p> <a href=\"https://www.producthunt.com/products/oovi?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_source=",
-      "heat": 0.12
+      "heat": 0.117
     },
     {
       "id": "ph:resurf-2",
@@ -389,7 +389,7 @@ window.COMMUNITY_DATA = {
       "author": "fmerian",
       "time": "2026-11-21T08:21:36-08:00",
       "excerpt": "<p> Personal Knowledge Base & Bookmark Manager for Mac </p> <p> <a href=\"https://www.producthunt.com/products/resurf-2?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-f",
-      "heat": 0.092
+      "heat": 0.089
     },
     {
       "id": "ph:othor-ai",
@@ -402,7 +402,7 @@ window.COMMUNITY_DATA = {
       "author": "Unni Koroth",
       "time": "2026-11-21T03:57:04-08:00",
       "excerpt": "<p> Your Head of Intelligence. Know what your numbers are hiding </p> <p> <a href=\"https://www.producthunt.com/products/othor-ai?utm_campaign=producthunt-atom-posts-feed&amp;utm_me",
-      "heat": 0.057
+      "heat": 0.054
     },
     {
       "id": "ph:spikely",
@@ -415,7 +415,7 @@ window.COMMUNITY_DATA = {
       "author": "Prince Ajuzie",
       "time": "2026-11-21T02:04:50-08:00",
       "excerpt": "<p> Startup Metric Alerts for iPhone, Mac and Apple Watch </p> <p> <a href=\"https://www.producthunt.com/products/spikely?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss",
-      "heat": 0.043
+      "heat": 0.04
     },
     {
       "id": "ph:jot-15",
@@ -428,7 +428,7 @@ window.COMMUNITY_DATA = {
       "author": "Abdalmohsen Al Tulaihi",
       "time": "2026-11-21T01:34:42-08:00",
       "excerpt": "<p> One key for everything you do with text </p> <p> <a href=\"https://www.producthunt.com/products/jot-15?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&amp;utm_s",
-      "heat": 0.039
+      "heat": 0.036
     },
     {
       "id": "ph:chat-with-work",
@@ -441,7 +441,7 @@ window.COMMUNITY_DATA = {
       "author": "Carmine Paolino",
       "time": "2026-11-21T01:06:12-08:00",
       "excerpt": "<p> AI bots in Europe. They work. You decide. </p> <p> <a href=\"https://www.producthunt.com/products/chat-with-work?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed",
-      "heat": 0.035
+      "heat": 0.032
     },
     {
       "id": "ph:omi-cli",
@@ -454,7 +454,7 @@ window.COMMUNITY_DATA = {
       "author": "Om Prakash Sahoo",
       "time": "2026-11-21T00:05:31-08:00",
       "excerpt": "<p> AI coding agents that work while you're away. </p> <p> <a href=\"https://www.producthunt.com/products/omi-cli?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&am",
-      "heat": 0.027
+      "heat": 0.024
     },
     {
       "id": "ph:snowly-2",
@@ -483,19 +483,6 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:naturefunding-org",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "naturefunding.org",
-      "url": "https://www.producthunt.com/products/naturefunding-org",
-      "author": "Bernat Fortet Unanue",
-      "time": "2026-11-18T19:48:42-08:00",
-      "excerpt": "<p> Grants for nature projects, checked against funder pages </p> <p> <a href=\"https://www.producthunt.com/products/naturefunding-org?utm_campaign=producthunt-atom-posts-feed&amp;u",
-      "heat": 0
-    },
-    {
       "id": "ph:mai-image-2-3",
       "source": "Product Hunt",
       "sub": "PH",
@@ -506,6 +493,19 @@ window.COMMUNITY_DATA = {
       "author": "Kumar Abhishek",
       "time": "2026-11-17T10:42:27-08:00",
       "excerpt": "<p> Microsoft's image model with precise edits and Canvas </p> <p> <a href=\"https://www.producthunt.com/products/mai-image-2-3?utm_campaign=producthunt-atom-posts-feed&amp;utm_medi",
+      "heat": 0
+    },
+    {
+      "id": "ph:naturefunding-org",
+      "source": "Product Hunt",
+      "sub": "PH",
+      "subLabel": "Product Hunt",
+      "cat": "产品发布",
+      "title": "naturefunding.org",
+      "url": "https://www.producthunt.com/products/naturefunding-org",
+      "author": "Bernat Fortet Unanue",
+      "time": "2026-11-18T19:48:42-08:00",
+      "excerpt": "<p> Grants for nature projects, checked against funder pages </p> <p> <a href=\"https://www.producthunt.com/products/naturefunding-org?utm_campaign=producthunt-atom-posts-feed&amp;u",
       "heat": 0
     },
     {
@@ -548,19 +548,6 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:mockreel",
-      "source": "Product Hunt",
-      "sub": "PH",
-      "subLabel": "Product Hunt",
-      "cat": "产品发布",
-      "title": "Mockreel",
-      "url": "https://www.producthunt.com/products/mockreel",
-      "author": "Saurav Chamoli",
-      "time": "2026-11-19T18:04:14-08:00",
-      "excerpt": "<p> your screen recording, but in a 3D phone. free, no signup </p> <p> <a href=\"https://www.producthunt.com/products/mockreel?utm_campaign=producthunt-atom-posts-feed&amp;utm_mediu",
-      "heat": 0
-    },
-    {
       "id": "ph:creavit-studio",
       "source": "Product Hunt",
       "sub": "PH",
@@ -587,16 +574,16 @@ window.COMMUNITY_DATA = {
       "heat": 0
     },
     {
-      "id": "ph:denotch",
+      "id": "ph:mockreel",
       "source": "Product Hunt",
       "sub": "PH",
       "subLabel": "Product Hunt",
       "cat": "产品发布",
-      "title": "DeNotch",
-      "url": "https://www.producthunt.com/products/denotch",
-      "author": "Juozas Zobernis",
-      "time": "2026-11-18T23:57:34-08:00",
-      "excerpt": "<p> Hide the MacBook notch and tame your menu bar </p> <p> <a href=\"https://www.producthunt.com/products/denotch?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&am",
+      "title": "Mockreel",
+      "url": "https://www.producthunt.com/products/mockreel",
+      "author": "Saurav Chamoli",
+      "time": "2026-11-19T18:04:14-08:00",
+      "excerpt": "<p> your screen recording, but in a 3D phone. free, no signup </p> <p> <a href=\"https://www.producthunt.com/products/mockreel?utm_campaign=producthunt-atom-posts-feed&amp;utm_mediu",
       "heat": 0
     },
     {
@@ -610,6 +597,19 @@ window.COMMUNITY_DATA = {
       "author": "Adarsh Subham",
       "time": "2026-11-19T07:08:42-08:00",
       "excerpt": "<p> your coding agent directs your launch video </p> <p> <a href=\"https://www.producthunt.com/products/teaserkit?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&am",
+      "heat": 0
+    },
+    {
+      "id": "ph:denotch",
+      "source": "Product Hunt",
+      "sub": "PH",
+      "subLabel": "Product Hunt",
+      "cat": "产品发布",
+      "title": "DeNotch",
+      "url": "https://www.producthunt.com/products/denotch",
+      "author": "Juozas Zobernis",
+      "time": "2026-11-18T23:57:34-08:00",
+      "excerpt": "<p> Hide the MacBook notch and tame your menu bar </p> <p> <a href=\"https://www.producthunt.com/products/denotch?utm_campaign=producthunt-atom-posts-feed&amp;utm_medium=rss-feed&am",
       "heat": 0
     },
     {
